@@ -7,6 +7,6 @@
     main "Hi im [mcName]"
 
     Josh "hi"
-    jump joshroute
+    jump fredroute
 
     return
