@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/joshroute.rpy", line 358: Say menuitems and captions may not exist in the same menu.
+    Josh "Now that you've reviewed all the cards, let's see if you saw the pattern"
+                                                                                   ^
+
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Tue May 27 11:41:31 2025
