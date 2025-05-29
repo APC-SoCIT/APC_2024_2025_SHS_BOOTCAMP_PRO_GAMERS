@@ -1,4 +1,4 @@
-label Fredroute:
+label fredroute:
         
     "You follow Fred to the main building’s 3rd Floor. Home of the Senior High School students and the School Activities Office."
 
@@ -326,6 +326,7 @@ label cardsection:
             Fred "Jones was your typical jock part of our school’s varsity running for a scholarship for his upcoming college years"
             Fred "However, one of his football teammates found out that he had a crush on one of the guys in their team"
             Fred "So they decided to call him queer slurs and make fun of him for liking guys"
+
             main "Geez…poor guy"
             main "What happened afterwards?"
 
@@ -351,30 +352,98 @@ label cardsection:
             jump cards
 
         "Card labelled \"Byeong-Yeon\" ":
-            Fred “Oh, its Byeong-Yeon”
-            Fred “He was a korean student in Band, I’m pretty sure he was an exchange student from Seoul”
-            Fred “The guy could barely speak English and was still adjusting to the school’s environment but he was a bit shy for the most part”
-            Fred “His case of discrimination was when people started calling him names because of his Korean nationality”
-            Fred “He basically started breaking down in a bathroom once because of the cruel jokes the other students were making”
+            Fred "Oh, its Byeong-Yeon"
+            Fred "He was a korean student in Band, I’m pretty sure he was an exchange student from Seoul"
+            Fred "The guy could barely speak English and was still adjusting to the school’s environment but he was a bit shy for the most part"
+            Fred "His case of discrimination was when people started calling him names because of his Korean nationality"
+            Fred "He basically started breaking down in a bathroom once because of the cruel jokes the other students were making"
 
-            [mcName] “What kind of cruel jokes”
+            main "What kind of cruel jokes"
             
-            Fred “Oh you know, typical stereotypes yada-yada. The joke got so bad once that a bunch of students managed to lure him on stage in front of the entire Senior High district and started playing K-Pop”
-            Fred “Then they were shouting chants and telling him to dance”
+            Fred "Oh you know, typical stereotypes yada-yada. The joke got so bad once that a bunch of students managed to lure him on stage in front of the entire Senior High district and started playing K-Pop"
+            Fred "Then they were shouting chants and telling him to dance"
 
-            [mcName] “Public humiliation…yikes”
+            main "Public humiliation…yikes"
 
-            Fred “I don’t remember exactly how the case was resolved, but it ended up with the guy having to take remote classes online instead of being onsite due to the jokes he had to deal with”
-            Fred “I mean, the guy was practically jumped on by a group of bullies in his class. Can’t say I exactly blame him”
+            Fred "I don’t remember exactly how the case was resolved, but it ended up with the guy having to take remote classes online instead of being onsite due to the jokes he had to deal with"
+            Fred "I mean, the guy was practically jumped on by a group of bullies in his class. Can’t say I exactly blame him"
+
+            main "What happened to the bullies though? Does the school do anything about this or do the students just endure this"
+
+            Fred "...."
+            Fred "That's the thing,"
+            Fred "Byeong-Yeon's case was so widespread that the school wasn't able to pinpoint a direct perpetrator"
+            Fred "Even he couldn't point fingers cuz usually he would get ganged up by a bunch of people"
+            Fred "Says alot about our school, huh?"
+            
+            main "Man, the poor guy though...I'm glad he's doing alright"
+
+            Fred "Yeah, I'd like to say something about our school's discipline office, but even they're too tired to deal with this problem"
+            Fred "Really sucks what Byeong-Yeon went through"
 
             jump cards
 
 
         "Card labelled \"Chica Palmer\" ":
-            Fred "Somewhere else."
+            Fred "Chica Palmer..."
+            Fred "Her case was...something"
+
+            main "What happened to her?"
+
+            Fred "She used to be part of a religious group that used to do bible study every Sunday"
+            Fred "But then she was diagnosed with a case of ADHD and Autism"
+            Fred "The people who ran the bible study used to be adults from church who also happened to be associates of the school"
+            Fred "And when they found out about this, they started praying for Chica, hoping her 'problem' would go away with God's power"
+
+            main "Were they-"
+
+            Fred "Conservative? Yes."
+            Fred "They believed that Chica's neurological problems was solvable with enough praying"
+            Fred "Chica felt a bit uncomfy with how they viewed her so she opted to 'take a break' from that bible study"
+            Fred "However, word got out about her neurological problems and a specific group of boys started calling her names like \"Tism\" or something"
+            Fred "What's worse is that boy group had her crush in it"
+            Fred "She felt so ashamed that she didn't want to show her face to school anymore"
+
+            main "How did the guidance office catch wind of this?"
+            main "I'm sure she had someone to back her up at least"
+
+            Fred "She did, until her friends graduated and she was left to fend for herself"
+            Fred "She didn't have any friends her level so that left her defenseless"
+            Fred "The bullying stopped once the guidance office caught up with them"
+            Fred "Surprisingly, they also supported Chica with therapy to help her gain the confidence and to recover from the bullying"
+            Fred "Thankfully her case was solved and she's doing fine nowadays"
+
+            main "That's a relief"
+
             jump cards
 
-    Fred "Now that you've reviewed all the cards, let's see if you saw the pattern"
+    main "Wow....this is a lot to take in"
+    main "This feels like I'm peering into to much personal stuff"
+
+    Fred "Sometimes, incidents like these tend to bring out a lot of personal information about a person and their life"
+    Fred "Sometimes they're things you least expect"
+    Fred "It's a bit disappointing cases like these in school tend to pop up"
+    Fred "But I'm glad there's a few people who are willing to help out those in need"
+    Fred "Moving on, now that you viewed all of the cases, let's move onto the quiz part of your training"
+    
+    main "Do I have to?"
+
+    Fred "Hush"
+    Fred "There will be a total of 5 questions and all you gotta do is answer them right"
+    Fred "Are you ready?"
+
+menu:
+    "Yes":
+        "Now that's what I'm talkin' about, let's go"
+        jump questions
+
+    "No":
+        Fred "Too late, already whipping out the questions"
+        Fred "Get Ready"
+        jump questions
+
+label questions:
+
 
     return
 
