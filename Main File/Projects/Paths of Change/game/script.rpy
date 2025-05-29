@@ -6,6 +6,6 @@
 
     main "Hi im [mcName]"
 
-    jump fredroute
+    jump kentroute
 
     return

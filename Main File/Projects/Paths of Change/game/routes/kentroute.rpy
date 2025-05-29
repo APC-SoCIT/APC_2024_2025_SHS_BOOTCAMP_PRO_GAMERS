@@ -170,7 +170,7 @@ menu:
     "Not working out, studying, or breathing fresh air frequently?":  
         jump LED
  
-    "...Are you a vampire avoiding the bid LED outside? So sensitive to vitamin D?":
+    "...Are you a vampire avoiding the big LED outside? So sensitive to vitamin D?":
         jump vamp
  
 label LED:
@@ -219,7 +219,7 @@ label next1:
 label next2:
     "After a while..."
     Kent "Alright, you win... I’ve got nothing better to do anyways other than what I said. And you’re fun to be with also so it’s a win-win for me."
-    jump nex3
+    jump next3
  
 label next3:
     "Just then, the orders arrived."
@@ -368,7 +368,7 @@ label nochoi:
     Kent "…Treadmill. But I’m setting it to ‘snail’."
     "He lasts four minutes before dramatically collapsing onto the machine, wheezing."
     main "You lasted longer than thought."
-    "Kent “W-well, it’s me we are talking here."
+    Kent "W-well, it’s me we are talking here."
     "He said proudly."
     main "Really?"
     "You said to Kent while smirking wickedly."
