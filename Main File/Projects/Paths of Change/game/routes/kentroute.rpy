@@ -4,7 +4,7 @@ label kentroute:
     Kent "You okay with that?"
     main "Yeah."
     Kent "Alright! Of course, if you have anywhere you want to go, then we’ll go there as well."
-    You "Oh, thanks."
+    main "Oh, thanks."
     Kent "Nice. Now with that decided, let’s go to the nearest fast-food restaurant first to eat before going anywhere else."
     Kent "You good with it?"
  
@@ -16,12 +16,12 @@ menu:
         jump yerr
  
 label yer:
-    You "Yup."
+    main "Yup."
     Kent "The nearest fast-food restaurant here is KFC. Let’s go there."
     jump goi
  
 label yerr:
-    You "Well, I am a little hungry so..."
+    main "Well, I am a little hungry so..."
     Kent "Same here!"
     Kent "The nearest fast-food restaurant here is KFC. Let’s go there."
     jump goi
@@ -39,21 +39,21 @@ menu:
         jump yerb
  
 label yera:
-    You "Hey, are you alright?"
+    main "Hey, are you alright?"
     Kent "Yeah, just a bit tired."
     jump yerc
  
 label yerb:
-    You "Wait, you’re exhausted already?"
+    main "Wait, you’re exhausted already?"
     Kent "How rude. Though yeah, my stamina is dead."
     jump yerc
  
 label yerc:
     Kent "Well, this has always been the case for me though."
     Kent "Nothing new, really."
-    You "Oh, I see."
+    main "Oh, I see."
     Kent "Well, enough about me. Ready to go in?"
-    You "Absolutely!"
+    main "Absolutely!"
     Kent "Woah, so enthusiastic."
     "You both got inside and took a seat…"
     Kent "Finally! Air that really feels good to the touch."
@@ -68,23 +68,23 @@ menu:
         jump no
  
 label yes:
-    You "Yup."
+    main "Yup."
     "You told Kent what you want."
     Kent "Oh? You’ve got quite the interesting combination."
     jump next
  
 label no:
-    You "Not yet... Too many choices here."
+    main "Not yet... Too many choices here."
     Kent "Take your time, though don’t take too long."
-    You "No, it’s fine. I know what I want now."
+    main "No, it’s fine. I know what I want now."
     "You told Kent what you want."
     Kent "Oh? You’ve got quite the interesting combination."
     jump next
  
 label next:
-    You "Well, gotta balance what I eat after all."
+    main "Well, gotta balance what I eat after all."
     "You were curios as to what Kent wants to order."
-    You "What do you want to get for yourself?"
+    main "What do you want to get for yourself?"
     Kent "Well... I will order fried chicken, burger, fries, and coke."
  
 menu:
@@ -95,12 +95,12 @@ menu:
         jump sure
  
 label lot:
-    You "...That’s a lot"
+    main "...That’s a lot"
     Kent "Gotta eat a lot, you know?"
     jump sure
  
 label sure:
-    You "Are you sure about that? Those are quite the unhealthy combo you have."
+    main "Are you sure about that? Those are quite the unhealthy combo you have."
     Kent "Nah, it’s fine. I eat these types of food almost every day. And look, nothing happened."
  
 menu:
@@ -111,18 +111,18 @@ menu:
         jump something
  
 label be:
-    You "If you say so..."
+    main "If you say so..."
     "You reluctantly said."
     Kent "I’ll order now."
     jump arrive
  
 label something:
-    You "Why not, you know? Add something green alongside?"
+    main "Why not, you know? Add something green alongside?"
     Kent "Ehh..."
     "Kent said in an aloof manner, expressing his unenthusiasm"
     Kent "Fine, I’ll add some of that just as you've said. Although just once."
     "He said reluctantly"
-    You "Nice. That's it, my guy."
+    main "Nice. That's it, my guy."
     Kent "I’ll order now."
     jump arrive
  
@@ -138,30 +138,30 @@ menu:
         jump usual
  
 label secret:
-    You "Well... That's sudden. Though it's a secret"
+    main "Well... That's sudden. Though it's a secret"
     Kent "Eh… No secrets please."
-    You "Just kidding."
-    You "Well, I usually study, exercise, and do what I like."
+    main "Just kidding."
+    main "Well, I usually study, exercise, and do what I like."
     jump usual1
  
 label usual:
-    You "Hmm... I usually study, exercise, and do what I like."
+    main "Hmm... I usually study, exercise, and do what I like."
     Kent "You’re so active, huh?"
-    You "How about you?"
+    main "How about you?"
     jump ab
  
 label usual1:
-    You "Well, I usually study, exercise, and do what I like."
+    main "Well, I usually study, exercise, and do what I like."
     Kent "Wow, so active."
-    You "How about you?"
+    main "How about you?"
     jump ab
  
 label ab:
-    You "How about you?"
+    main "How about you?"
     Kent "About me..."
     Kent "Well, I just play games and laze around all around the clock. I don’t really go out that often so..."
     Kent "That’s it."
-    You "..."
+    main "..."
     "You stared at him in silence."
     Kent "Hey… What’s with the silent stare? You’re scaring me."
     "You asked him again."
@@ -174,21 +174,21 @@ menu:
         jump vamp
  
 label LED:
-    You "Not working out, studying, or breathing fresh air frequently?"
+    main "Not working out, studying, or breathing fresh air frequently?"
     Kent "Well, yeah. More or less."
     "You thought to yourself that it’s no wonder why he is physically weak."
     jump gue
  
 label vamp:
-    You "...Are you a vampire avoiding the big LED outside? So sensitive to vitamin D?"
+    main "...Are you a vampire avoiding the big LED outside? So sensitive to vitamin D?"
     Kent "So harsh! It's not that bad, bro."
     "He said in a mild exasperated expression."
     jump gue
  
 label gue:
-    You "I guess... so?"
+    main "I guess... so?"
     "You are pondering about something."
-    You "You know what? Why don’t we hangout often?"
+    main "You know what? Why don’t we hangout often?"
     Kent "Wait wait wait... How come?"
     "Kent was surprised by your sudden suggestion."
  
@@ -200,12 +200,12 @@ menu:
         jump longa
  
 label idea:
-    You "Hearing what you said, I just thought it would be a good idea, no?"
+    main "Hearing what you said, I just thought it would be a good idea, no?"
     Kent "Ehh… What a pain that is."
     jump next1
  
 label longa:
-    You "You won’t live long bro. You won’t reach the release of GTA 6 at this rate."
+    main "You won’t live long bro. You won’t reach the release of GTA 6 at this rate."
     "You said smugly."
     Kent "Hey… That’s rude. Though I would hate it if I can’t get myself to play that game."
     jump next2
@@ -223,16 +223,16 @@ label next2:
  
 label next3:
     "Just then, the orders arrived."
-    You "Then it’s decided! We can talk about what to do later. We’ll eat for now."
+    main "Then it’s decided! We can talk about what to do later. We’ll eat for now."
     Kent "Yep, I feel hungry after seeing the food haha."
     "He said while looking at the food happily."
     "After some time..."
     Kent "I’m stuffed!"
     "He said while patting his stomache."
-    You "So, what do we do now?"
+    main "So, what do we do now?"
     Kent "Let’s see..."
     Kent "Why don’t we leave for now?"
-    You "Yeah, let do that."
+    main "Yeah, let do that."
     "After leaving KFC, Kent groans, rubbing his stomach as they walk down the street. The sun is setting, casting an orange glow over the sidewalk."
     Kent "Ugh… I might have overdone it."
  
@@ -244,16 +244,16 @@ menu:
         jump conv
  
 label saw:
-    You "Saw this coming knowing how much you ate."
+    main "Saw this coming knowing how much you ate."
     "You said bluntly as if you expected this much to happen."
     Kent "W-well..."
     "He said with a bittersweet laugh."
     jump conv
  
 label conv:
-    You "Want to walk it off? Looks like there's a convenience store just in front with water."
+    main "Want to walk it off? Looks like there's a convenience store just in front with water."
     Kent "Water? Bold of you to assume I hydrate."
-    You "Yeah yeah..."
+    main "Yeah yeah..."
     "Inside the convenience store, fluorescent lights buzz overhead. Kent immediately veers toward the energy drinks. You step in front of him, blocking the way."
  
 menu:
@@ -264,17 +264,17 @@ menu:
         jump this1
  
 label this:
-    You "Nope. Try this one instead."
+    main "Nope. Try this one instead."
     "You gave Kent coconut water, and he reluctantly took a sip of the coconut water and gags."
     Kent "Ugh, this tastes like regret."
-    You "It’s not that bad, you know?"
+    main "It’s not that bad, you know?"
     jump noto
  
 label this1:
-    You "You’ll literally turn into a glow stick if you drink another one of those sooner or later, you know?"
+    main "You’ll literally turn into a glow stick if you drink another one of those sooner or later, you know?"
     "You handed Kent a coconut water, and he reluctantly took a sip of the coconut water and gags."
     Kent "Ugh, this tastes like regret."
-    You "It’s not that bad, you know?"
+    main "It’s not that bad, you know?"
     "You said while smirking."
     Kent "Yes, it is…"
  
@@ -292,33 +292,33 @@ menu:
         jump grem
  
 label already:
-    You "I already told you the reason earlier though. Forgot it already?"
+    main "I already told you the reason earlier though. Forgot it already?"
     Kent "Well... no?"
     "He said looking nervously"
-    You "Right..."
+    main "Right..."
     "You are doubting what he said."
     "You told Kent the reason and he was listening closely."
-    You "Because I want you to live long enough to play GTA 6 or live longer than that."
+    main "Because I want you to live long enough to play GTA 6 or live longer than that."
     Kent "Huh? The heck was with that reason?"
     "You grin as you said that, bumping his shoulder while he look flabbergasted."
     "He said that but you know that he understood what you were trying to convey to him."
     jump reas
  
 label grem:
-    You "Someone’s gotta call you out when you’re being a self-destructive gremlin."
+    main "Someone’s gotta call you out when you’re being a self-destructive gremlin."
     "You grin as you said that, bumping his shoulder."
     Kent "Gremlin? Rude."
     "He said smiling, and there’s a flicker of something softer in his expression."
     "Knowing that you were concerned for him made him happy."
-    You "Eh... Are you that happy?"
+    main "Eh... Are you that happy?"
     "You said mockingly..."
     Kent "You shut it. I'm going home."
-    You "Yeah yeah, I'll do that as well."
+    main "Yeah yeah, I'll do that as well."
     jump nex
  
 label reas:
     Kent "Eh, is that really it?"
-    You "Yes sir"
+    main "Yes sir"
     "You said proudly"
     Kent "I see.. Haha"
     "He said while smiling and laughing."
@@ -336,19 +336,19 @@ menu:
         jump exha
  
 label exha:
-    You "Heh... It's gonna take more than that to exhaust me."
+    main "Heh... It's gonna take more than that to exhaust me."
     "You said while looking at him, grinning."
     Kent "But it is for me, though..."
-    You "Yes yes. Let's go."
+    main "Yes yes. Let's go."
     Kent "Ugh, I’d rather die."
     "He said as if he is in despair."
     jump shr
  
 label answ:
-    You "Of course not."
-    You "And you are going to go along with me and I won't be taking no as an answer."
+    main "Of course not."
+    main "And you are going to go along with me and I won't be taking no as an answer."
     Kent "I don't even have a choice anymore?!"
-    You "Nada, stop whining bro. You can do it!"
+    main "Nada, stop whining bro. You can do it!"
     "You said to cheer him."
     jump shr
  
@@ -367,21 +367,21 @@ menu:
 label nochoi:
     Kent "…Treadmill. But I’m setting it to ‘snail’."
     "He lasts four minutes before dramatically collapsing onto the machine, wheezing."
-    You "You lasted longer than thought."
+    main "You lasted longer than thought."
     "Kent “W-well, it’s me we are talking here."
     "He said proudly."
-    You "Really?"
+    main "Really?"
     "You said to Kent while smirking wickedly."
     Kent "No, no. I’m joking. Please no more. I’ll die at this rate."
     "He said while sweating bullets and shivering."
-    You "I’m joking. Let's take a short break."
+    main "I’m joking. Let's take a short break."
     "Kent looked at you like you’re a saint."
     "After the gym session, you invited Kent in your apartment."
     "Later in your apartment. Smoke billows from a pan as Kent frantically waves a towel at the screeching smoke alarm."
     Kent "I told you I’m a takeout guy! I don’t cook!"
-    You "We’re trying again. And no, ordering pizza doesn’t count as ‘cooking’."
+    main "We’re trying again. And no, ordering pizza doesn’t count as ‘cooking’."
     "You thought to yourself that maybe starting to cook from the get-go is tough for beginners."
-    You "…Okay, maybe we’ll start with sandwiches next time."
+    main "…Okay, maybe we’ll start with sandwiches next time."
     "You said with a defeated sigh, opened the window."
     Kent "I miss my chicken nuggets."
     "He said while holding up a charred lump that was supposed to be chicken."
@@ -397,24 +397,24 @@ menu:
  
 label jog:
     "You two have jogged on the nearby park."
-    You "Here, water."
+    main "Here, water."
     "You handed him a bottle of water."
     "The two of you jog half the path before Kent stops, hands on his knees, panting."
     "But he doesn’t complain, just watches the sunrise with you, a small, grudging smile tugging at his lips."
-    You "See?"
+    main "See?"
     Kent "What do you mean?"
-    You "Compare to how you look when we first met, you look far better. A little movement doesn’t exhaust you anymore."
-    You "At first, you looked so pale, and your complexion looks so dire. I also remember the fact that you tend to get too easily get sick."
-    You "But now? Those problems are already gone when I more or less forced you into getting back in shape. Though you were reluctant at it first."
+    main "Compare to how you look when we first met, you look far better. A little movement doesn’t exhaust you anymore."
+    main "At first, you looked so pale, and your complexion looks so dire. I also remember the fact that you tend to get too easily get sick."
+    main "But now? Those problems are already gone when I more or less forced you into getting back in shape. Though you were reluctant at it first."
     "You said with a faint laugh."
     Kent "W-well, it thought it was hard, and yes it was. But I kinda, you know? Enjoyed it more or less doing it with someone."
-    You "Now you're talking like someone living life to the fullest."
+    main "Now you're talking like someone living life to the fullest."
     Kent "Shut it."
     "He said bashfully."
-    You "Haha, alright alright."
+    main "Haha, alright alright."
     "Montage of progress: Kent’s gaming streams now feature \"Fitness Fail\" compilations. His fridge has two vegetables. He still groans about weekly runs, but he’s there every time."
     Kent "…Okay, maybe endorphins are a real thing."
-    You "Told you. Next goal: Yoga. No excuses."
-    You "You said while grinning."
+    main "Told you. Next goal: Yoga. No excuses."
+    main "You said while grinning."
     Kent "I will block your number."
     "But he’s already following, shaking his head with a smile."
