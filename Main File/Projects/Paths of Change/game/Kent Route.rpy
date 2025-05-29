@@ -412,7 +412,7 @@ label jog:
     You "Now you're talking like someone living life to the fullest."
     Kent "Shut it."
     "He said bashfully."
-    You "Haha, alright alright."
+    You "Haha, says someone who volunteered."
     "Montage of progress: Kent’s gaming streams now feature \"Fitness Fail\" compilations. His fridge has two vegetables. He still groans about weekly runs, but he’s there every time."
     Kent "…Okay, maybe endorphins are a real thing."
     You "Told you. Next goal: Yoga. No excuses."
