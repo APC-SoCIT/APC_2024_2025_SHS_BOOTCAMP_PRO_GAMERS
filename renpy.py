@@ -420,4 +420,4 @@ label jog:
     You "Told you. Next goal: Yoga. No excuses."
     You "You said while grinning."
     Kent "I will block your number."
-    "But he’s already following, shaking his head with a smile.
+    "But he’s already following, shaking his head with a smile."
