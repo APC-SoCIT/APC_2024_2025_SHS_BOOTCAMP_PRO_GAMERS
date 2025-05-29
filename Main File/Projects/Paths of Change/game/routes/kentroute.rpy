@@ -2,7 +2,7 @@ label kentroute:
     Kent "Sure, let's hang out."
     Kent "Knowing that you are new here, I’ll take the lead."
     Kent "You okay with that?"
-    You "Yeah."
+    main "Yeah."
     Kent "Alright! Of course, if you have anywhere you want to go, then we’ll go there as well."
     You "Oh, thanks."
     Kent "Nice. Now with that decided, let’s go to the nearest fast-food restaurant first to eat before going anywhere else."
@@ -417,4 +417,4 @@ label jog:
     You "Told you. Next goal: Yoga. No excuses."
     You "You said while grinning."
     Kent "I will block your number."
-    "But he’s already following, shaking his head with a smile.
+    "But he’s already following, shaking his head with a smile."
