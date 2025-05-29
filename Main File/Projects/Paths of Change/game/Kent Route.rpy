@@ -1,4 +1,4 @@
-﻿define Kent = Character("Kent", color = "#a01fb4")
+define Kent = Character("Kent", color = "#a01fb4")
 define You = Character("You", color = "#c8ffc8")
 
 label start:
@@ -330,16 +330,33 @@ label nex:
     Kent "Don't you get tired?"
 
 menu:
+    "Of course not.":
+        jump answ
+
     "Heh... It's gonna take more than that to exhaust me.":
         jump exha
 
-    "Of course not, and you are going to go along with me. Won't be taking a no as an answer":
-        jump answ
-
 label exha:
-    Kent "What a pain..."
+    You "Heh... It's gonna take more than that to exhaust me."
+    "You said while looking at him, grinning."
+    Kent "But it is for me, though..."
+    You "Yes yes. Let's go."
+    Kent "Ugh, I’d rather die."
+    "He said as if he is in despair."
+    jump shr
+
+label answ:
+    You "Of course not."
+    You "And you are going to go along with me and I won't be taking no as an answer."
+    Kent "I don't even have a choice anymore?!"
+    You "Nada, stop whining bro. You can do it!"
+    "You said to cheer him."
+    jump shr
+
+label shr:
     "One week later, you dragged Kent to a local gym’s free trial day. Kent clings to the doorway like a cat avoiding a bath."
-    Kent "I’d rather die."
+    Kent "I will never let go. Never!"
+    "He said, looking so fired up and motivated"
 
 menu:
     "You’re at it again, huh? You will die if you don’t move. C’mon, just the treadmill!":
