@@ -444,6 +444,36 @@ menu:
 
 label questions:
 
+    default wrong = 0
+
+    Fred "Ok, first things first. What did all students, aside from being discriminated, have in common"
+    Fred "Don't worry about this one, there isn't a wrong answer, I just want your honesst viewpoint on it"
+
+    label question1:
+        if wrong < 3:
+            menu:
+                "The students were overpowered by a certain group":
+                    Fred "Uhh yeah...duh"
+                    jump question1
+                "The students did not have anyone to back them up":
+                    Fred "yes"
+                    jump question2
+                "The studdents were part of a minority":
+                    Fred "Uhh yeah...duh"
+                    jump question1
+                "Chad.":
+                    Fred "Nevermind. Forget what I said."
+                    Fred "Chad literally is out in the picture with any of these"
+                    Fred "Try again, dude"
+                    $ wrong = wrong + 1
+                    jump question1
+        else:
+            Fred "Man you suck at this"
+            Fred "Goodbye"
+            return
+
+        label question2:
+            Fred "dhjkshfjsdkh"
 
     return
 
