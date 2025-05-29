@@ -49,6 +49,7 @@ label yera:
 label yerb:
     You "Wait, you’re exhausted already?"
     Kent "How rude. Though yeah, my stamina is dead."
+    jump yerc
 
 label yerc:
     Kent "Well, this has always been the case for me though."
@@ -221,6 +222,7 @@ label next1:
 label next2:
     "After a while..."
     Kent "Alright, you win... I’ve got nothing better to do anyways other than what I said. And you’re fun to be with also so it’s a win-win for me."
+    jump nex3
 
 label next3:
     "Just then, the orders arrived."
@@ -229,7 +231,7 @@ label next3:
     "He said while looking at the food happily."
     "After some time..."
     Kent "I’m stuffed!"
-    "He happily said while patting his stomache."
+    "He said while patting his stomache."
     You "So, what do we do now?"
     Kent "Let’s see..."
     Kent "Why don’t we leave for now?"
@@ -247,8 +249,8 @@ menu:
 label saw:
     You "Saw this coming knowing how much you ate."
     "You said bluntly as if you expected this much to happen."
-    Kent "W-well... Haha"
-    "He said while laughing."
+    Kent "W-well..."
+    "He said with a bittersweet laugh."
     jump conv
 
 label conv:
@@ -268,10 +270,8 @@ label this:
     You "Nope. Try this one instead."
     "You gave Kent coconut water, and he reluctantly took a sip of the coconut water and gags."
     Kent "Ugh, this tastes like regret."
-
-menu:
-    "It’s not that bad, you know?":
-        jump noto
+    You "It’s not that bad, you know?"
+    jump noto
 
 label this1:
     You "You’ll literally turn into a glow stick if you drink another one of those sooner or later, you know?"
@@ -280,6 +280,8 @@ label this1:
     You "It’s not that bad, you know?"
     "You said while smirking."
     Kent "Yes, it is…"
+
+label noto:
     "Despite what he said, he bought another anyway, sulking as you two exit."
     "You both sat on a bench outside the store, watching pigeons fight over a discarded fry. Kent swirls his coconut water like it’s a fine wine he hates."
     Kent "Hey… Why do you even care about my ‘health’ or whatever?"
@@ -412,7 +414,7 @@ label jog:
     You "Now you're talking like someone living life to the fullest."
     Kent "Shut it."
     "He said bashfully."
-    You "Haha, says someone who volunteered."
+    You "Haha, alright alright."
     "Montage of progress: Kent’s gaming streams now feature \"Fitness Fail\" compilations. His fridge has two vegetables. He still groans about weekly runs, but he’s there every time."
     Kent "…Okay, maybe endorphins are a real thing."
     You "Told you. Next goal: Yoga. No excuses."
