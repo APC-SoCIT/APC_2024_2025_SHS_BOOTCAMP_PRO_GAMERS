@@ -1,3 +1,4 @@
+image bg_ApartmentIn = "ApartmentIn.avif"
 image bg_ConvinienceOutside = "ConvinienceOutside.jpg"
 image bg_Convinience = "Convinience.jpg"
 image bg_Gym = "Gym.png"
@@ -430,9 +431,9 @@ label jog:
     main "Here, water."
     "You handed him a bottle of water."
     "The two of you jog half the path before Kent stops, hands on his knees, panting."
-    "But he doesn’t complain, just watches the sunrise with you, a small, grudging smile tugging at his lips."
+    "But he doesn’t complain, just staring at the horizon above."
     main "See?"
-    Kent "What do you mean?"
+    Kent "Hmm? What do you mean?"
     main "Compare to how you look when we first met, you look far better. A little movement doesn’t exhaust you anymore."
     main "At first, you looked so pale, and your complexion looks so dire. I also remember the fact that you tend to get too easily get sick."
     main "But now? Those problems are already gone when I more or less forced you into getting back in shape. Though you were reluctant at it first."
@@ -449,3 +450,4 @@ label jog:
     main "You said while grinning."
     Kent "I will block your number."
     "But he’s already following, shaking his head with a smile."
+    scene bg_Black
