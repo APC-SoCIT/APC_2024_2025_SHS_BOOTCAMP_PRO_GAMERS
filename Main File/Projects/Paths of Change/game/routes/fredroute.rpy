@@ -106,14 +106,14 @@ menu:
 
         menu:
             "Yes":
-                jump abortroute
+                jump abortfredroute
             "No":
                 jump Fredchoice
     
     "I can help you out":
-        jump continueroute
+        jump continuefredroute
 
-label abortroute:
+label abortfredroute:
 
     main "I’m really sorry Fred, but I don’t think I’m cut out for being a host"
 
@@ -137,12 +137,17 @@ label abortroute:
 
     main "Who should I go with?"
 
-    #add an option where you choose Gian, Remie, or Alf
-    return
+    menu:
+        "Message Kent to hang out":
+            jump kentroute
+        "Head to Lily's Office":
+            jump lilyroute
+        "Go to the park where Vino resides":
+            jump vinoroute
 
     
 
-label continueroute:
+label continuefredroute:
 
     main "Well, I guess I can give it a shot-"
 
@@ -447,34 +452,241 @@ label questions:
     default wrong = 0
 
     Fred "Ok, first things first. What did all students, aside from being discriminated, have in common"
-    Fred "Don't worry about this one, there isn't a wrong answer, I just want your honesst viewpoint on it"
+    Fred "Don't worry about this one, there isn't a wrong answer, I just want your honest viewpoint on it"
 
     label question1:
-        if wrong < 3:
-            menu:
-                "The students were overpowered by a certain group":
-                    Fred "Uhh yeah...duh"
-                    jump question1
-                "The students did not have anyone to back them up":
-                    Fred "yes"
-                    jump question2
-                "The studdents were part of a minority":
-                    Fred "Uhh yeah...duh"
-                    jump question1
-                "Chad.":
-                    Fred "Nevermind. Forget what I said."
-                    Fred "Chad literally is out in the picture with any of these"
-                    Fred "Try again, dude"
-                    $ wrong = wrong + 1
-                    jump question1
-        else:
-            Fred "Man you suck at this"
-            Fred "Goodbye"
-            return
+        menu:
+            "The students were overpowered by a certain group":
+                Fred "That is true"
+                Fred "All 3 cases included a group of students ganging up on them"
+                Fred "Honestly makes me think"
+                jump q2
+            "The students did not have anyone to back them up":
+                Fred "Hmm, I like your viewpoint on that"
+                Fred "The problem with discrimination is it can sometimes be a silent or messy fight"
+                Fred "Such as these students, it wasn't easy for them to reach out for help"
+                "Fred sighs disappointingly"
+                Fred "Let alone anyone outside reaching out to help them"
+                jump q2
+            "The perpetrators think highly of themselvess":
+                Fred "Yeah, well that's life for ya"
+                Fred "One day you're just vibing, and the next, someone jumps at you for existing"
+                Fred "In discrimination, usually the abuser or offender's way of reason is that"
+                jump q2
+            "Chad.":
+                Fred "Chad literally is out in the picture with any of these cases"
+                Fred "Buttttt... he is a huge pain in the ass"
+                Fred "Still, not the answer I was looking for"
+                Fred "Try again, dude"
+                $ wrong = wrong + 1
+                jump question1
 
+    label q2:
+        Fred "Ok, ok, let's get a bit more technical here."
+        Fred "That first question was just a test of opinion"
+        Fred "Question 2: What is the best way to deal with discrimination, shown by the 3 cases you've read"
+        
         label question2:
-            Fred "dhjkshfjsdkh"
+            menu:
+                "Find the source and stop it":
+                    Fred "That may be right depending on someone's morals, but it really isn't advised to do so"
+                    Fred "No matter how annoying and pressuring it can get, you don't throw a fist to another fist"
+                    Fred "Unless, only when needed. Heh..."
+                    $ wrong = wrong + 1
+                    jump q3
+                "Ignore the torment, they'll get tired eventually":
+                    Fred "Sorry [mcName], that's not the right answer"
+                    Fred "Ignorance is a band-aid solution and will only prolong the bullying"
+                    Fred "What's worse, it could deepen the situation the victim is in"
+                    $ wrong = wrong + 1
+                    jump q3
+                "Provide full support for the discriminated in overcoming prejudice and provide a safe space":
+                    Fred "Nice one!"
+                    Fred "It's best to remember the best way to deal with victims of prejudice is to assure them that they are not alone"
+                    Fred "Support is the best weapon against Derogatory nitwits"
+                    jump q3
+                "Immediately report the instance of discrimination to a higher position in-charge":
+                    Fred "While that is true..."
+                    Fred "Sad to say that the higher ups don't really care sometimes"
+                    Fred "I mean, yeah they'd do something to punish the perpetrators, but uhhh that's it."
+                    $ wrong = wrong + 1
+                    jump q3
 
+    label q3:
+        Fred "Ok, that one was easy, let's try to test your memory"
+        Fred "Out of the three cases, which of them was publicly humiliated?"
+
+        label question3:
+            menu:
+                "Jones Cooper":
+                    Fred "Heh...sorry bud, wrong answer"
+                    $ wrong = wrong + 1
+                "Byeong-Yeon":
+                    Fred "Heh...sorry bud, wrong answer"
+                    $ wrong = wrong + 1
+                "Chica Palmer":
+                    Fred "Heh...sorry bud, wrong answer"
+                    $ wrong = wrong + 1
+                "None of the above":
+                    Fred "...."
+                    Fred "Seriously?"
+                    $ wrong = wrong + 1
+                "All of the above":
+                    "Good job, my little detective."
+        
+        Fred "Trick question: it was all of them"
+        Fred "I may have mentioned that it was only Byeong-Yeon who was publicly humiliated,"
+        Fred "but with the spread of gossip with how the others were different, they also suffered through public humiliation"
+        jump q4
+
+    label q4:
+        Fred "Question number four. You're nearing the end here, buddy."
+        Fred "What was each student disciminated against them?"
+
+        label question4:
+            default q4choice = True
+            menu:
+                "Jones:Gender Identity; Byeong-Yeon:Race; Chica:Religion":
+                    Fred "Nope! Sorry bucko"
+                    $ wrong = wrong + 1
+                    $ q4choice = False
+                "Jones:Sexuality; Byeong-Yeon:Nationality; Chica:Developmental Disability":
+                    Fred "Right you are, nice work"
+                "Jones:Gender Expression; Byeong-Yeon:Ethnicity; Chica:Learning Disability":
+                    Fred "Ehh, not quite..."
+                    $ wrong = wrong + 1
+                    $ q4choice = False
+
+            if q4choice == False:
+                Fred "Jones was discriminated for being gay, ergo they targetted his sexuality"
+                Fred "Byeon-Yeon was made fun of for being Korean, therefore, Nationality"
+                Fred "And lastly, Chica's Autism is a Developmental Disability"
+                Fred "Did the similar choices mess ya up?"
+                jump q5
+            else:
+                Fred "Not bad, glad to see you knew the difference of each choice"
+                jump q5
+
+    label q5:
+        Fred "Alrighty then, we're at the last question"
+        Fred "Out of all of these, what is the ONE main thing discrimination strip people away from"
+        
+        label question5:
+            menu:
+                "Freedom":
+                    Fred "Ohh...sorry not quite"
+                    jump outro
+                "Unity":
+                    Fred "Nope, sorry bud wrong answer"
+                    jump outro
+                "Human Rights":
+                    Fred "Well done, [mcName]"
+                    jump outro
+                "Opportunities":
+                    Fred "Not the answer I was looking for, sadly. But you were close."
+                    jump outro
+
+    label outro:
+        Fred "Well. that wraps up about the small test for today"
+        Fred "Great work on our warm up, bud"
+
+        main "Wait....warm up?"
+
+        Fred "Well I mean, yeah, this is literally just the first day of your training"
+        Fred "Don't forget, we still gotta train you up for the big event!"
+
+        main "Then what was all of today for???"
+        
+        Fred "That was an introduction, a small taste of what's to come, if you will"
+
+        Fred "Anyways, let's review your score."
+        if wrong <= 3:
+            jump goodend
+
+        else:
+            jump badend
+
+    label goodend:
+        Fred "In total, you got atleast [wrong] mistakes"
+        Fred "Not bad, seems like you really did listen to a word I said"
+
+        main "Surprisingly, yeah"
+        main "Hey, the next time we do this, please give me a heads up at least"
+
+        Fred "Heh...no promises"
+        Fred "It's called the art of always being ready for a popquiz"
+        Fred "Trust me, you're gonna need that in this kinda school"
+
+        main "God spare me"
+
+        "Fred chuckles as he pats you in the back and gives you a warm smile"
+        jump end
+        
+
+    label badend:
+        Fred "In total, you got atleast [wrong] mistakes"
+        Fred "Not that I expected any specific outcome from today, but....we can work on it I guess"
+
+        main "To be fair, I was so not prepared for that quiz"
+
+        Fred "You gotta start being prepared for anything, [mcName]"
+        Fred "But yeah, mind handing me your schedule later, I really do think we need to practice this a bit more"
+
+        "Fred fidgets around his phone as he types away, trying to schedule what seems to be your future training sessions with him"
+
+        main "HEY HEY HOLD ON"
+        main "It is quite literally my first day in college, don't tell me you're scheduling more trainings"
+
+        "Fred blinks at you dumbfounded as he stops what he's doing and scratches his head"
+
+        Fred "Heh...sorry. Got a bit carried away there"
+        Fred "Totally forgot about that"
+        jump end
+
+
+    label end:
+        "A ringing alarm errupts from Fred's pocket. He pulled his phone out to silence the alarm"
+
+        Fred "Huh, 6:30 already. I guess it's time to pack up and head home"
+
+        main "Yeah, I'm pretty beat from today"
+
+        Fred "C'mon, let's head to the cafeteria and grab a coffee or something. Pretty sure my boyfriend's waiting for me there"
+
+        main "You're....boyfriend?"
+
+        Fred "Yeah, he's pretty chill, I can introduce him to ya"
+        Fred "Wait haven't I mentioned him yet or-"
+
+        main "N-nope..."
+
+        "Fred blinked a few times densely before smirking at you as he raised a brow and a toothy grin"
+
+        Fred "Why? Any particular reason you were asking?"
+
+        menu:
+            "NO. not at all":
+                Fred "Sure thing, hehe"
+            "I thought you were single":
+                Fred "Pffft, yea even I was surprised how I managed to fish a guy in"
+            "I'm not into you":
+                Fred "Bummer, so tragic, I'm sobbing, seething of rage even"
+        
+        Fred "Anyways, let's go before the shuttle stops service for tonight"
+        Fred "You did good today, let's try to keep this up before the event"
+
+        main "Thanks...evem if you did just drag me here by the wrist forcefully"
+        main "And threw me into a mini gameshow quiz"
+
+        Fred "What can I say, I'm pretty unpredictable"
+
+        "Fred's phone began to ring, pulling it out of his pocket to be met by an incoming call from his partner"
+
+        Fred "Welp, looks like that's our call. C'mon, I can show you all the good types of coffee they have at this hour"
+
+        "Fred jogs off out of the room in an excited hurry as you chase on after him"
+        "This is gonna be a long journey at your new college, but hey, at least you're having fun with it"
+        "End of Fred's Chapter."
     return
 
 
