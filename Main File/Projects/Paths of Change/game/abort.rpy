@@ -2,7 +2,10 @@ label abort:
 
     main "Who should I go with?"
 
-    if abortFred == True and abortKent == True and abortVino == True:
+    if all(metChars):
+        jump abortAll
+
+    elif abortFred == True and abortKent == True and abortVino == True:
 
             menu:
                 "Head to Lily's Office":

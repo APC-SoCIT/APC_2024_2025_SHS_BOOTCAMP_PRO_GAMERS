@@ -21,7 +21,11 @@ label kentintro:
 
         $ metKent = True
 
-        call screen map
+        if metFred == True and metKent == True and metVino == True and metLily == True:
+            jump metAll
+
+        else:
+            call screen map
 
     elif metKent == True:
 
@@ -29,9 +33,5 @@ label kentintro:
     
 label kentleft:
     "Kent left the classroom"
-
-    if all(metChars):
-        jump metAll
     
-    else:
-        call screen map
+    call screen map

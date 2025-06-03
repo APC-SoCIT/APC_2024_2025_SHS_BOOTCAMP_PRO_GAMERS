@@ -14,7 +14,7 @@ screen map:
         ypos 9
         auto "map/state_2_%s.png"
         focus_mask True
-        action NullAction()
+        action Jump("lilyintro")
 
     imagebutton:
         xpos 79

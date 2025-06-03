@@ -534,6 +534,7 @@ label questions:
         Fred "but with the spread of gossip with how the others were different, they also suffered through public humiliation"
         jump q4
 
+
     label q4:
         Fred "Question number four. You're nearing the end here, buddy."
         Fred "What was each student disciminated against them?"

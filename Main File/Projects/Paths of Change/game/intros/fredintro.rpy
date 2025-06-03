@@ -84,7 +84,11 @@ label fredintro:
 
         $ metFred = True
 
-        call screen map
+        if metFred == True and metKent == True and metVino == True and metLily == True:
+            jump metAll
+
+        else:
+            call screen map
 
     elif metFred == True:
 
@@ -92,11 +96,7 @@ label fredintro:
     
 label fredleft:
     "Fred left the parking lot"
-
-    if all(metChars):
-        jump metAll
     
-    else:
-        call screen map
+    call screen map
 
     

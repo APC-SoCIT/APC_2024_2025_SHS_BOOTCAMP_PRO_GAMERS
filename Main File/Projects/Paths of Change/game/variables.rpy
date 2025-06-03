@@ -9,3 +9,5 @@ default abortFred = False
 default abortLily = False
 default abortKent = False
 default abortVino = False
+
+default abortChars = [abortFred, abortLily, abortVino, abortKent]

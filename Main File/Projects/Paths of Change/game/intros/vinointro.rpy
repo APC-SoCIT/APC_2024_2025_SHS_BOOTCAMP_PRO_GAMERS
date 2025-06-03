@@ -52,7 +52,12 @@ label vinointro:
         
         $ metVino = True
 
-        call screen map
+        if metFred == True and metKent == True and metVino == True and metLily == True:
+            jump metAll
+
+        else:
+            call screen map
+
 
     elif metVino == True:
 
@@ -61,11 +66,6 @@ label vinointro:
 label vinoleft:
     "Vino left the cafeteria"
 
-
-    if all(metChars):
-        jump metAll
-    
-    else:
-        call screen map
+    call screen map
 
     
