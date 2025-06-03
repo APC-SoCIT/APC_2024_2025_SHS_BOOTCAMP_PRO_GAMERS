@@ -17,3 +17,20 @@ label kentIntro:
     "He said as he walks away in a rush."
     main "Yeah. Bye..."
     main "Hmm… Now what to do? Where should I head out now?"
+
+ $ metKent = True
+
+        call screen map
+
+    elif metKent == True:
+
+        jump fredleft
+    
+label kentleft:
+    "Kent left"
+
+    if all(metChars):
+        jump metAll
+    
+    else:
+        call screen map
