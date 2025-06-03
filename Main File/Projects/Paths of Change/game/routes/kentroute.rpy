@@ -1,4 +1,5 @@
 label kentroute:
+    scene bg class with dissolve
     Kent "You wanna hang out with me?"
 
 menu:
@@ -494,3 +495,4 @@ label jog3:
     Kent "I will block your number."
     "But he’s already following, shaking his head with a smile."
     scene bg black
+    "You have reached the ending of this route."
