@@ -9,7 +9,7 @@ label kentintro:
         Kent "You’re new here, huh? Sure, I don’t mind. Feel free, I have nothing better to do anyways."
         main "Thanks!"
         "You two talked a bit before the homeroom teacher arrived, and the classroom orientation started."
-        "Lunchtime..."
+        "Lunchtime arrived as the orientation ended. You two met up in the hallway."
         Kent "Hey, sorry but I won’t be able to accompany you for a bit since I have to do something real quick. Urgent thingy, trust."
         main "It’s fine, I understand. Let’s talk later after you arrive. For the meantime, I’ll wander around the school for a bit."
         Kent "I see, then it’s settled. Really, sorry about this. Talk to you later."
