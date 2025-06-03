@@ -2,7 +2,7 @@ label kentroute:
 
     scene bg class with dissolve
 
-    Kent "You wanna hang out with me?"
+    Kent "You...wanna hang out with me?"
 
 menu:
 
@@ -44,15 +44,10 @@ label routeabort:
 
     "After some time... You thought about your next course of action."
 
-<<<<<<< HEAD
     $ abortKent = True
 
     jump abort
-=======
-    main "Who should I go with?"
->>>>>>> 2e930f4692f5a42c6ab0b49a8a6584bb3488f31b
-    
-    #Needed to add options that can redirect to other routes
+
 
 
 
@@ -670,7 +665,7 @@ label nochoi:
 
     "He lasts four minutes before dramatically collapsing onto the machine, wheezing."
 
-    main "You lasted longer than thought."
+    main "You lasted longer than I thought."
 
     Kent "W-well, it’s me we are talking here."
 
