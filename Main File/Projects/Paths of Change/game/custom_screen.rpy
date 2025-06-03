@@ -21,7 +21,7 @@ screen map:
         ypos 137
         auto "map/state_3_%s.png"
         focus_mask True
-        action NullAction()
+        action Jump("kentintro")
 
     imagebutton:
         xpos 1269

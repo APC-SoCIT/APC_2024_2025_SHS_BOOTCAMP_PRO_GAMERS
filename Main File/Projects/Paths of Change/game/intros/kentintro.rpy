@@ -1,4 +1,4 @@
-label kentIntro:
+label kentintro:
     if metKent == False:
         "You are headed towards your classroom, wandered a bit to find your seat number."
         "After finding your seat, you placed your belongings and sat down. There, you approached your seatmate and talked to him."
@@ -28,7 +28,7 @@ label kentIntro:
         jump kentleft
     
 label kentleft:
-    "Kent left"
+    "Kent left the classroom"
 
     if all(metChars):
         jump metAll
