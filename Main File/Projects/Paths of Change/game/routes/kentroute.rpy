@@ -11,11 +11,49 @@ image bg_Black = "Black.png"
 image bg_City = "City.jpg"
 
 label kentroute:
-    Kent "Sure, let's hang out."
+    Kent "You wanna hang out with me?"
+
+menu:
+    "Yeah...":
+        jump yh1
+
+    "On second thought, I remembered you said that you have something else to do."
+        "WARNING: This option will abort Kent's route completely."
+        "Do you wish to proceed?"
+
+        menu:
+            "Yes":
+                jump routeabort
+
+            "No":
+                jump kentroute
+
+label routeabort:
+    main "On second thought, I remembered you said that you have something else to do."
+    "You remembered your conversation with him earlier."
+    Kent "Oh yeah, I do have something else to do."
+    Kent "Well, we can always hang out if you want to. We are seatmates so..." 
+    Kent "Just not for now since I am occupied with something."
+    main "What are you so occupied with?"
+    Kent "Well... Let's say it's a secret."
+    Kent "(Can't really say that I am occupied with games.)"
+    Kent "Well then, talk to you later."
+    main "Yeah..."
+    "After some time... You thought about your next course of action."
+    main "Who should I go with?"
+    
+    #Needed to add options that can redirect to other routes
+    return
+
+
+label yh1:
+    main "Yeah..."
+    Kent "Alright..."
+    "Kent nodded."
     Kent "Knowing that you are new here, I’ll take the lead."
     Kent "You okay with that?"
     main "Yeah."
-    Kent "Alright! Of course, if you have anywhere you want to go, then we’ll go there as well."
+    Kent "Of course, if you have anywhere you want to go, then we’ll go there as well."
     main "Oh, thanks."
     Kent "Nice. Now with that decided, let’s go to the nearest fast-food restaurant first to eat before going anywhere else."
     Kent "You good with it?"
