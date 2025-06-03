@@ -2,7 +2,7 @@ label abort:
 
     main "Who should I go with?"
 
-    if all(metChars):
+    if abortFred == True and abortKent == True and abortVino == True and abortLily == True:
         jump abortAll
 
     elif abortFred == True and abortKent == True and abortVino == True:

@@ -2,7 +2,7 @@ label kentroute:
 
     scene bg class with dissolve
 
-    Kent "You wanna hang out with me?"
+    Kent "You...wanna hang out with me?"
 
 menu:
 
@@ -48,10 +48,6 @@ label routeabort:
 
     jump abort
 
-    main "Who should I go with?"
-
-    
-    #Needed to add options that can redirect to other routes
 
 
 
