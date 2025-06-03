@@ -2,7 +2,7 @@ label lilyintro:
 
     if metLily == False:
 
-        "jhdcvbgjkhsdvbhgfbhds"
+        "You take the elevator up to the guidance office to get some paperwork needed for new enrollees"
 
         $ metLily = True
 
