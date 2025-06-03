@@ -28,10 +28,13 @@ label routeabort:
     Kent "Well then, talk to you later."
     main "Yeah..."
     "After some time... You thought about your next course of action."
-    main "Who should I go with?"
+
+    $ abortKent = True
+
+    jump abort
     
     #Needed to add options that can redirect to other routes
-    return
+
 
 
 label yh1:
