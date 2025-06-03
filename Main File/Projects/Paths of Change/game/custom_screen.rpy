@@ -28,7 +28,7 @@ screen map:
         ypos 597
         auto "map/state_4_%s.png"
         focus_mask True
-        action NullAction()
+        action Jump("vinointro")
 
 screen state_1:
     add "map/state_1_idle.png" at truecenter zoom 1.5

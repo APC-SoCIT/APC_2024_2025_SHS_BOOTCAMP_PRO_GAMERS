@@ -1,15 +1,3 @@
-image bg_ApartmentIn = "ApartmentIn.avif"
-image bg_ConvinienceOutside = "ConvinienceOutside.jpg"
-image bg_Convinience = "Convinience.jpg"
-image bg_Gym = "Gym.png"
-image bg_McdIn = "McdIn.jpg"
-image bg_McdoOutside = "McdoOutside.jpg"
-image bg_Kitchen = "Kitchen.jpg"
-image bg_Park = "Park_jpg"
-image bg_Door = "Door_jpg"
-image bg_Black = "Black.png"
-image bg_City = "City.jpg"
-
 label kentroute:
     Kent "You wanna hang out with me?"
 
@@ -17,7 +5,7 @@ menu:
     "Yeah...":
         jump yh1
 
-    "On second thought, I remembered you said that you have something else to do."
+    "On second thought, I remembered you said that you have something else to do.":
         "WARNING: This option will abort Kent's route completely."
         "Do you wish to proceed?"
 
@@ -77,9 +65,9 @@ label yerr:
     jump goi
  
 label goi:
-    scene bg_Black
+    scene bg black
     "After walking for a while..."
-    scene bg_McdoOutside with dissolve
+    scene bg mcdoout with dissolve
     Kent "W-we’re here. Let’s go in."
     "You noticed how exhausted Kent is despite just walking for a short while."
  
@@ -107,9 +95,9 @@ label yerc:
     Kent "Well, enough about me. Ready to go in?"
     main "Absolutely!"
     Kent "Woah, so enthusiastic."
-    scene bg_Black
+    scene bg black
     "You both got inside and took a seat…"
-    scene bg_McdIn with dissolve
+    scene bg mcdoin with dissolve
     Kent "Finally! Air that really feels good to the touch."
     "Kent said excitedly."
     Kent "By the way, do you know what you want to get?"
@@ -287,9 +275,9 @@ label next3:
     Kent "Let’s see..."
     Kent "Why don’t we leave for now?"
     main "Yeah, let do that."
-    scene bg_Black
+    scene bg black
     "After leaving KFC, Kent groans, rubbing his stomach as they walk down the street. The sun is setting, casting an orange glow over the sidewalk."
-    scene bg_McdoOutside with dissolve
+    scene bg mcdoout with dissolve
     Kent "Ugh… I might have overdone it."
  
 menu:
@@ -310,9 +298,9 @@ label conv:
     main "Want to walk it off? Looks like there's a convenience store just in front with water."
     Kent "Water? Bold of you to assume I hydrate."
     main "Yeah yeah..."
-    scene bg_Black
+    scene bg black
     "Inside the convenience store, fluorescent lights buzz overhead. Kent immediately veers toward the energy drinks. You step in front of him, blocking the way."
-    scene bg_Convinience with dissolve
+    scene bg convenience with dissolve
 
 menu:
     "Nope. Try this one instead.":
@@ -337,9 +325,9 @@ label this1:
     Kent "Yes, it is…"
  
 label noto:
-    scene bg_Black
+    scene bg black
     "Despite what he said, he bought another anyway, sulking as you two exit."
-    scene bg_ConvinienceOutside with dissolve
+    scene bg convenienceoutside with dissolve
     "You both sat on a bench outside the store, watching pigeons fight over a discarded fry. Kent swirls his coconut water like it’s a fine wine he hates."
     Kent "Hey… Why do you even care about my ‘health’ or whatever?"
     "He said, avoiding eye contact, kicking at the pavement."
@@ -385,9 +373,9 @@ label reas:
     jump nex
  
 label nex:
-    scene bg_Black
+    scene bg black
     "The next day and following days, you two are hanging out. More accurately, you are dragging him around all over the place."
-    scene bg_City with dissolve
+    scene bg city with dissolve
     Kent "Don't you get tired?"
  
 menu:
@@ -415,9 +403,9 @@ label answ:
     jump shr
  
 label shr:
-    scene bg_Black
+    scene bg black
     "One week later, you dragged Kent to a local gym’s free trial day. Kent clings to the doorway like a cat avoiding a bath."
-    scene bg_Gym with dissolve
+    scene bg gym with dissolve
     Kent "I will never let go. Never!"
     "He said, looking so fired up and motivated"
  
@@ -441,9 +429,9 @@ label nochoi:
     main "I’m joking. Let's take a short break."
     "Kent looked at you like you’re a saint."
     main "Stop looking at me like that."
-    scene bg_Black
+    scene bg black
     "After the gym session, you invited Kent in your apartment."
-    scene bg_Kitchen with dissolve
+    scene bg kitchen with dissolve
     "Later in your apartment. Smoke billows from a pan as Kent frantically waves a towel at the screeching smoke alarm."
     Kent "I told you I’m a takeout guy! I don’t cook!"
     main "We’re trying again. And no, ordering pizza doesn’t count as ‘cooking’."
@@ -452,9 +440,9 @@ label nochoi:
     "You said with a defeated sigh, opened the window."
     Kent "I miss my chicken nuggets."
     "He said while holding up a charred lump that was supposed to be chicken."
-    scene bg_Black
+    scene bg black
     "Months later, at 7 AM, Your doorbell rang. Kent stands there in neon-orange sneakers, looking like he hasn’t slept."
-    scene bg_Door with dissolve
+    scene bg door with dissolve
     Kent "I hate you for this. Let’s go before I change my mind."
  
 menu:
@@ -481,11 +469,11 @@ label jog:
     Kent "Shut it."
     main "Haha, alright alright."
     "You two continued to talk before going home."
-    scene bg_Black
+    scene bg black
     "Montage of progress: Kent’s gaming streams now feature \"Fitness Fail\" compilations. His fridge has two vegetables. He still groans about weekly runs, but he’s there every time."
     Kent "…Okay, maybe endorphins are a real thing."
     main "Told you. Next goal: Yoga. No excuses."
     main "You said while grinning."
     Kent "I will block your number."
     "But he’s already following, shaking his head with a smile."
-    scene bg_Black
+    scene bg black

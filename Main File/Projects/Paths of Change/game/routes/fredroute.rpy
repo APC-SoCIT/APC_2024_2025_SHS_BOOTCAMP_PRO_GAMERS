@@ -135,15 +135,10 @@ label abortfredroute:
 
     "You shrug off the uneasy feeling of guilt off of you and decide to set on a next course of action"
 
-    main "Who should I go with?"
+    $ abortFred = True
 
-    menu:
-        "Message Kent to hang out":
-            jump kentroute
-        "Head to Lily's Office":
-            jump lilyroute
-        "Go to the park where Vino resides":
-            jump vinoroute
+    jump abort
+
 
     
 

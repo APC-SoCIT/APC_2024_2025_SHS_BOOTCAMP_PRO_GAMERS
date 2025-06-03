@@ -91,7 +91,7 @@ label fredintro:
         jump fredleft
     
 label fredleft:
-    "Fred left"
+    "Fred left the parking lot"
 
     if all(metChars):
         jump metAll
