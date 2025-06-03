@@ -6,7 +6,8 @@ screen map:
         ypos 555
         auto "map/state_1_%s.png"
         focus_mask True
-        action NullAction()
+        action Jump("fredintro")
+        
 
     imagebutton:
         xpos 751
