@@ -42,6 +42,34 @@ label vinointro:
 
         "Coming back to the seats, you and him talk for a while"
 
+        main "So what are some stuff that you like to do?"
+
+        Vino "Well I do love gardening and all that"
+
+        Vino "I also sometimes do regular recycling around the park just to you know keep it clean"
+        
+        main "Oh that sounds nice, but why though?"
+
+        main "Aren't there people who really clean those?"
+
+        Vino "Well... yeah but they really don't clean it well and some students cause a mess throughout the day"
+
+        Vino "It might seem like a hassle but it's just a small thing I can do to help"
+
+        Vino "Our climate IS getting a bit worse each day so I love recycling and just helping around"
+
+        main "That sounds great! I'm glad some people still care for our environment"
+
+        main "It sounds interesting"
+
+        main "I'd like to hear more about it sometimes!"
+
+        Vino "Of course! anytime"
+
+        "Time passes and both are done eating"
+
+        "You both stand up and are getting ready to leave"
+
         Vino "Alright, it was good to meet you"
          
         Vino "I've got some stuff to do so I'll go ahead"
