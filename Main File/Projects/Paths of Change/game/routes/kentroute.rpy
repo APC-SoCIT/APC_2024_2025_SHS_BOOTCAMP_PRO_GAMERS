@@ -447,12 +447,29 @@ label nochoi:
  
 menu:
     "Who are you and what have you done to Kent?":
-        jump jog
+        jump jog1
  
     "Proud of you. Now suffer with me.":
-        jump jog
+        jump jog2
  
-label jog:
+label jog1:
+    main "Who are you and what have you done to Kent?"
+    Kent "Shut it..."
+    main "Ehh... It's quite surprising, though."
+    Kent "Alright alright, let's go."
+    jump jog3
+
+label jog2:
+    main "Proud of you. Now suffer with me."
+    Kent "Don't worry, I've suffered enough."
+    main "You didn't suffer enough, so you need to suffer more."
+    Kent "Ugh... That sounds like pain. Why is this happening to me?"
+    "He asked himself."
+    Kent "Whatever, let's go now."
+    main "Yeah."
+    jump jog3
+
+label jog3:
     "You two have jogged on the nearby park."
     main "Here, water."
     "You handed him a bottle of water."
