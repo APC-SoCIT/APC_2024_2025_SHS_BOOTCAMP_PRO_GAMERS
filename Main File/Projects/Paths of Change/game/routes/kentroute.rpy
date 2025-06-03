@@ -30,7 +30,7 @@ menu:
 
 label routeabort:
     main "On second thought, I remembered you said that you have something else to do."
-    "You remembered your conversation with him earlier."
+    "You recalled your interaction with him earlier."
     Kent "Oh yeah, I do have something else to do."
     Kent "Well, we can always hang out if you want to. We are seatmates so..." 
     Kent "Just not for now since I am occupied with something."
