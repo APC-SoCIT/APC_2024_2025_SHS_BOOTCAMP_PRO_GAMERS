@@ -1,20 +1,64 @@
 label vinoroute:
 
-    "You see a boy picking up trash and recycling"
+    scene bg parkinglot
 
-    "He seems familiar to you as you have seen him before"
+    "You continue walking around"
 
-    main "I wonder what he's doing out here all alone...?"
+    scene bg black
 
-    Vino "Oh, hello there"
+    "After a while"
 
-    Vino "You were the one I met at the cafeteria, right?"
+    "You end up at a garden"
+
+    scene bg garden
+
+    main "This place seems nice..."
+
+    Vino "Yeah... It's one of the things I'm most proud of"
+
+    "Vino goes around to check on the plants and you wait for him to finish"
+
+    "Time passes..."
+
+    "Vino finishes checking on the plants"
+
+    Vino "Alright, that's it for today"
+
+    Vino "Shall we get going?"
+
+    main "To where...?"
+
+    Vino "Just trust me"
+
+    scene bg black
+
+    "You follow Vino as he exits the garden"
+
+    "After a while"
+
+    "You end up at a park"
+
+    scene bg park
+
+    main "I wonder why he chose to go out here...?"
+
+    "You feel the wind blow"
+
+    Vino "It feels nice, huh?"
+
+    Vino "I usually come here to do some gardening around... but sometimes it's to release my stress"
 
     main "Yeah..."
 
+    "After an hour passes..."
+
+    "Vino starts picking up some trash"
+
+    "While he does, he looks at you"
+
     Vino "So... what are you doing out here?"
 
-    main "Well... I just coincidentally passed by, though the sky has been looking dark and gas emissions have been heard to be through the roof"
+    main "Well... I just thought of following you after you know, the fight... I also heard that the sky has been looking dark and gas emissions have been through the roof"
 
     main "How about you? You shouldn’t be out here during a time like this"
 
@@ -30,7 +74,7 @@ label Vinochoice:
 
 menu:
 
-    "You walk away":
+    "You back off and go your own way":
 
         "WARNING: This option will abort Vino's route completely"
 
@@ -47,17 +91,29 @@ menu:
 
 label abortvinoroute:
 
+    scene bg park
+
     main "Oh, alright, well, good luck with what you’re doing!"
 
     main "I’ve got some things to do so I’ll be going first"
 
     Vino "Thanks! See you at school!"
 
+    scene bg black
+
+    "You chose to not do anything..."
+
+    "This route has ended due to your negligence..."
+
+    "You chose the Neutral ending..."
+
     $ abortVino = True
 
     jump abort
 
 label continuevinoroute:
+
+    scene bg park
 
     main "That's a great idea, do you mind if I come along? I'd like to help as much as I can!"
 
@@ -103,6 +159,8 @@ menu:
 
 label disagreevinoplan:
 
+    scene bg park
+
     main "I don't know about that one... It might get a bit messy if we involve other people..."
 
     Vino "Hm... I think you have got a point there, but nevertheless we still need to find a way to help as much as we can"
@@ -116,6 +174,8 @@ label disagreevinoplan:
     Vino "I really appreciate it, even if it's just the two of us"
 
     main "no problem... anytime"
+
+    scene bg black
 
     "You both leave and went home"
 
@@ -137,6 +197,8 @@ label disagreevinoplan:
 
     "LUNCHTIME"
 
+    scene bg caf
+
     "You see Vino in the cafeteria"
 
     "You feel hesitant approaching him"
@@ -151,6 +213,8 @@ menu:
         jump ignorevino
 
 label ignorevino:
+
+    scene bg caf
 
     "The feeling of reluctancy you continue walking"
 
@@ -170,13 +234,17 @@ label ignorevino:
 
     main "I wish I did something back then..."
 
+    scene bg black
+
     "The route ends with a feeling of regret..."
 
-    $ abortVino = True
+    "You chose the Bad ending..."
 
-    jump abort
+    return
 
 label approachvino:
+
+    scene bg caf
 
     "As you see Vino you continue to walk towards him"
 
@@ -256,11 +324,15 @@ label approachvino:
 
     Vino "Same for me, I'll get started with the poster and everything else"
 
+    scene bg black
+
     "Some time passes..."
 
     "Both of you accomplish the distributed tasks"
 
     "You both meet up and felt accomplished knowing you have done something to help"
+
+    scene bg caf
 
     Vino "Alright, everything seems to be going according to plan"
 
@@ -272,11 +344,15 @@ label approachvino:
 
     main "From this onwards, we'll have to continue putting in the effort"
 
+    scene bg black
+
     "After a few weeks passing by..."
 
     News "INCOMING NEWS! Updated statistics have shown that throughout the pass week, gas emissions have shown signs of dropping!"
 
     News "It is said that after a few months, it may drop by a whole 20 percent!"
+
+    scene bg park
 
     "You and Vino are in the park"
 
@@ -306,7 +382,15 @@ label approachvino:
 
     "You both feel proud and accomplished after all the hardwork"
 
+    scene bg black
+
     "You have reached the ending of this route..."
+
+    "You chose a Good ending..."
+
+    $ abortVino = True
+
+    jump abort
 
 label agreevinoplan:
 
@@ -321,17 +405,27 @@ menu:
 
 label vinoideachoice2:
 
+    scene bg park
+
     Vino "Are you for real...?"
 
     Vino "Uhm... I think I’ve got this... You can go ahead and continue what you were doing..."
 
     "Vino walks back to cleaning the park surroundings and recycling"
 
-    "Your route has ended"
+    scene bg black
+
+    "Your route has ended feeling uneasy..."
+
+    "You chose the bad ending..."
 
     $ abortVino = True
 
+    jump abort
+
 label vinoideachoice1:
+
+    scene bg park
 
     Vino "That sounds like an amazing idea! We should do it when we’re both free from school!"
 
@@ -346,6 +440,8 @@ label vinoideachoice1:
     "Some time passes..."
 
     "You and Vino met up to discuss the plans"
+
+    scene bg caf
 
     Vino "Okay so, I think we should start getting the attention of people first"
 
@@ -363,7 +459,11 @@ label vinoideachoice1:
 
     "You both leave to complete your own tasks"
 
+    scene bg black
+
     "A week has passed by..."
+
+    scene bg hall
 
     "You were walking in the hallway and suddenly got a notification"
 
@@ -391,7 +491,7 @@ label vinoideachoice1:
 
     main "Now, we just need to expand and gather more people"
 
-    scene bg caf
+    scene bg black
 
     "A few weeks have passed by"
 
@@ -399,7 +499,7 @@ label vinoideachoice1:
 
     News "It is said that after a few months, it may drop by a whole 20 percent!"
 
-    scene bg black
+    scene bg park
 
     "You and Vino are in the park"
 
@@ -415,7 +515,11 @@ label vinoideachoice1:
 
     "You both look around once more, amazed with the amount of people that have helped for a greater cause"
 
-    "Your route has ended..."
+    scene bg black
+
+    "Your route has ended feeling successful..."
+
+    "You chose the Best ending..."
 
     return
 
