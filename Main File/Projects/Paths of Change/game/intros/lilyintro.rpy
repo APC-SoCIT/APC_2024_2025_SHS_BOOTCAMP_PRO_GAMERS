@@ -32,7 +32,26 @@ label lilyintro:
 
         "Lily looks slightly embarrassed as she got conscious"
 
-        Lily "sorry I tend to ramble a lot... but um- the councellor's not here yet if you want you can wait inside the office so that 
+        Lily "sorry I tend to ramble a lot... but um- the councellor's not here yet if you want you can wait inside the office"
+
+        "You both head into the office"
+
+        "Feeling a bit awkward you decided to make small talk by asking about the pamphlets Lily was holding"
+
+        main "What are those pamphlets about?"
+
+        Lily "oh they're just seminars for people who are looking to take internships but at the same time the seminar also gives advice
+        to people who can't decide which course they'll take up for their career path would you like one?"
+
+        "You take a pamphlet"
+
+        "Lily then perks up like she remembered something she quickly checks her watch then mutters a curse"
+
+        Lily "sorry to cut our conversation short but I have class in 5 so I should really get going- you can wait here for the councellor 
+        if you're interested in seminars and such you can come here to the office and ask for me. I'm really sorry I have to go- it was nice 
+        meeting you!"
+
+        "Lily quickly runs out the office and rushes down the stairs"
 
         $ metLily = True
 
