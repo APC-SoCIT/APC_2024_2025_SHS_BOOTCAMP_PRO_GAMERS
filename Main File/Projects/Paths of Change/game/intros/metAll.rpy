@@ -163,13 +163,13 @@ menu:
 
         Lily "I guess [mcName] is going with Vino then"
 
-        Kent "If any of you needs me, I'll be in my dorm"
+        Kent "If any of you need me, I'll be in my dorm"
 
         Lily "Yeah, I'll be hitting the restroom then"
 
         Fred "See ya guys"
 
-        "You accompany Vino as he leaves"
+        "You accompany Vino as the others leaves"
 
         Vino "Just follow me"
         jump vinoroute
