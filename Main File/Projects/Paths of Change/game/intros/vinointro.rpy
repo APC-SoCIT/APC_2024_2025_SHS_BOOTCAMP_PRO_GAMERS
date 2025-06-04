@@ -2,6 +2,8 @@ label vinointro:
 
     if metVino == False:
 
+        scene bg caf with dissolve
+
         "You look around to find a seat"
 
         main "Everywhere seems like it's full..."

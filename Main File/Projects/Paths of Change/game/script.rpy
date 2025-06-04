@@ -9,9 +9,9 @@
 
     $ mcName = renpy.input("Enter your name", length = 32)
     if not mcName:
-        $ mcName = "Manny"
+        $ mcName = "You"
 
-    main "Ah, there is is"
+    main "Ah, there it is"
 
     "You put on your lanyard with a bright yellow shade and blue highlights that reflects your school's main color palette"
     "On your lanyard is a fresh new ID with your name and face on it, dresssed in a business attire they made you wear when you admissioned"
@@ -75,9 +75,13 @@
     "The shuttle made its stop at the front of the school's gates"
     "Passing by, you notice the numerous amounts of stalls right next to the benches at the parking lot"
     "Looking at them made you hungry"
-    "As the students from before got up, you saw that one of them with the Glasses and sling bag, made his way to the bench areas alone"
+    
+    scene bg lobby with dissolve
+
     "You got up and waltzed your way through the guards that met you by the school's entrance"
     "Before anything, you head to your left to the admissions office to get your schedule"
+
+    scene bg office with dissolve
 
     main "Uhh hi, my name is [mcName], I've come for my schedule for the day"
     "A friendly admission office worker approached you and handded you a specific folder she oddly handed to you as if she was expecting you"
@@ -86,6 +90,8 @@
     Admission "You could check your entire schedule and payments and such on our website, you know"
     main "Yeah sorry, I kinda enrolled late"
     Admission "It's alright, have a good day!"
+
+    scene bg lobby with dissolve
 
     "You walk out of the admissions office, clutching the folder on your arm."
     "You check to see what the lady was talking about all your information being in their website"

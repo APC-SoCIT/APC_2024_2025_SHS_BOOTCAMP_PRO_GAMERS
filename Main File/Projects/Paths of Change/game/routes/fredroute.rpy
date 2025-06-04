@@ -1,14 +1,21 @@
 label fredroute:
-        
+    
+    scene bg halltwo
+
     "You follow Fred to the main building’s 3rd Floor. Home of the Senior High School students and the School Activities Office."
 
     "He guides you towards a classroom parallel across the stairs. You can view the classroom from the outside via the window on their door"
 
+    scene bg fredroom with dissolve
+
     "Fred opens the door to an airconditioned room filled with paperwork, props, and an array of files scattered throughout the tables"
+
+    "Aside from the paperwork, the rooms also had a bunch of computers around the tables"
 
     "The classroom had at least 5-6 students working inside. Mountains of papers were stacked on top of each other like a game of Jenga as different students type away at their laptops"
 
-    Fred "Welcome to Classroom 307, A.K.A my team’s workspace"
+    
+    Fred "Welcome to Classroom 499, A.K.A my team’s workspace"
 
     Fred "....well, for about 3 hours a day after class hours, hehe"
 
@@ -154,6 +161,8 @@ label continuefredroute:
 
     main "Well…I-"
 
+    scene bg board
+    
     "Before you could finish your sentence, Fred drags you to a corner of the room with a whiteboard stand filled with a bunch of topics jotted down on the board"
 
     "There also seems to be a bunch of sticky notes scattered around the board to add extra bits of information"
@@ -527,7 +536,7 @@ label questions:
                     Fred "Seriously?"
                     $ wrong = wrong + 1
                 "All of the above":
-                    "Good job, my little detective."
+                    Fred "Good job, my little detective."
         
         Fred "Trick question: it was all of them"
         Fred "I may have mentioned that it was only Byeong-Yeon who was publicly humiliated,"
@@ -654,7 +663,7 @@ label questions:
         Fred "Yeah, he's pretty chill, I can introduce him to ya"
         Fred "Wait haven't I mentioned him yet or-"
 
-        main "N-nope..."
+        main "Uhhhhh nope..."
 
         "Fred blinked a few times densely before smirking at you as he raised a brow and a toothy grin"
 
@@ -671,7 +680,7 @@ label questions:
         Fred "Anyways, let's go before the shuttle stops service for tonight"
         Fred "You did good today, let's try to keep this up before the event"
 
-        main "Thanks...evem if you did just drag me here by the wrist forcefully"
+        main "Thanks...even if you did just drag me here by the wrist forcefully"
         main "And threw me into a mini gameshow quiz"
 
         Fred "What can I say, I'm pretty unpredictable"

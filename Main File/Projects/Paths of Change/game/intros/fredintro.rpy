@@ -2,6 +2,8 @@ label fredintro:
 
     if metFred == False:
 
+        scene bg parkinglot
+
         "You see a student walking around, near a bench."
 
         "His hair seems a bit scruffy while he’s scuffling a bunch of folders on his arm that seems like they’re about to slip off from his grip."
