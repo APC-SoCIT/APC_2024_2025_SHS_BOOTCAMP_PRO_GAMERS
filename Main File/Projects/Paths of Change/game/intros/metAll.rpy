@@ -1,5 +1,7 @@
 label metAll:
     
+    scene bg lobby
+    
     "The school bell rings once more as you drag yourself towards the school lobby"
     "The avast ray of people you've met today were...peculiar to say the least, but hey new people to talk to doesn't seem too bad"
     "You check the digital clock mounted on the wall right in between the elevators"

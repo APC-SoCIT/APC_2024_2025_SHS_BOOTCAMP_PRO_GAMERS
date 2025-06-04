@@ -29,11 +29,19 @@ label Vinochoice:
     main "What should I do?"
 
 menu:
+
     "You walk away":
 
-    "WARNING: THIS WILL END YOUR ROUTE"
-        jump abortvinoroute
+        "WARNING: This option will abort Vino's route completely"
 
+        "Do you wish to proceed?"
+
+        menu:
+            "Yes":
+                jump abortvinoroute
+            "No":
+                jump Vinochoice
+    
     "You help Vino":
         jump continuevinoroute
 

@@ -83,6 +83,7 @@ label vinointro:
         $ metVino = True
 
         if metFred == True and metKent == True and metVino == True and metLily == True:
+            "After waving bye to Vino, [mcName] decided to head to the lobby"
             jump metAll
 
         else:

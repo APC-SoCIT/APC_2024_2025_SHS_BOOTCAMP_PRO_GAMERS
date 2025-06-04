@@ -2,7 +2,7 @@ label fredintro:
 
     if metFred == False:
 
-        scene bg parkinglot
+        scene bg parkinglot with dissolve
 
         "You see a student walking around, near a bench."
 
@@ -87,6 +87,7 @@ label fredintro:
         $ metFred = True
 
         if metFred == True and metKent == True and metVino == True and metLily == True:
+            "After watching Fred run off and getting your requirements, [mcName] decided to head to the lobby"
             jump metAll
 
         else:

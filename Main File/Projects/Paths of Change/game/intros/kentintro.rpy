@@ -44,11 +44,10 @@ label kentintro:
 
         main "Yeah. Bye..."
 
-        main "Hmm… Now what to do? Where should I head out now?"
-
         $ metKent = True
 
         if metFred == True and metKent == True and metVino == True and metLily == True:
+            "After watching Kent dawdle around before walking away, [mcName] decided to head to the lobby"
             jump metAll
 
         else:
