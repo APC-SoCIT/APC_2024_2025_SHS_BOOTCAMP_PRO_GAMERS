@@ -1,10 +1,16 @@
 label vinoroute:
 
+    scene bg parkinglot
+
     "You continue walking around"
+
+    scene bg black
 
     "After a while"
 
     "You end up at a park"
+
+    scene bg park
 
     main "I wonder why he chose to go out here...?"
 
@@ -40,7 +46,7 @@ label Vinochoice:
 
 menu:
 
-    "You walk away":
+    "You back off and go your own way":
 
         "WARNING: This option will abort Vino's route completely"
 
@@ -57,11 +63,17 @@ menu:
 
 label abortvinoroute:
 
+    scene bg park
+
     main "Oh, alright, well, good luck with what you’re doing!"
 
     main "I’ve got some things to do so I’ll be going first"
 
     Vino "Thanks! See you at school!"
+
+    "You chose to not do anything..."
+
+    "This route has ended due to your negligence..."
 
     $ abortVino = True
 
@@ -192,9 +204,9 @@ label ignorevino:
 
     "The route ends with a feeling of regret..."
 
-    $ abortVino = True
+    "You chose the Bad ending..."
 
-    jump abort
+    return
 
 label approachvino:
 
@@ -338,6 +350,12 @@ label approachvino:
 
     "You have reached the ending of this route..."
 
+    "You chose a Good ending..."
+
+    $ abortVino = True
+
+    jump abort
+
 label agreevinoplan:
 
     main "That sounds like a fantastic plan! I could already think of what we could do!"
@@ -359,9 +377,13 @@ label vinoideachoice2:
 
     "Vino walks back to cleaning the park surroundings and recycling"
 
-    "Your route has ended"
+    "Your route has ended with feeling uneasy..."
+
+    "You chose the bad ending..."
 
     $ abortVino = True
+
+    jump abort
 
 label vinoideachoice1:
 
@@ -455,7 +477,9 @@ label vinoideachoice1:
 
     "You both look around once more, amazed with the amount of people that have helped for a greater cause"
 
-    "Your route has ended..."
+    "Your route has ended feeling successful..."
+
+    "You chose the Best ending..."
 
     return
 
