@@ -21,7 +21,7 @@ menu:
                 jump kentroute
 
 label routeabort:
-
+    
     main "On second thought, I remembered you said that you have something else to do."
 
     "You recalled your interaction with him earlier."
