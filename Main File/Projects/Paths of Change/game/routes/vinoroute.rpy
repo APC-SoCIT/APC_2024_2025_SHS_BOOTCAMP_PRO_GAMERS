@@ -71,9 +71,13 @@ label abortvinoroute:
 
     Vino "Thanks! See you at school!"
 
+    scene bg black
+
     "You chose to not do anything..."
 
     "This route has ended due to your negligence..."
+
+    "You chose the Neutral ending..."
 
     $ abortVino = True
 
@@ -201,6 +205,8 @@ label ignorevino:
     News "It is also stated that in the upcoming months, these levels may increase rapidly!"
 
     main "I wish I did something back then..."
+
+    scene bg black
 
     "The route ends with a feeling of regret..."
 
@@ -348,6 +354,8 @@ label approachvino:
 
     "You both feel proud and accomplished after all the hardwork"
 
+    scene bg black
+
     "You have reached the ending of this route..."
 
     "You chose a Good ending..."
@@ -377,7 +385,9 @@ label vinoideachoice2:
 
     "Vino walks back to cleaning the park surroundings and recycling"
 
-    "Your route has ended with feeling uneasy..."
+    scene bg black
+
+    "Your route has ended feeling uneasy..."
 
     "You chose the bad ending..."
 
@@ -476,6 +486,8 @@ label vinoideachoice1:
     main "Right back at you man"
 
     "You both look around once more, amazed with the amount of people that have helped for a greater cause"
+
+    scene bg black
 
     "Your route has ended feeling successful..."
 
