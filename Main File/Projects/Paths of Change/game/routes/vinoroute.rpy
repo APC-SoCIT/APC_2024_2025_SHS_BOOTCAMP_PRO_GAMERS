@@ -331,6 +331,77 @@ label vinoideachoice1:
 
     main "Sure, I'll be waiting!"
 
+    "Some time passes..."
+
+    "You and Vino met up to discuss the plans"
+
+    Vino "Okay so, I think we should start getting the attention of people first"
+
+    Vino "I was thinking, what if we posted a quick poster or something online about helping around in the park"
+
+    Vino "It could be about recycling, pickup up trash, waste disposal, etc."
+
+    Vino "This should catch peoples attention"
+
+    main "Yeah, that sounds good for me"
+
+    main "I'll go ahead and spread the word about it throughout the school"
+
+    Vino "Right! and I'll start with the poster"
+
+    "You both leave to complete your own tasks"
+
+    "A week has passed by..."
+
+    "You were walking in the hallway and suddenly got a notification"
+
+    "Checking it you noticed it was from the news"
+
+    Philippine News Network "Breaking News!!! after gathering further statistics, it has been confirmed that greenhouse gas levels have been through the roof! and without further action this might lead to severe cliate changes throughout the year"
+
+    main "I hope this plan works..."
+
+    "You get another notification"
+
+    main "Oh, Vino"
+
+    "You checked his message"
+
+    Vino "DUDE, THE POSTER WE POSTED ONLINE!"
+
+    Vino "It's through the roof right now! A lot of people have been looking into it and are even talking about it!"
+
+    Vino "There are also some people who already volunteered!"
+
+    "You think to yourself"
+
+    main "It's working!"
+
+    main "Now, we just need to expand and gather more people"
+
+    "A few weeks have passed by"
+
+    Philippine News Network "INCOMING NEWS! Updated statistics have shown that throughout the pass week, gas emissions have shown signs of dropping!"
+
+    Philippine News Network "It is said that after a few months, it may drop by a whole 20 percent!"
+
+    "You and Vino are in the park"
+
+    "You see the amount of people who have gathered to help"
+
+    Vino "I'm glad we did this"
+
+    main "Yeah, even though it just started as the two of us we were still able to accomplish something this big"
+
+    Vino "It was good to work with you"
+
+    main "Right back at you man"
+
+    "You both look around once more, amazed with the amount of people that have helped for a greater cause"
+
+    "Your route has ended..."
+
+
 
 
 
