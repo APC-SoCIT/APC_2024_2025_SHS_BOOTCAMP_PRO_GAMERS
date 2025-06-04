@@ -8,6 +8,34 @@ label vinoroute:
 
     "After a while"
 
+    "You end up at a garden"
+
+    scene bg garden
+
+    main "This place seems nice..."
+
+    Vino "Yeah... It's one of the things I'm most proud of"
+
+    "Vino goes around to check on the plants and you wait for him to finish"
+
+    "Time passes..."
+
+    "Vino finishes checking on the plants"
+
+    Vino "Alright, that's it for today"
+
+    Vino "Shall we get going?"
+
+    main "To where...?"
+
+    Vino "Just trust me"
+
+    scene bg black
+
+    "You follow Vino as he exits the garden"
+
+    "After a while"
+
     "You end up at a park"
 
     scene bg park
