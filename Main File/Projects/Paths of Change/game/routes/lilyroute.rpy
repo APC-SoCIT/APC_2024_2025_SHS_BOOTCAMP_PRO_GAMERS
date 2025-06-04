@@ -1,332 +1,338 @@
-label lilyroute:
+# label lilyroute:
 
-    "You visit the guidance office again to inquire more about the seminars and to help you decide on which course you can take"
+#     "You visit the guidance office again to inquire more about the seminars and to help you decide on which course you can take"
 
-    "You see a girl hunched over the front desk and she seemed familiar to you. You cleared your throat to get her attention"
+#     "You see a girl hunched over the front desk and she seemed familiar to you. You cleared your throat to get her attention"
 
-    main "excuse me miss?"
+#     main "excuse me miss?"
 
-    "Lily's head perks up and she smiles in recognition"
+#     "Lily's head perks up and she smiles in recognition"
 
-    Lily "Oh hey you're back! what can I help you with today?"
+#     Lily "Oh hey you're back! what can I help you with today?"
 
-    main "Um- I actually wanted to inquire about the pamphlet you gave me you know the seminars?"
+#     main "Um- I actually wanted to inquire about the pamphlet you gave me you know the seminars?"
 
-    Vino "A?"
+#     Vino "A?"
 
-    main "Well... I just coincidentally passed by, though the sky has been looking dark and gas emissions have been heard to be through the roof"
+#     main "Well... I just coincidentally passed by, though the sky has been looking dark and gas emissions have been heard to be through the roof"
 
-    main "How about you? You shouldn’t be out here during a time like this"
+#     main "How about you? You shouldn’t be out here during a time like this"
 
-    Vino "Well remember what we talked about last time?"
+#     Vino "Well remember what we talked about last time?"
 
-    Vino "How I like to help around the park and all"
+#     Vino "How I like to help around the park and all"
 
-    Vino "And as you said, gas emissions have been up... So, I'm trying my best to help even through recycling"
+#     Vino "And as you said, gas emissions have been up... So, I'm trying my best to help even through recycling"
 
-label Vinochoice:
+# label Vinochoice:
 
-    main "What should I do?"
+#     main "What should I do?"
 
-menu:
-    "You walk away":
+# menu:
+#     "You walk away":
 
-    "WARNING: THIS WILL END YOUR ROUTE"
-        jump abortvinoroute
+#         "WARNING: This option will abort Vino's route completely"
 
-    "You help Vino":
-        jump continuevinoroute
+#         "Do you wish to proceed?"
 
-label abortvinoroute:
+#         menu:
+#             "Yes":
+#                 jump abortvinoroute
+#             "No":
+#                 jump Vinochoice
+    
+#     "You help Vino":
+#         jump continuevinoroute
+# label abortvinoroute:
 
-    main "Oh, alright, well, good luck with what you’re doing!"
+#     main "Oh, alright, well, good luck with what you’re doing!"
 
-    main "I’ve got some things to do so I’ll be going first"
+#     main "I’ve got some things to do so I’ll be going first"
 
-    Vino "Thanks! See you at school!"
+#     Vino "Thanks! See you at school!"
 
-    $ abortVino = True
+#     $ abortVino = True
 
-    jump abort
+#     jump abort
 
-label continuevinoroute:
+# label continuevinoroute:
 
-    main "That's a great idea, do you mind if I come along? I'd like to help as much as I can!"
+#     main "That's a great idea, do you mind if I come along? I'd like to help as much as I can!"
 
-    Vino "Oh! You'd like to help? I'd gladly accept it!"
+#     Vino "Oh! You'd like to help? I'd gladly accept it!"
 
-    Vino "Okay, so our task is to collect all this trash on the floor and dispose of it properly and for the things that could be recycled, we'll put them into another bin"
+#     Vino "Okay, so our task is to collect all this trash on the floor and dispose of it properly and for the things that could be recycled, we'll put them into another bin"
 
-    Vino "Sounds easy, right? Alright! I'll start over here and you can start over there. Get back to me when you're done"
+#     Vino "Sounds easy, right? Alright! I'll start over here and you can start over there. Get back to me when you're done"
 
-    main "Sure! I'll get started then"
+#     main "Sure! I'll get started then"
 
-    "Some time passes..."
+#     "Some time passes..."
 
-    Vino "Hey, I'm done over there, how is it here on your side?"
+#     Vino "Hey, I'm done over there, how is it here on your side?"
 
-    main "It's bad. There's trash everywhere and whenever I do pick some up, there's just more coming... it feels endless"
+#     main "It's bad. There's trash everywhere and whenever I do pick some up, there's just more coming... it feels endless"
 
-    main "I'm glad that I was able to come and help you out here, it would have taken too long if you had done it by yourself..."
+#     main "I'm glad that I was able to come and help you out here, it would have taken too long if you had done it by yourself..."
 
-    Vino "Yea... but I've got to do something about all this trash, so it can't be helped"
+#     Vino "Yea... but I've got to do something about all this trash, so it can't be helped"
 
-    Vino "Though it was nice that you were able to help me!"
+#     Vino "Though it was nice that you were able to help me!"
 
-    main "Of course! This task is too heavy for one person"
+#     main "Of course! This task is too heavy for one person"
 
-    Vino "That just gave me an idea!"
+#     Vino "That just gave me an idea!"
 
-    main "hm?"
+#     main "hm?"
 
-    Vino "We should gather more people to help us clean this park up, so many use it but no one takes care of it as much as it should be"
+#     Vino "We should gather more people to help us clean this park up, so many use it but no one takes care of it as much as it should be"
 
-label Vinochoice2:
+# label Vinochoice2:
 
-    main "Do you wish to go with the plan?"
+#     main "Do you wish to go with the plan?"
 
-menu:
-    "Disagree with the plan":
-        jump disagreevinoplan
+# menu:
+#     "Disagree with the plan":
+#         jump disagreevinoplan
 
-    "Agree with than plan":
-        jump agreevinoplan
+#     "Agree with than plan":
+#         jump agreevinoplan
 
 
-label disagreevinoplan:
+# label disagreevinoplan:
 
-    main "I don't know about that one... It might get a bit messy if we involve other people..."
+#     main "I don't know about that one... It might get a bit messy if we involve other people..."
 
-    Vino "Hm... I think you have got a point there, but nevertheless we still need to find a way to help as much as we can"
+#     Vino "Hm... I think you have got a point there, but nevertheless we still need to find a way to help as much as we can"
 
-    main "We should just continue recycling from time to time, it'll still be good help"
+#     main "We should just continue recycling from time to time, it'll still be good help"
 
-    Vino "Yeah I guess... though I wish we could do find a more efficient and effective way that could help on a larger scale"
+#     Vino "Yeah I guess... though I wish we could do find a more efficient and effective way that could help on a larger scale"
 
-    Vino "Anyways, thanks for your help"
+#     Vino "Anyways, thanks for your help"
 
-    Vino "I really appreciate it, even if it's just the two of us"
+#     Vino "I really appreciate it, even if it's just the two of us"
 
-    main "no problem... anytime"
+#     main "no problem... anytime"
 
-    "You both leave and went home"
+#     "You both leave and went home"
 
-    "As you are walking, you get a notification from your phone about the current news"
+#     "As you are walking, you get a notification from your phone about the current news"
 
-    Philippine News Network "Breaking News!!! after gathering further statistics, it has been confirmed that greenhouse gas levels have been through the roof! and without further action this might lead to severe cliate changes throughout the year"
+#     Philippine News Network "Breaking News!!! after gathering further statistics, it has been confirmed that greenhouse gas levels have been through the roof! and without further action this might lead to severe cliate changes throughout the year"
 
-    main "Oh no..."
+#     main "Oh no..."
 
-    main "This is getting out of hand..."
+#     main "This is getting out of hand..."
 
-    "You think twice about what Vino said while you walk home"
+#     "You think twice about what Vino said while you walk home"
 
-    "Time passes and it's the next day..."
+#     "Time passes and it's the next day..."
 
-    main "Should I bring it up with Vino...?"
+#     main "Should I bring it up with Vino...?"
 
-    main "After what I said yesterday, I'm not sure..."
+#     main "After what I said yesterday, I'm not sure..."
 
-    "LUNCHTIME"
+#     "LUNCHTIME"
 
-    "You see Vino in the cafeteria"
+#     "You see Vino in the cafeteria"
 
-    "You feel hesitant approaching him"
+#     "You feel hesitant approaching him"
 
-    main "Will you approach him?"
+#     main "Will you approach him?"
 
-menu:
-    "Approach Vino":
-        jump approachvino
+# menu:
+#     "Approach Vino":
+#         jump approachvino
 
-    "Continue on without noticing him":
-        jump ignorevino
+#     "Continue on without noticing him":
+#         jump ignorevino
 
-label ignorevino:
+# label ignorevino:
 
-    "The feeling of reluctancy you continue walking"
+#     "The feeling of reluctancy you continue walking"
 
-    "You make eye contact with him as you pass by but chose to ignore him"
+#     "You make eye contact with him as you pass by but chose to ignore him"
 
-    "A few weeks have passed..."
+#     "A few weeks have passed..."
 
-    "You being on your phone"
+#     "You being on your phone"
 
-    "A notification popped up"
+#     "A notification popped up"
 
-    "You check it out as you noticed it was about the latest news"
+#     "You check it out as you noticed it was about the latest news"
 
-    Philippine News Network "INCOMING NEWS! Statistics have shown that for the pass few weeks, gas emissions have been through the roof!"
+#     Philippine News Network "INCOMING NEWS! Statistics have shown that for the pass few weeks, gas emissions have been through the roof!"
 
-    Philippine News Network "It is also stated that in the upcoming months, these levels may increase rapidly!"
+#     Philippine News Network "It is also stated that in the upcoming months, these levels may increase rapidly!"
 
-    main "I wish I did something back then..."
+#     main "I wish I did something back then..."
 
-    "The route ends with a feeling of regret..."
+#     "The route ends with a feeling of regret..."
 
-label approachvino:
+# label approachvino:
 
-    "As you see Vino you continue to walk towards him"
+#     "As you see Vino you continue to walk towards him"
 
-    "With the slight feeling of reluctance you muster up the courage to talk with him"
+#     "With the slight feeling of reluctance you muster up the courage to talk with him"
 
-    main "Hey, Vino"
+#     main "Hey, Vino"
 
-    Vino "Oh, hey"
+#     Vino "Oh, hey"
 
-    Vino "Is there something you need?"
+#     Vino "Is there something you need?"
 
-    main "Uhm.. yeah"
+#     main "Uhm.. yeah"
 
-    main "It's about what we talked about yesterday"
+#     main "It's about what we talked about yesterday"
 
-    Vino "Hm?"
+#     Vino "Hm?"
 
-    main "I think we should continue it"
+#     main "I think we should continue it"
 
-    Vino "What do you mean?"
+#     Vino "What do you mean?"
 
-    main "We had this idea, right?"
+#     main "We had this idea, right?"
 
-    main "Where we would gather people that could help recycle and all"
+#     main "Where we would gather people that could help recycle and all"
 
-    Vino "Oh... that"
+#     Vino "Oh... that"
 
-    Vino "What changed your mind?"
+#     Vino "What changed your mind?"
 
-    main "After seeing the latest news update..."
+#     main "After seeing the latest news update..."
 
-    main "I gave it some thought last night and I think we do need to take action"
+#     main "I gave it some thought last night and I think we do need to take action"
 
-    main "Even the slightest help can reduce the gas emissions"
+#     main "Even the slightest help can reduce the gas emissions"
 
-    main "So I think we should continue our plan"
+#     main "So I think we should continue our plan"
 
-    Vino "Alright, I'm glad you changed your mind!"
+#     Vino "Alright, I'm glad you changed your mind!"
 
-    Vino "Are you free after this?"
+#     Vino "Are you free after this?"
 
-    main "Yeah, I am"
+#     main "Yeah, I am"
 
-    Vino "Let's grab some food and continue with what we were talking about yesterday"
+#     Vino "Let's grab some food and continue with what we were talking about yesterday"
 
-    main "Sounds like a good idea"
+#     main "Sounds like a good idea"
 
-    "You both grab some food to eat"
+#     "You both grab some food to eat"
 
-    "Time passes..."
+#     "Time passes..."
 
-    "You both finish your food"
+#     "You both finish your food"
 
-    main "Alright, so where do we start?"
+#     main "Alright, so where do we start?"
 
-    Vino "Okay so, I think we should start getting the attention of people first"
+#     Vino "Okay so, I think we should start getting the attention of people first"
 
-    Vino "I was thinking, what if we posted a quick poster or something online about helping around in the park"
+#     Vino "I was thinking, what if we posted a quick poster or something online about helping around in the park"
 
-    Vino "It could be about recycling, pickup up trash, waste disposal, etc."
+#     Vino "It could be about recycling, pickup up trash, waste disposal, etc."
 
-    Vino "This should catch peoples attention"
+#     Vino "This should catch peoples attention"
 
-    main "Yeah, that sounds great!"
+#     main "Yeah, that sounds great!"
 
-    main "We could also set up a schedule for whenever we meet up in the park"
+#     main "We could also set up a schedule for whenever we meet up in the park"
 
-    Vino "Exactly!"
+#     Vino "Exactly!"
 
-    Vino "Alright so I'll go ahead and make the poster as soon as I can"
+#     Vino "Alright so I'll go ahead and make the poster as soon as I can"
 
-    Vino "What I need you to do is spread the word about it"
+#     Vino "What I need you to do is spread the word about it"
 
-    Vino "I'll do the same with the people I do gardening with. they for sure would love to help"
+#     Vino "I'll do the same with the people I do gardening with. they for sure would love to help"
 
-    main "Okay okay, I'll get going then"
+#     main "Okay okay, I'll get going then"
 
-    Vino "Same for me, I'll get started with the poster and everything else"
+#     Vino "Same for me, I'll get started with the poster and everything else"
 
-    "Some time passes..."
+#     "Some time passes..."
 
-    "Both of you accomplish the distributed tasks"
+#     "Both of you accomplish the distributed tasks"
 
-    "You both meet up and felt accomplished knowing you have done something to help"
+#     "You both meet up and felt accomplished knowing you have done something to help"
 
-    Vino "Alright, everything seems to be going according to plan"
+#     Vino "Alright, everything seems to be going according to plan"
 
-    main "Yeah, I even got some people who were already interested"
+#     main "Yeah, I even got some people who were already interested"
 
-    Vino "For now, we'll just have to see how it all plays out"
+#     Vino "For now, we'll just have to see how it all plays out"
 
-    main "That's true"
+#     main "That's true"
 
-    main "From this onwards, we'll have to continue putting in the effort"
+#     main "From this onwards, we'll have to continue putting in the effort"
 
-    "After a few weeks passing by..."
+#     "After a few weeks passing by..."
 
-    Philippine News Network "INCOMING NEWS! Updated statistics have shown that throughout the pass week, gas emissions have shown signs of dropping!"
+#     Philippine News Network "INCOMING NEWS! Updated statistics have shown that throughout the pass week, gas emissions have shown signs of dropping!"
 
-    Philippine News Network "It is said that after a few months, it may drop by a whole 20 percent!"
+#     Philippine News Network "It is said that after a few months, it may drop by a whole 20 percent!"
 
-    "You and Vino are in the park"
+#     "You and Vino are in the park"
 
-    "You look around and see all the people helping"
+#     "You look around and see all the people helping"
 
-    "Vino takes a deep breath and looks at you with dedication in his eyes"
+#     "Vino takes a deep breath and looks at you with dedication in his eyes"
 
-    Vino "Dude, we've done it"
+#     Vino "Dude, we've done it"
 
-    Vino "We were able to make a small thing turn into a huge impact"
+#     Vino "We were able to make a small thing turn into a huge impact"
 
-    main "Yeah, it was all worth it"
+#     main "Yeah, it was all worth it"
 
-    "You both look around once more and feel satisfied"
+#     "You both look around once more and feel satisfied"
 
-    Vino "I really can't believe that we were able to do this"
+#     Vino "I really can't believe that we were able to do this"
 
-    Vino "Honestly, all I can say is thank you"
+#     Vino "Honestly, all I can say is thank you"
 
-    main "Man, it wasn't just me"
+#     main "Man, it wasn't just me"
 
-    main "You were the one who opened my eyes and made me see the bigger picture"
+#     main "You were the one who opened my eyes and made me see the bigger picture"
 
-    main "If you didn't influence me, I probably wouldn't even be doing anything about it right now"
+#     main "If you didn't influence me, I probably wouldn't even be doing anything about it right now"
 
-    Vino "Yeah, I'm glad we were both able to infleunce each other and a lot more"
+#     Vino "Yeah, I'm glad we were both able to infleunce each other and a lot more"
 
-    "You both feel proud and accomplished after all the hardwork"
+#     "You both feel proud and accomplished after all the hardwork"
 
-    "You have reached the ending of this route..."
+#     "You have reached the ending of this route..."
 
-label agreevinoplan:
+# label agreevinoplan:
 
-    main "That sounds like a fantastic plan! I could already think of what we could do!"
+#     main "That sounds like a fantastic plan! I could already think of what we could do!"
 
-menu: 
-    "We should post online about inviting people to maybe like a community and gather those who want to help!":
-        jump vinoideachoice1
+# menu: 
+#     "We should post online about inviting people to maybe like a community and gather those who want to help!":
+#         jump vinoideachoice1
 
-    "We should scream at people to join our community and make them help!"
-        jump vinoideachoice2
+#     "We should scream at people to join our community and make them help!":
+#         jump vinoideachoice2
 
-label vinoideachoice2:
+# label vinoideachoice2:
 
-    Vino "Are you for real...?"
+#     Vino "Are you for real...?"
 
-    Vino "Uhm... I think I’ve got this... You can go ahead and continue what you were doing..."
+#     Vino "Uhm... I think I’ve got this... You can go ahead and continue what you were doing..."
 
-    "Vino walks back to cleaning the park surroundings and recycling"
+#     "Vino walks back to cleaning the park surroundings and recycling"
 
-    "Your route has ended"
+#     "Your route has ended"
 
-    $ abortVino = True
+#     $ abortVino = True
 
-label vinoideachoice1:
+# label vinoideachoice1:
 
-    Vino "That sounds like an amazing idea! We should do it when we’re both free from school!"
+#     Vino "That sounds like an amazing idea! We should do it when we’re both free from school!"
 
-    main "Right! Here is my number..."
+#     main "Right! Here is my number..."
 
-    Vino "Alright! Thanks! I’m grateful for your help!"
+#     Vino "Alright! Thanks! I’m grateful for your help!"
 
-    Vino "I’ll message you when I can, so look out for it!"
+#     Vino "I’ll message you when I can, so look out for it!"
 
-    main "Sure, I'll be waiting!"
+#     main "Sure, I'll be waiting!"

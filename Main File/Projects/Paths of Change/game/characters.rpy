@@ -15,5 +15,8 @@ define Admission= Character('Admission Officer', color="#cc441f")
 define RandomStudent= Character('Random Student', color="#139d6d")
 define Chad= Character('Chad', color="#13339d")
 
+#chars from vinoroute
+define News= Character('Philippine News Network', color="#f90e0e")
+
 #mc
 define main = Character("[mcName]", color="#5b1fb4")

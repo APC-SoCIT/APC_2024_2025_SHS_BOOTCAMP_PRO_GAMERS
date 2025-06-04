@@ -121,7 +121,7 @@ label disagreevinoplan:
 
     "As you are walking, you get a notification from your phone about the current news"
 
-    Philippine News Network "Breaking News!!! after gathering further statistics, it has been confirmed that greenhouse gas levels have been through the roof! and without further action this might lead to severe cliate changes throughout the year"
+    News "Breaking News!!! after gathering further statistics, it has been confirmed that greenhouse gas levels have been through the roof! and without further action this might lead to severe cliate changes throughout the year"
 
     main "Oh no..."
 
@@ -164,13 +164,17 @@ label ignorevino:
 
     "You check it out as you noticed it was about the latest news"
 
-    Philippine News Network "INCOMING NEWS! Statistics have shown that for the pass few weeks, gas emissions have been through the roof!"
+    News "INCOMING NEWS! Statistics have shown that for the pass few weeks, gas emissions have been through the roof!"
 
-    Philippine News Network "It is also stated that in the upcoming months, these levels may increase rapidly!"
+    News "It is also stated that in the upcoming months, these levels may increase rapidly!"
 
     main "I wish I did something back then..."
 
     "The route ends with a feeling of regret..."
+
+    $ abortVino = True
+
+    jump abort
 
 label approachvino:
 
@@ -270,9 +274,9 @@ label approachvino:
 
     "After a few weeks passing by..."
 
-    Philippine News Network "INCOMING NEWS! Updated statistics have shown that throughout the pass week, gas emissions have shown signs of dropping!"
+    News "INCOMING NEWS! Updated statistics have shown that throughout the pass week, gas emissions have shown signs of dropping!"
 
-    Philippine News Network "It is said that after a few months, it may drop by a whole 20 percent!"
+    News "It is said that after a few months, it may drop by a whole 20 percent!"
 
     "You and Vino are in the park"
 
@@ -312,7 +316,7 @@ menu:
     "We should post online about inviting people to maybe like a community and gather those who want to help!":
         jump vinoideachoice1
 
-    "We should scream at people to join our community and make them help!"
+    "We should scream at people to join our community and make them help!":
         jump vinoideachoice2
 
 label vinoideachoice2:
@@ -365,7 +369,7 @@ label vinoideachoice1:
 
     "Checking it you noticed it was from the news"
 
-    Philippine News Network "Breaking News!!! after gathering further statistics, it has been confirmed that greenhouse gas levels have been through the roof! and without further action this might lead to severe cliate changes throughout the year"
+    News "Breaking News!!! after gathering further statistics, it has been confirmed that greenhouse gas levels have been through the roof! and without further action this might lead to severe cliate changes throughout the year"
 
     main "I hope this plan works..."
 
@@ -387,11 +391,15 @@ label vinoideachoice1:
 
     main "Now, we just need to expand and gather more people"
 
+    scene bg caf
+
     "A few weeks have passed by"
 
-    Philippine News Network "INCOMING NEWS! Updated statistics have shown that throughout the pass week, gas emissions have shown signs of dropping!"
+    News "INCOMING NEWS! Updated statistics have shown that throughout the pass week, gas emissions have shown signs of dropping!"
 
-    Philippine News Network "It is said that after a few months, it may drop by a whole 20 percent!"
+    News "It is said that after a few months, it may drop by a whole 20 percent!"
+
+    scene bg black
 
     "You and Vino are in the park"
 
@@ -409,7 +417,7 @@ label vinoideachoice1:
 
     "Your route has ended..."
 
-
+    return
 
 
 
