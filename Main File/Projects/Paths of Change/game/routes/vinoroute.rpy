@@ -1,20 +1,30 @@
 label vinoroute:
 
-    "You see a boy picking up trash and recycling"
+    "You continue walking around"
 
-    "He seems familiar to you as you have seen him before"
+    "After a while"
 
-    main "I wonder what he's doing out here all alone...?"
+    "You end up at a park"
 
-    Vino "Oh, hello there"
+    main "I wonder why he chose to go out here...?"
 
-    Vino "You were the one I met at the cafeteria, right?"
+    "You feel the wind blow"
+
+    Vino "It feels nice, huh?"
+
+    Vino "I usually come here to do some gardening around... but sometimes it's to release my stress"
 
     main "Yeah..."
 
+    "After an hour passes..."
+
+    "Vino starts picking up some trash"
+
+    "While he does, he looks at you"
+
     Vino "So... what are you doing out here?"
 
-    main "Well... I just coincidentally passed by, though the sky has been looking dark and gas emissions have been heard to be through the roof"
+    main "Well... I just thought of following you after you know, the fight... I also heard that the sky has been looking dark and gas emissions have been through the roof"
 
     main "How about you? You shouldn’t be out here during a time like this"
 
