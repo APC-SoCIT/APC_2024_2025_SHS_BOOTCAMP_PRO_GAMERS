@@ -59,6 +59,8 @@ label abortvinoroute:
 
 label continuevinoroute:
 
+    scene bg park
+
     main "That's a great idea, do you mind if I come along? I'd like to help as much as I can!"
 
     Vino "Oh! You'd like to help? I'd gladly accept it!"
@@ -103,6 +105,8 @@ menu:
 
 label disagreevinoplan:
 
+    scene bg park
+
     main "I don't know about that one... It might get a bit messy if we involve other people..."
 
     Vino "Hm... I think you have got a point there, but nevertheless we still need to find a way to help as much as we can"
@@ -116,6 +120,8 @@ label disagreevinoplan:
     Vino "I really appreciate it, even if it's just the two of us"
 
     main "no problem... anytime"
+
+    scene bg black
 
     "You both leave and went home"
 
@@ -137,6 +143,8 @@ label disagreevinoplan:
 
     "LUNCHTIME"
 
+    scene bg caf
+
     "You see Vino in the cafeteria"
 
     "You feel hesitant approaching him"
@@ -151,6 +159,8 @@ menu:
         jump ignorevino
 
 label ignorevino:
+
+    scene bg caf
 
     "The feeling of reluctancy you continue walking"
 
@@ -177,6 +187,8 @@ label ignorevino:
     jump abort
 
 label approachvino:
+
+    scene bg caf
 
     "As you see Vino you continue to walk towards him"
 
@@ -256,11 +268,15 @@ label approachvino:
 
     Vino "Same for me, I'll get started with the poster and everything else"
 
+    scene bg black
+
     "Some time passes..."
 
     "Both of you accomplish the distributed tasks"
 
     "You both meet up and felt accomplished knowing you have done something to help"
+
+    scene bg caf
 
     Vino "Alright, everything seems to be going according to plan"
 
@@ -272,11 +288,15 @@ label approachvino:
 
     main "From this onwards, we'll have to continue putting in the effort"
 
+    scene bg black
+
     "After a few weeks passing by..."
 
     News "INCOMING NEWS! Updated statistics have shown that throughout the pass week, gas emissions have shown signs of dropping!"
 
     News "It is said that after a few months, it may drop by a whole 20 percent!"
+
+    scene bg park
 
     "You and Vino are in the park"
 
@@ -321,6 +341,8 @@ menu:
 
 label vinoideachoice2:
 
+    scene bg park
+
     Vino "Are you for real...?"
 
     Vino "Uhm... I think I’ve got this... You can go ahead and continue what you were doing..."
@@ -332,6 +354,8 @@ label vinoideachoice2:
     $ abortVino = True
 
 label vinoideachoice1:
+
+    scene bg park
 
     Vino "That sounds like an amazing idea! We should do it when we’re both free from school!"
 
@@ -346,6 +370,8 @@ label vinoideachoice1:
     "Some time passes..."
 
     "You and Vino met up to discuss the plans"
+
+    scene bg caf
 
     Vino "Okay so, I think we should start getting the attention of people first"
 
@@ -363,7 +389,11 @@ label vinoideachoice1:
 
     "You both leave to complete your own tasks"
 
+    scene bg black
+
     "A week has passed by..."
+
+    scene bg hall
 
     "You were walking in the hallway and suddenly got a notification"
 
@@ -391,7 +421,7 @@ label vinoideachoice1:
 
     main "Now, we just need to expand and gather more people"
 
-    scene bg caf
+    scene bg black
 
     "A few weeks have passed by"
 
@@ -399,7 +429,7 @@ label vinoideachoice1:
 
     News "It is said that after a few months, it may drop by a whole 20 percent!"
 
-    scene bg black
+    scene bg park
 
     "You and Vino are in the park"
 
