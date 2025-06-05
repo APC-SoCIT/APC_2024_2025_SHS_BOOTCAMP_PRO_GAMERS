@@ -124,6 +124,10 @@ label metAll:
 
     "With the chaos brewing in front of you, it would be a shame if you just left them all hanging"
     "Plus, you did say to send at least a pretty good friend, and now the gods have sent you four...very chaotic...friend potential"
+    show fred norm at firstPos with dissolve
+    show kent norm at secondPos with dissolve
+    show lily norm at thirdPos with dissolve
+    show vino norm at fourthPos with dissolve
 
     main "well uhhhh..."
 
@@ -153,9 +157,13 @@ menu:
         jump fredroute
 
     "Kent":
-
+        
         jump kentroute
 
+    "Lily":
+        
+        jump lilyroute
+    
     "Vino":
         "As you stare at Vino he then calls you over to follow him"
 
@@ -173,7 +181,3 @@ menu:
 
         Vino "Just follow me"
         jump vinoroute
-
-    "Lily":
-        
-        jump lilyroute

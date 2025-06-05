@@ -1,6 +1,6 @@
 label lilyroute:
 
-    scene bg guidance_office
+    scene bg office
 
     "You return to the guidance office, pamphlet in hand. A quiet tension sits in your chest—you’re still unsure about your future."
 
@@ -62,11 +62,16 @@ label Lilychoice:
 
 menu:
     "Thank her and leave":
-        jump lilyabortending
 
         "WARNING: This option will abort Lily's route completely"
 
         "Do you wish to proceed?"
+
+        menu:
+            "Yes":
+                jump lilyabortending
+            "No":
+                jump Lilychoice
 
     "Ask her if she’s attending too":
         jump lilycloseroute
@@ -91,9 +96,9 @@ label lilyabortending:
 
     "You left without committing, unsure of the road ahead."
 
-    "You chose the Abort Ending."
+    "You chose to abort Lily's Ending."
 
-     $ abortVino = True
+    $ abortLily = True
 
     jump abort
 

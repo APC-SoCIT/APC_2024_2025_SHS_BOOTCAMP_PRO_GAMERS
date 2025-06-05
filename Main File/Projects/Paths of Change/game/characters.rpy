@@ -20,3 +20,9 @@ define News= Character('Philippine News Network', color="#f90e0e")
 
 #mc
 define main = Character("[mcName]", color="#5b1fb4")
+
+# Positions
+define firstPos = Position(xalign=0.0)
+define secondPos = Position(xalign=0.35)
+define thirdPos = Position(xalign=0.65)
+define fourthPos = Position(xalign=1.0)
