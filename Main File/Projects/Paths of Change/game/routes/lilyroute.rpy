@@ -64,6 +64,10 @@ menu:
     "Thank her and leave":
         jump lilyabortending
 
+        "WARNING: This option will abort Lily's route completely"
+
+        "Do you wish to proceed?"
+
     "Ask her if she’s attending too":
         jump lilycloseroute
 
