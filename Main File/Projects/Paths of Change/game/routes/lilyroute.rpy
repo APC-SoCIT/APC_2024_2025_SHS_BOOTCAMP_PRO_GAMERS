@@ -93,7 +93,9 @@ label lilyabortending:
 
     "You chose the Abort Ending."
 
-    return
+     $ abortVino = True
+
+    jump abort
 
 
 label lilycloseroute:
