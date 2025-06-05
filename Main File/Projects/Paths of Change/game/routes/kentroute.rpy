@@ -1,15 +1,94 @@
 label kentroute:
 
+    "Kent drags you with him to the classroom to hide from others."
+
     scene bg class with dissolve
 
-    Kent "You...wanna hang out with me?"
+    Kent "Phew... I-I managed to snatch you away from them. T-this place should be enough to... hide."
+
+    "He said while panting."
 
 menu:
 
-    "Yeah...":
+    "Hey, why'd you dragged me here?":
+        jump hre
+
+    "Why were you fighting with them like a madman?":
+        jump madman
+
+label madman:
+
+    main "Why were you fighting with them like a madman?"
+
+    Kent "Well, I mean... Those 3 were trying to do the same as well."
+
+    Kent "And I thought, It looks fun fighting against them over something."
+
+    main "I am not a thing to fight over with!"
+
+    Kent "I know, I know. I was kidding."
+
+    main "Hmm...."
+
+    Kent "R-really, I swear..."
+
+    main "I was joking as well..."
+
+    Kent "Are you serious right now?"
+
+    "Kent was dumbfounded..."
+
+    jump star
+
+
+label hre:
+
+    main "Hey, why'd you dragged me here?"
+
+    Kent "Cuz this place is a good place to hide. Trust."
+
+    "He confidently said."
+
+    main "This is literally such an easy place to be found."
+
+    Kent "Nuh uh. As people says it, hiding in open spots are better than hiding in something so hidden."
+
+    Kent "After all, they might start looking for us in places that could be hard to spot, no?"
+
+    main "Right... Good point, I guess?"
+
+    Kent "See?"
+
+    "Kent exclaimed proudly."
+
+    jump star
+
+label star:
+
+    main "So, uhh... What are we gonna do again?"
+
+    Kent "Beats me."
+
+    main "Hey, you dragged me with without any plans on top?"
+
+    Kent "Well, I kinda did it in the heat of the moment so..."
+
+    main "Seriously?"
+
+    Kent "Okay okay, I dragged you here so... Let me think of something to do to make up for it."
+
+    main "Sure."
+
+    Kent "Oh... I get it."
+    
+    Kent "[mcName], let's hang out!"
+
+menu:
+
+    "That's unexpected... But sure.":
         jump yh1
 
-    "On second thought, I remembered you said that you have something else to do.":
+    "On second though, no...":
         "WARNING: This option will abort Kent's route completely."
         "Do you wish to proceed?"
 
@@ -21,14 +100,22 @@ menu:
                 jump kentroute
 
 label routeabort:
-    
-    main "On second thought, I remembered you said that you have something else to do."
 
-    "You recalled your interaction with him earlier."
+    main "On second though, no..."
 
-    Kent "Oh yeah, I do have something else to do."
+    "You replied."
 
-    Kent "Well, we can always hang out if you want to. We are seatmates so..." 
+    Kent "Huh? Why?"
+
+    main "I kinda forgot it when I said your name but I remembered you said that you have something urgent to do so..."
+
+    main "I don't wanna bother you before you are done with it."
+
+    "You said as you recalled your interaction with him earlier."
+
+    Kent "Oh wait. Yeah, I do have something to do."
+
+    Kent "I mean, we can always hang out if you want to. We are seatmates and all so..." 
 
     Kent "Just not for now since I am occupied with something."
 
@@ -49,27 +136,53 @@ label routeabort:
     jump abort
 
 
-
-
 label yh1:
 
-    main "Yeah..."
+    main "That's unexpected... But sure."
 
-    Kent "Alright..."
+    Kent "Oh boy, this is gonna be my first time going out for a while as well."
 
-    "Kent nodded."
+    "Kent replied."
 
-    Kent "Knowing that you are new here, I’ll take the lead."
+    main "Wait, seriously?"
 
-    Kent "You okay with that?"
+    Kent "Yeah... More or less... Since I am spending most of my time in the dorm."
+
+    main "I see..."
+
+    Kent "Well, enough about that. Let's hang out after class orientation ends."
+
+    main "Yeah, that works."
+
+    Kent "Nice... Although knowing that you are new here, I’ll take the lead."
+
+    Kent "You okay with it?"
 
     main "Yeah."
 
     Kent "Of course, if you have anywhere you want to go, then we’ll go there as well."
 
-    main "Oh, thanks."
+    main "Oh, that's nice of you."
 
-    Kent "Nice. Now with that decided, let’s go to the nearest fast-food restaurant first to eat before going anywhere else."
+    Kent "Hehe, of course."
+
+    "He smirked while saying that."
+
+    Kent "Nice. Now with that decided, let's hang out after class!"
+    
+    "He said excitedly."
+
+    scene bg black
+
+    "After some time, class orientation ends."
+
+    scene bg class with dissolve
+
+    Kent "Hey... Actually, before doing anything else, why don't we eat?"
+
+    main "Sure. Do you have something in mind?"
+
+    Kent "Well, why don't we go to the nearest fast-food restaurant first."
 
     Kent "You good with it?"
  
@@ -85,7 +198,11 @@ label yer:
 
     main "Yup."
 
-    Kent "The nearest fast-food restaurant here is McDonald's. Let’s go there."
+    Kent "Alright! The nearest fast-food restaurant here is McDonald's so..."
+
+    Kent "let’s go there."
+
+    main "Yeah."
 
     jump goi
  
@@ -95,7 +212,11 @@ label yerr:
 
     Kent "Same here!"
 
-    Kent "The nearest fast-food restaurant here is McDonald's. Let’s go there."
+    Kent "The nearest fast-food restaurant here is McDonald's so..."
+
+    Kent "Let’s go there." 
+
+    main "Yeah."
 
     jump goi
  
@@ -103,7 +224,9 @@ label goi:
 
     scene bg black
 
-    "After walking for a while..."
+    "You two are headed towards McDonald's."
+
+    "And after walking for a while..."
 
     scene bg mcdoout with dissolve
 
@@ -762,24 +885,7 @@ label jog3:
 
     "You handed him a bottle of water."
 
-    "The two of you jog half the path before Kent stops, hands on his knees, panting."
-
-    "But he doesn’t complain, just staring at the horizon above."
-
-    main "See?"
-
-    Kent "Hmm? What do you mean?"
-
-    main "Compare to how you look when we first met, you look far better. A little movement doesn’t exhaust you anymore."
-
-    main "At first, you looked so pale, and your complexion looks so dire. I also remember the fact that you tend to get too easily get sick."
-
-    main "But now? Those problems are already gone when I more or less forced you into getting back in shape. Though you were reluctant at it first."
-
-    "You said with a faint laugh."
-
-    Kent "W-well, it thought it was hard, and yes it was. But I kinda, you know? Enjoyed it more or less doing it with someone."
-
+    "The two of you jog half the path before Kent 
     main "Now you're talking like someone living life to the fullest."
 
     Kent "Shut it."
@@ -796,11 +902,11 @@ label jog3:
 
     main "Told you. Next goal: Yoga. No excuses."
 
-    main "You said while grinning."
+    "You said while grinning."
 
     Kent "I will block your number."
 
-    "But he’s already following, shaking his head with a smile."
+    "But he’s already following, shaking his head."
 
     scene bg black
 
