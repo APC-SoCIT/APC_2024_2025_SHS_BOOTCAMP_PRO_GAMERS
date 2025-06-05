@@ -1,338 +1,257 @@
-# label lilyroute:
+label lilyroute:
 
-#     "You visit the guidance office again to inquire more about the seminars and to help you decide on which course you can take"
+    scene bg guidance_office
 
-#     "You see a girl hunched over the front desk and she seemed familiar to you. You cleared your throat to get her attention"
+    "You return to the guidance office, pamphlet in hand. A quiet tension sits in your chest—you’re still unsure about your future."
 
-#     main "excuse me miss?"
+    "The room feels the same, neat and quiet, but there's a sense of warmth to it now. Maybe because you remember the face from before."
 
-#     "Lily's head perks up and she smiles in recognition"
+    "At the front desk, a familiar girl is hunched over a small stack of papers, focused."
 
-#     Lily "Oh hey you're back! what can I help you with today?"
+    "You hesitate, then clear your throat."
 
-#     main "Um- I actually wanted to inquire about the pamphlet you gave me you know the seminars?"
+    main "Excuse me, miss?"
 
-#     Vino "A?"
+    "She looks up and beams when she sees you. It’s Lily."
 
-#     main "Well... I just coincidentally passed by, though the sky has been looking dark and gas emissions have been heard to be through the roof"
+    Lily "Oh hey, you came back! That’s a nice surprise."
 
-#     main "How about you? You shouldn’t be out here during a time like this"
+    main "I was hoping you could help me again. It’s about the pamphlet you gave me… the one with the seminars."
 
-#     Vino "Well remember what we talked about last time?"
+    Lily "Of course!"  
 
-#     Vino "How I like to help around the park and all"
+    "She reaches under the desk and pulls out a fresh copy of the seminar guide."
 
-#     Vino "And as you said, gas emissions have been up... So, I'm trying my best to help even through recycling"
+    Lily "I actually hoped you’d come back. Most students just grab it and leave. Not many take the time to ask more."
 
-# label Vinochoice:
+    main "I wasn’t sure if I’d come back either… but I guess I kept thinking about it."
 
-#     main "What should I do?"
+    Lily "That’s a good sign. It means something stuck."
 
-# menu:
-#     "You walk away":
+    "She lays out the pamphlet on the counter and taps a few parts with her pen."
 
-#         "WARNING: This option will abort Vino's route completely"
+    Lily "There’s a variety of topics covered here—business, tech, science, health care, and creative fields too."
 
-#         "Do you wish to proceed?"
+    main "I’ve been thinking. I like drawing, and… maybe something creative?"
 
-#         menu:
-#             "Yes":
-#                 jump abortvinoroute
-#             "No":
-#                 jump Vinochoice
-    
-#     "You help Vino":
-#         jump continuevinoroute
-# label abortvinoroute:
+    Lily "That narrows it down! We have a design and multimedia seminar next week—it’s a mix of visual arts and digital content creation. You’d probably enjoy it."
 
-#     main "Oh, alright, well, good luck with what you’re doing!"
+    main "That does sound interesting."
 
-#     main "I’ve got some things to do so I’ll be going first"
+    Lily "And it’s hands-on! You’ll get to try out basic editing software, sketch some mockup designs, maybe even collaborate on a mini-project."
 
-#     Vino "Thanks! See you at school!"
+    main "That sounds... kind of fun, actually."
 
-#     $ abortVino = True
+    Lily "Great! I can sign you up now if you want."
 
-#     jump abort
+    main "Yeah. Please do."
 
-# label continuevinoroute:
+    "Lily writes your name down on a small clipboard and smiles."
 
-#     main "That's a great idea, do you mind if I come along? I'd like to help as much as I can!"
+    Lily "There we go. You’re officially registered."
 
-#     Vino "Oh! You'd like to help? I'd gladly accept it!"
+    main "Thanks. You really make this stuff easier to think about."
 
-#     Vino "Okay, so our task is to collect all this trash on the floor and dispose of it properly and for the things that could be recycled, we'll put them into another bin"
+    Lily "That’s kind of the point. You don’t have to figure it all out alone."
 
-#     Vino "Sounds easy, right? Alright! I'll start over here and you can start over there. Get back to me when you're done"
+    "She gives you a playful wink."
 
-#     main "Sure! I'll get started then"
+label Lilychoice:
 
-#     "Some time passes..."
+    main "What should I do now?"
 
-#     Vino "Hey, I'm done over there, how is it here on your side?"
+menu:
+    "Thank her and leave":
+        jump lilyabortending
 
-#     main "It's bad. There's trash everywhere and whenever I do pick some up, there's just more coming... it feels endless"
+        "WARNING: This option will abort Lily's route completely"
 
-#     main "I'm glad that I was able to come and help you out here, it would have taken too long if you had done it by yourself..."
+        "Do you wish to proceed?"
 
-#     Vino "Yea... but I've got to do something about all this trash, so it can't be helped"
+    "Ask her if she’s attending too":
+        jump lilycloseroute
 
-#     Vino "Though it was nice that you were able to help me!"
+label lilyabortending:
 
-#     main "Of course! This task is too heavy for one person"
+    scene bg hallway
+    with dissolve
 
-#     Vino "That just gave me an idea!"
+    "You thank Lily politely, but your steps feel heavier as you leave the office."
 
-#     main "hm?"
+    "You pause in the hallway, the pamphlet crinkling in your grip."
 
-#     Vino "We should gather more people to help us clean this park up, so many use it but no one takes care of it as much as it should be"
+    "Your thoughts buzz—was this the right path? Were you ready?"
 
-# label Vinochoice2:
+    "Slowly, you fold the pamphlet and slide it into your bag, but you already know you won’t be showing up to the seminar."
 
-#     main "Do you wish to go with the plan?"
+    "Maybe next time… or maybe not."
 
-# menu:
-#     "Disagree with the plan":
-#         jump disagreevinoplan
+    scene bg black
+    with fade
 
-#     "Agree with than plan":
-#         jump agreevinoplan
+    "You left without committing, unsure of the road ahead."
 
+    "You chose the Abort Ending."
 
-# label disagreevinoplan:
+     $ abortVino = True
 
-#     main "I don't know about that one... It might get a bit messy if we involve other people..."
+    jump abort
 
-#     Vino "Hm... I think you have got a point there, but nevertheless we still need to find a way to help as much as we can"
 
-#     main "We should just continue recycling from time to time, it'll still be good help"
+label lilycloseroute:
 
-#     Vino "Yeah I guess... though I wish we could do find a more efficient and effective way that could help on a larger scale"
+    scene bg guidance_office
 
-#     Vino "Anyways, thanks for your help"
+    main "Hey… are you attending the seminar too?"
 
-#     Vino "I really appreciate it, even if it's just the two of us"
+    Lily "Hmm? Me? Well, not as a guest. I help with organizing and setup. So I’ll be there the whole time."
 
-#     main "no problem... anytime"
+    main "Cool. Maybe I’ll see you around then?"
 
-#     "You both leave and went home"
+    Lily "Definitely. And hey—if you get nervous or lost, just look for me, alright?"
 
-#     "As you are walking, you get a notification from your phone about the current news"
+    main "I will. Thanks again, Lily."
 
-#     Philippine News Network "Breaking News!!! after gathering further statistics, it has been confirmed that greenhouse gas levels have been through the roof! and without further action this might lead to severe cliate changes throughout the year"
+    Lily "Anytime."
 
-#     main "Oh no..."
+    scene bg black
 
-#     main "This is getting out of hand..."
+    "A few days later…"
 
-#     "You think twice about what Vino said while you walk home"
+    scene bg seminar_room
 
-#     "Time passes and it's the next day..."
+    "The seminar room buzzes with quiet chatter as students take their seats."
 
-#     main "Should I bring it up with Vino...?"
+    "You glance around and spot Lily near the projector, arranging materials."
 
-#     main "After what I said yesterday, I'm not sure..."
+    "You feel oddly calmer knowing she’s here."
 
-#     "LUNCHTIME"
+    Lily "Hey! You made it."
 
-#     "You see Vino in the cafeteria"
+    main "Yeah. I guess I’m actually excited now."
 
-#     "You feel hesitant approaching him"
+    Lily "That’s the spirit. Go on, grab a seat—I’ll be around if you need anything."
 
-#     main "Will you approach him?"
+    scene bg seminar_hands_on
 
-# menu:
-#     "Approach Vino":
-#         jump approachvino
+    "The seminar unfolds with hands-on activities—sketching wireframes, using simple editing software, and discussing creative challenges."
 
-#     "Continue on without noticing him":
-#         jump ignorevino
+    "You dive into it more than you expected. Ideas begin to flow."
 
-# label ignorevino:
+    "During the break, Lily approaches with two bottled drinks."
 
-#     "The feeling of reluctancy you continue walking"
+    Lily "Thirsty? I figured you’d be working hard."
 
-#     "You make eye contact with him as you pass by but chose to ignore him"
+    main "Thanks. This is actually more fun than I thought."
 
-#     "A few weeks have passed..."
+    Lily "Told you! It’s all about finding that spark."
 
-#     "You being on your phone"
+    scene bg park_evening
 
-#     "A notification popped up"
+    "After the seminar, you and Lily walk around campus as the sun sets."
 
-#     "You check it out as you noticed it was about the latest news"
+    Lily "You really lit up during that seminar. It was nice to see you so focused."
 
-#     Philippine News Network "INCOMING NEWS! Statistics have shown that for the pass few weeks, gas emissions have been through the roof!"
+    main "I didn't expect to enjoy it this much. You were right."
 
-#     Philippine News Network "It is also stated that in the upcoming months, these levels may increase rapidly!"
+    Lily "You have talent. Don’t let it go to waste."
 
-#     main "I wish I did something back then..."
+    "She stops walking for a moment and turns to you."
 
-#     "The route ends with a feeling of regret..."
+    Lily "Actually... there's a student creative group forming soon. We work on design projects, do exhibitions, help promote events. I think you'd fit in."
 
-# label approachvino:
+    main "Oh—really?"
 
-#     "As you see Vino you continue to walk towards him"
+    Lily "Yeah. Want to join?"
 
-#     "With the slight feeling of reluctance you muster up the courage to talk with him"
+label lilyfinalchoice:
 
-#     main "Hey, Vino"
+menu:
+    "Join the group and keep spending time with Lily":
+        jump lilybestending
 
-#     Vino "Oh, hey"
+    "Thank her but say you're not ready yet":
+        jump lilygoodending
 
-#     Vino "Is there something you need?"
+    "Say you're not really interested after all":
+        jump lilybadending
 
-#     main "Uhm.. yeah"
+label lilybestending:
 
-#     main "It's about what we talked about yesterday"
+    main "Yeah… I want to be part of it. With you."
 
-#     Vino "Hm?"
+    Lily "That makes me really happy. I was hoping you'd say that."
 
-#     main "I think we should continue it"
+    scene bg clubroom_day
 
-#     Vino "What do you mean?"
+    "A few weeks later, you’re part of the creative group. You attend weekly meetings, help organize posters, and even lead your own project."
 
-#     main "We had this idea, right?"
+    "Lily becomes a constant presence—not just a mentor, but a close friend… maybe something more."
 
-#     main "Where we would gather people that could help recycle and all"
+    scene bg rooftop_evening
 
-#     Vino "Oh... that"
+    "One evening, the two of you sit together on the school rooftop, watching the sky darken."
 
-#     Vino "What changed your mind?"
+    Lily "I knew from the start you had something special. I’m glad you trusted yourself."
 
-#     main "After seeing the latest news update..."
+    main "I wouldn’t have found that out without you."
 
-#     main "I gave it some thought last night and I think we do need to take action"
+    Lily "Maybe. But you’re the one who chose to try."
 
-#     main "Even the slightest help can reduce the gas emissions"
+    "She rests her head on your shoulder."
 
-#     main "So I think we should continue our plan"
+    "The path ahead doesn’t seem so uncertain anymore."
 
-#     Vino "Alright, I'm glad you changed your mind!"
+    scene bg black
 
-#     Vino "Are you free after this?"
+    "You found both a direction and a person to walk it with."
 
-#     main "Yeah, I am"
+    "You chose the Best Ending."
 
-#     Vino "Let's grab some food and continue with what we were talking about yesterday"
+    return
 
-#     main "Sounds like a good idea"
+label lilygoodending:
 
-#     "You both grab some food to eat"
+    main "Thanks, Lily. I think I’ll keep working on my own for now. But I really appreciate everything."
 
-#     "Time passes..."
+    Lily "That’s totally fair. I just hope you keep going—you’ve got a real spark."
 
-#     "You both finish your food"
+    main "I will. I’m really grateful to you."
 
-#     main "Alright, so where do we start?"
+    Lily "Anytime. And hey… even if we’re not in the same group, don’t be a stranger, alright?"
 
-#     Vino "Okay so, I think we should start getting the attention of people first"
+    "You smile and nod."
 
-#     Vino "I was thinking, what if we posted a quick poster or something online about helping around in the park"
+    scene bg black
 
-#     Vino "It could be about recycling, pickup up trash, waste disposal, etc."
+    "You take what you learned and pursue your creative interests."
 
-#     Vino "This should catch peoples attention"
+    "You and Lily stay in touch, and maybe someday… something more might blossom."
 
-#     main "Yeah, that sounds great!"
+    "You chose the Good Ending."
 
-#     main "We could also set up a schedule for whenever we meet up in the park"
+    return
 
-#     Vino "Exactly!"
+label lilybadending:
 
-#     Vino "Alright so I'll go ahead and make the poster as soon as I can"
+    main "I don’t think I’m interested anymore. It was fun, but… I guess I’m just not cut out for it."
 
-#     Vino "What I need you to do is spread the word about it"
+    "Lily’s expression falters, but she recovers quickly."
 
-#     Vino "I'll do the same with the people I do gardening with. they for sure would love to help"
+    Lily "I see. That’s okay—sometimes we try things and find out they’re not for us."
 
-#     main "Okay okay, I'll get going then"
+    main "Yeah… sorry if I wasted your time."
 
-#     Vino "Same for me, I'll get started with the poster and everything else"
+    Lily "You didn’t. Just… don’t give up on yourself completely, okay?"
 
-#     "Some time passes..."
+    "You nod, but part of you isn’t sure."
 
-#     "Both of you accomplish the distributed tasks"
+    scene bg black
 
-#     "You both meet up and felt accomplished knowing you have done something to help"
+    "You walk away from the chance to grow—uncertain, and with a subtle feeling of regret."
 
-#     Vino "Alright, everything seems to be going according to plan"
+    "You and Lily drift apart. The moment passes, never to return."
 
-#     main "Yeah, I even got some people who were already interested"
+    "You chose the Bad Ending."
 
-#     Vino "For now, we'll just have to see how it all plays out"
-
-#     main "That's true"
-
-#     main "From this onwards, we'll have to continue putting in the effort"
-
-#     "After a few weeks passing by..."
-
-#     Philippine News Network "INCOMING NEWS! Updated statistics have shown that throughout the pass week, gas emissions have shown signs of dropping!"
-
-#     Philippine News Network "It is said that after a few months, it may drop by a whole 20 percent!"
-
-#     "You and Vino are in the park"
-
-#     "You look around and see all the people helping"
-
-#     "Vino takes a deep breath and looks at you with dedication in his eyes"
-
-#     Vino "Dude, we've done it"
-
-#     Vino "We were able to make a small thing turn into a huge impact"
-
-#     main "Yeah, it was all worth it"
-
-#     "You both look around once more and feel satisfied"
-
-#     Vino "I really can't believe that we were able to do this"
-
-#     Vino "Honestly, all I can say is thank you"
-
-#     main "Man, it wasn't just me"
-
-#     main "You were the one who opened my eyes and made me see the bigger picture"
-
-#     main "If you didn't influence me, I probably wouldn't even be doing anything about it right now"
-
-#     Vino "Yeah, I'm glad we were both able to infleunce each other and a lot more"
-
-#     "You both feel proud and accomplished after all the hardwork"
-
-#     "You have reached the ending of this route..."
-
-# label agreevinoplan:
-
-#     main "That sounds like a fantastic plan! I could already think of what we could do!"
-
-# menu: 
-#     "We should post online about inviting people to maybe like a community and gather those who want to help!":
-#         jump vinoideachoice1
-
-#     "We should scream at people to join our community and make them help!":
-#         jump vinoideachoice2
-
-# label vinoideachoice2:
-
-#     Vino "Are you for real...?"
-
-#     Vino "Uhm... I think I’ve got this... You can go ahead and continue what you were doing..."
-
-#     "Vino walks back to cleaning the park surroundings and recycling"
-
-#     "Your route has ended"
-
-#     $ abortVino = True
-
-# label vinoideachoice1:
-
-#     Vino "That sounds like an amazing idea! We should do it when we’re both free from school!"
-
-#     main "Right! Here is my number..."
-
-#     Vino "Alright! Thanks! I’m grateful for your help!"
-
-#     Vino "I’ll message you when I can, so look out for it!"
-
-#     main "Sure, I'll be waiting!"
+    return
