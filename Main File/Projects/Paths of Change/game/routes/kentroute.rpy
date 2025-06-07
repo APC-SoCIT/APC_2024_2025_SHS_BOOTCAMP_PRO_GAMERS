@@ -22,7 +22,7 @@ label madman:
 
     Kent "Well, I mean... Those 3 were trying to do the same as well."
 
-    Kent "And I thought, It looks fun fighting against them over something."
+    Kent "And I thought, It looks fun fighting against them over something, so...."
 
     main "I am not a thing to fight over with!"
 
