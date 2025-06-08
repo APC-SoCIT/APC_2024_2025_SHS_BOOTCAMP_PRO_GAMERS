@@ -28,18 +28,32 @@
     "Your peace is interrupted briefly as you hear a loud clang behind you"
     "You turn back to see two other students who seem to have fumbled onto another"
 
+    show vino madcross at left with dissolve
     StudentV "Hey, watch it! You made me drop my water bottle"
+
+    show lily madtalk with dissolve
     StudentL "We wouldn't have hit you if you weren't like so in the way, Vino"
+
+    show fred utalk at right with dissolve
     StudentF "Guys...it is so early in the morning, can we please not make a fuss at the shuttle"
     
     "The trio's quarrel went on for a bit as you just watched in silence as the ruckus behind you unfolded"
 
+    show lily unamused with dissolve
     StudentL "It's just the first day of school and you're making such a big deal about accidentally dropping your water container"
+    
+    show vino annoyed at left with dissolve
     StudentV "Well yeah, my girlfriend gave this to me. How would you feel if I wiped the make up off of your powdered face in front of-"
-    StudentL "Take. that. {i}back.{/i}"
+    
+    show lily madtalk with dissolve
+    StudentL "I'd like to see you try"
+
+    show fred upset at right with dissolve
     StudentF "There is someone in front of us..."
 
     "As the other two's eyes slowly trail towards you, you look at a different direction, ignoring their presence in awkwardness"
+    show lily neutral with dissolve
+    show vino neutral at left with dissolve
     "From the side of your eye, you could see the other two brush themselves off and remained somewhat behave throughout the rest of the wait for the school's shuttle"
     "Although, you can still faintly hear murmuring and banter from the trio behind you"
 
@@ -52,26 +66,55 @@
     "Praying for a friend, an angel even, or whatever comes your way. First days are usually the more lonelier days"
     "Your thoughts were interrupted by the lingering conversation you can hear from the students before"
 
+    show vino unamused at left with dissolve
     StudentV "I have not eaten anything after helping out the community yesterday, I need something in my system STAT"
+    
+    show lily disappointed with dissolve
     StudentL "Lucky for you, I packed an extra Onigiri today, I'd hate to see you starve here"
+    
+    show fred proud at right with dissolve
     StudentF "Aww, thats sweet of you Lily. Didn't expect a sudden change of heart from you"
+    
+    show lily madtalk with dissolve
     StudentL "Shut it, Fred. Only doing this cuz I owe Vino for saving me from last night's game"
+    
+    show fred disappointed at right with dissolve
     StudentF "Ah...of course"
+    
+    show fred talk at right with dissolve
     StudentF "So, any plans today?"
+
+    show vino talk at left with dissolve
     StudentV "Plan on helping out at the school's garden again, and maybe another bite to eat"
 
     "You watch as the taller student scowled down the Onigiri in hunger, seeming unsatisfied"
 
+    show lily disappointed with dissolve
     StudentL "Manners."
+
+    show vino waiting at left with dissolve
     StudentV "You're one to talk"
+
+    show fred disappointed at right with dissolve
     StudentF "If Kent was here, you would've bashed him"
+
+    show lily glad with dissolve
     StudentL "Hehe, well you know me"
+
+    show fred itsok at right with dissolve
     StudentF "The poor guy barely gets out anymore, you could at least cut him some slack"
+    
+    show lily cocky with dissolve
     StudentL "Hmmmmm...."
     StudentL "We'll see about that later"
+    show lily norm with dissolve
     StudentL "Anyways,"
     StudentL "I was thinking of fixing the Guidance Office up for a bit, I gotta file some stuff for the new students. I love my job"
+    
+    show vino smile at left with dissolve
     StudentV "Girl please, that ain't even part of your internship"
+    
+    show lily glad with dissolve
     StudentL "But it's gonna look great on my resume~"
 
     "Oh right, the guidance office. You think to yourself as you stiffle a sigh"
