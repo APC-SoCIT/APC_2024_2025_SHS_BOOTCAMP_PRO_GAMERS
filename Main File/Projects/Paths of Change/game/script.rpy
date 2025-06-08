@@ -19,6 +19,9 @@
     
     main "Welp, time to get ready for school"
 
+    play music "bgmusic.mp3"
+    scene bg shuttleout with dissolve
+
     "On your way to the bus stop, or...the shuttle station, as how you hear other students call it, you seem to be the only one there"
     "You try to stop and take in the environment as you wait for the bus"
     "Lush trees, a clear sky, a peaceful neighborhood, it reminds you a bit of home"
@@ -39,6 +42,8 @@
     "As the other two's eyes slowly trail towards you, you look at a different direction, ignoring their presence in awkwardness"
     "From the side of your eye, you could see the other two brush themselves off and remained somewhat behave throughout the rest of the wait for the school's shuttle"
     "Although, you can still faintly hear murmuring and banter from the trio behind you"
+
+    scene bg shuttlein with dissolve
 
     "As the shuttle arrived, you four make your way in the bus, with the three students behind you politely greeting the driver"
     "Must be practiced courtesy here on campus. You take a mental note of that"

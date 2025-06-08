@@ -885,7 +885,7 @@ label jog3:
 
     "You handed him a bottle of water."
 
-    "The two of you jog half the path before Kent 
+    "The two of you jog half the path before Kent"
     main "Now you're talking like someone living life to the fullest."
 
     Kent "Shut it."

@@ -157,7 +157,39 @@ menu:
         jump fredroute
 
     "Kent":
-        
+        "He looked at others with a smug look in his face."
+ 
+        Kent "See? I am just better, is all."
+ 
+        Vino "[mcName], that guy doesn't go out at all! He doesn't know how things work in the outside world."
+ 
+        Lily "Yeah!"
+ 
+        "Lily agreed to Vino's words."
+ 
+        Kent "Well, that's not true at all.How unfortunate for the two of you."
+ 
+        Fred "Yeah yeah, we believe you."
+ 
+        "Fred said looking unconvince."
+ 
+        Kent "Yada yada, all is said and done. [mcName] will go with me."
+ 
+        "Still, the others seems to have not given up so..."
+ 
+        Kent "[mcName], follow me."
+ 
+        Vino "They are running away."
+ 
+        Lily "After them..."
+ 
+        Fred "Don't do something stupid, you two. Let's respect [mcName]'s choice."
+ 
+        Vino "Right..."
+ 
+        Lily "Fine. I give up."
+ 
+        Fred "Good."
         jump kentroute
 
     "Lily":
