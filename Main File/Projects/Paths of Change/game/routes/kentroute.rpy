@@ -1177,7 +1177,7 @@ label jog3:
 
     "You two continued to talk before going home."
 
-    hide kenthealth
+    hide kenthealth with dissolve
 
     scene bg black
 
