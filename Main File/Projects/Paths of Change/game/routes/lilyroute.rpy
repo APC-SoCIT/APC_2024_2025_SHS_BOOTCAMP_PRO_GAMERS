@@ -10,7 +10,7 @@ label lilyroute:
 
     "Lily then turns back to you with a bright smile on her face"
 
-    show lily yay 
+    show lily glad 
 
     Lily "I'm really glad you decided to come with me today I have A LOT to discuss with you"
 
@@ -18,7 +18,11 @@ label lilyroute:
 
     "Lily gestures to the seats infront of you two"
 
+    show lily norm
+
     main "I was hoping you could help me again. It’s about the pamphlet you gave me… the one with the seminars."
+
+    show lily excited 
 
     Lily "Of course!"  
 
@@ -32,6 +36,8 @@ label lilyroute:
     Lily "That’s a good sign. It means something stuck."
 
     "She lays out the pamphlet on the table and taps a few parts with her pen."
+
+    show lily talk
 
     Lily "There’s a variety of topics covered here—business, tech, science, health care, and creative fields too."
 
@@ -47,6 +53,8 @@ label lilyroute:
 
     main "That sounds... kind of fun, actually."
 
+    show lily yay
+
     Lily "Great! I can sign you up now if you want."
 
     main "Yeah. Please do."
@@ -58,6 +66,18 @@ label lilyroute:
     main "Thanks. You really make this stuff easier to think about."
 
     Lily "That’s kind of the point. You don’t have to figure it all out alone."
+
+    main "Actually I wanted to ask about something else"
+
+    Lily "Oh? what is it?"
+
+    show lily norm 
+
+    main "I was actually considering on taking a gap year and maybe looking for a job but I don't know if that would be the best option
+
+    for me 
+
+    show lily excited with dissolve 
 
     "She gives you a playful wink."
 
@@ -112,7 +132,9 @@ label lilycloseroute:
 
     scene bg guidance_office
 
-    main "Hey… are you attending the seminar too?"
+    main "Hey… I forgot to ask but uh- are you attending the seminar too?"
+
+    show lily talk
 
     Lily "Hmm? Me? Well, not as a guest. I help with organizing and setup. So I’ll be there the whole time."
 
@@ -122,11 +144,13 @@ label lilycloseroute:
 
     main "I will. Thanks again, Lily."
 
+    show lily norm 
+
     Lily "Anytime."
 
     scene bg black
 
-    "A few days later…"
+    "The next day..."
 
     scene bg seminar_room
 
@@ -136,9 +160,13 @@ label lilycloseroute:
 
     "You feel oddly calmer knowing she’s here."
 
+    show lily glad
+
     Lily "Hey! You made it."
 
     main "Yeah. I guess I’m actually excited now."
+
+    show lily excited
 
     Lily "That’s the spirit. Go on, grab a seat—I’ll be around if you need anything."
 
@@ -150,15 +178,21 @@ label lilycloseroute:
 
     "During the break, Lily approaches with two bottled drinks."
 
+    show lily neutral
+
     Lily "Thirsty? I figured you’d be working hard."
 
     main "Thanks. This is actually more fun than I thought."
+
+    show lily yay
 
     Lily "Told you! It’s all about finding that spark."
 
     scene bg park_evening
 
     "After the seminar, you and Lily walk around campus as the sun sets."
+
+    show lily norm 
 
     Lily "You really lit up during that seminar. It was nice to see you so focused."
 
@@ -168,7 +202,11 @@ label lilycloseroute:
 
     "She stops walking for a moment and turns to you."
 
-    Lily "Actually... there's a student creative group forming soon. We work on design projects, do exhibitions, help promote events. I think you'd fit in."
+    show lily awkward
+
+    Lily "Actually... there's a student creative group forming soon. We work on design projects, do exhibitions, 
+    
+    help promote events. I think you'd fit in."
 
     main "Oh—really?"
 
@@ -190,23 +228,31 @@ label lilybestending:
 
     main "Yeah… I want to be part of it. With you."
 
+    show lily excited 
+
     Lily "That makes me really happy. I was hoping you'd say that."
 
     scene bg clubroom_day
 
-    "A few weeks later, you’re part of the creative group. You attend weekly meetings, help organize posters, and even lead your own project."
+    "A few weeks later, you’re part of the creative group. You attend weekly meetings, help organize posters, 
 
-    "Lily becomes a constant presence—not just a mentor, but a close friend… maybe something more."
+    and even lead your own project."
+
+    "Lily becomes a constant presence—not just a mentor, but a close friend."
 
     scene bg rooftop_evening
 
     "One evening, the two of you sit together on the school parking lot, watching the sky darken."
+
+    show lily glad 
 
     Lily "I knew from the start you had something special. I’m glad you trusted yourself."
 
     main "I wouldn’t have found that out without you."
 
     Lily "Maybe. But you’re the one who chose to try."
+
+    show lily excited 
 
     "She smiles at you brightly."
 
@@ -224,9 +270,13 @@ label lilygoodending:
 
     main "Thanks, Lily. I think I’ll keep working on my own for now. But I really appreciate everything."
 
+    show lily flustered
+
     Lily "That’s totally fair. I just hope you keep going—you’ve got a real spark."
 
     main "I will. I’m really grateful to you."
+
+    show lily awkward
 
     Lily "Anytime. And hey… even if we’re not in the same group, don’t be a stranger, alright?"
 
@@ -236,7 +286,7 @@ label lilygoodending:
 
     "You take what you learned and pursue your creative interests."
 
-    "You and Lily stay in touch, and maybe someday… something more might blossom."
+    "You and Lily stay in touch, and maybe someday… the future will be more clear."
 
     "You chose the Good Ending."
 
@@ -246,11 +296,17 @@ label lilybadending:
 
     main "I don’t think I’m interested anymore. It was fun, but… I guess I’m just not cut out for it."
 
+    show lily dissapointed 
+
     "Lily’s expression falters, but she recovers quickly."
+
+    show lily awkward
 
     Lily "I see. That’s okay—sometimes we try things and find out they’re not for us."
 
     main "Yeah… sorry if I wasted your time."
+
+    show lily sad 
 
     Lily "You didn’t. Just… don’t give up on yourself completely, okay?"
 
