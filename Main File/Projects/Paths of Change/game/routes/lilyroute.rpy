@@ -75,7 +75,7 @@ label lilyroute:
 
     main "I was actually considering on taking a gap year and maybe looking for a job but I don't know if that would be the best option
 
-    for me 
+    for me"
 
     show lily excited with dissolve 
 
