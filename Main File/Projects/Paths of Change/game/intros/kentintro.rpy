@@ -56,6 +56,8 @@ label kentintro:
 
         Kent "Bye now."
 
+        hide kent with dissolve
+
         "He said as he walks away in a rush."
 
         main "Yeah. Bye..."

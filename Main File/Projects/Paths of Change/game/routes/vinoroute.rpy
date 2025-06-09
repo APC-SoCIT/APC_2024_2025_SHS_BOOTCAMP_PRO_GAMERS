@@ -12,6 +12,8 @@ label vinoroute:
 
     scene bg garden
 
+    show vino norm
+
     main "This place seems nice..."
 
     Vino "Yeah... It's one of the things I'm most proud of"
@@ -21,6 +23,8 @@ label vinoroute:
     "Time passes..."
 
     "Vino finishes checking on the plants"
+
+    show vino waiting
 
     Vino "Alright, that's it for today"
 
@@ -44,6 +48,8 @@ label vinoroute:
 
     "You feel the wind blow"
 
+    show vino relaxed
+
     Vino "It feels nice, huh?"
 
     Vino "I usually come here to do some gardening around... but sometimes it's to release my stress"
@@ -56,7 +62,9 @@ label vinoroute:
 
     "While he does, he looks at you"
 
-    Vino "So... what are you doing out here?"
+    show vino hmm
+
+    Vino "So... why'd you think of coming out here?"
 
     main "Well... I just thought of following you after you know, the fight... I also heard that the sky has been looking dark and gas emissions have been through the roof"
 
@@ -97,6 +105,8 @@ label abortvinoroute:
 
     main "I’ve got some things to do so I’ll be going first"
 
+    show vino neutral
+
     Vino "Thanks! See you at school!"
 
     scene bg black
@@ -104,8 +114,6 @@ label abortvinoroute:
     "You chose to not do anything..."
 
     "This route has ended due to your negligence..."
-
-    "You chose the Neutral ending..."
 
     $ abortVino = True
 
@@ -117,6 +125,8 @@ label continuevinoroute:
 
     main "That's a great idea, do you mind if I come along? I'd like to help as much as I can!"
 
+    show vino smile
+
     Vino "Oh! You'd like to help? I'd gladly accept it!"
 
     Vino "Okay, so our task is to collect all this trash on the floor and dispose of it properly and for the things that could be recycled, we'll put them into another bin"
@@ -126,6 +136,8 @@ label continuevinoroute:
     main "Sure! I'll get started then"
 
     "Some time passes..."
+
+    show vino relaxed
 
     Vino "Hey, I'm done over there, how is it here on your side?"
 
@@ -140,6 +152,8 @@ label continuevinoroute:
     main "Of course! This task is too heavy for one person"
 
     Vino "That just gave me an idea!"
+
+    show vino smirk
 
     main "hm?"
 
@@ -163,11 +177,15 @@ label disagreevinoplan:
 
     main "I don't know about that one... It might get a bit messy if we involve other people..."
 
+    show vino unamused
+
     Vino "Hm... I think you have got a point there, but nevertheless we still need to find a way to help as much as we can"
 
     main "We should just continue recycling from time to time, it'll still be good help"
 
     Vino "Yeah I guess... though I wish we could do find a more efficient and effective way that could help on a larger scale"
+
+    show vino waiting
 
     Vino "Anyways, thanks for your help"
 
@@ -220,6 +238,8 @@ label ignorevino:
 
     "You make eye contact with him as you pass by but chose to ignore him"
 
+    show vino annoyed
+
     "A few weeks have passed..."
 
     "You being on your phone"
@@ -250,9 +270,13 @@ label approachvino:
 
     "With the slight feeling of reluctance you muster up the courage to talk with him"
 
+    show vino neutral
+
     main "Hey, Vino"
 
     Vino "Oh, hey"
+
+    show vino talk
 
     Vino "Is there something you need?"
 
@@ -261,6 +285,8 @@ label approachvino:
     main "It's about what we talked about yesterday"
 
     Vino "Hm?"
+
+    show vino confused
 
     main "I think we should continue it"
 
@@ -274,6 +300,8 @@ label approachvino:
 
     Vino "What changed your mind?"
 
+    show vino hmm
+
     main "After seeing the latest news update..."
 
     main "I gave it some thought last night and I think we do need to take action"
@@ -284,6 +312,8 @@ label approachvino:
 
     Vino "Alright, I'm glad you changed your mind!"
 
+    show vino talk
+
     Vino "Are you free after this?"
 
     main "Yeah, I am"
@@ -292,6 +322,8 @@ label approachvino:
 
     main "Sounds like a good idea"
 
+    hide (vino talk)
+
     "You both grab some food to eat"
 
     "Time passes..."
@@ -299,6 +331,8 @@ label approachvino:
     "You both finish your food"
 
     main "Alright, so where do we start?"
+
+    show vino smile
 
     Vino "Okay so, I think we should start getting the attention of people first"
 
@@ -315,6 +349,8 @@ label approachvino:
     Vino "Exactly!"
 
     Vino "Alright so I'll go ahead and make the poster as soon as I can"
+
+    show vino talk
 
     Vino "What I need you to do is spread the word about it"
 
@@ -333,6 +369,8 @@ label approachvino:
     "You both meet up and felt accomplished knowing you have done something to help"
 
     scene bg caf
+
+    show vino relaxed
 
     Vino "Alright, everything seems to be going according to plan"
 
@@ -359,6 +397,8 @@ label approachvino:
     "You look around and see all the people helping"
 
     "Vino takes a deep breath and looks at you with dedication in his eyes"
+
+    show vino smile
 
     Vino "Dude, we've done it"
 
@@ -407,9 +447,13 @@ label vinoideachoice2:
 
     scene bg park
 
+    show vino madcross
+
     Vino "Are you for real...?"
 
     Vino "Uhm... I think I’ve got this... You can go ahead and continue what you were doing..."
+
+    show vino madtalk
 
     "Vino walks back to cleaning the park surroundings and recycling"
 
@@ -427,6 +471,8 @@ label vinoideachoice1:
 
     scene bg park
 
+    show vino talk
+
     Vino "That sounds like an amazing idea! We should do it when we’re both free from school!"
 
     main "Right! Here is my number..."
@@ -435,13 +481,19 @@ label vinoideachoice1:
 
     Vino "I’ll message you when I can, so look out for it!"
 
+    show vino smile
+
     main "Sure, I'll be waiting!"
+
+    scene bg black
 
     "Some time passes..."
 
     "You and Vino met up to discuss the plans"
 
     scene bg caf
+
+    show vino talk
 
     Vino "Okay so, I think we should start getting the attention of people first"
 
@@ -454,6 +506,8 @@ label vinoideachoice1:
     main "Yeah, that sounds good for me"
 
     main "I'll go ahead and spread the word about it throughout the school"
+
+    show vino smile
 
     Vino "Right! and I'll start with the poster"
 
@@ -493,7 +547,7 @@ label vinoideachoice1:
 
     scene bg black
 
-    "A few weeks have passed by"
+    "A few weeks have passed by..."
 
     News "INCOMING NEWS! Updated statistics have shown that throughout the pass week, gas emissions have shown signs of dropping!"
 
@@ -504,6 +558,8 @@ label vinoideachoice1:
     "You and Vino are in the park"
 
     "You see the amount of people who have gathered to help"
+
+    show vino relaxed
 
     Vino "I'm glad we did this"
 
