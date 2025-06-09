@@ -61,6 +61,8 @@ label lilyintro:
 
         Lily "I'm really sorry I have to go- it was nice meeting you!"
 
+        hide Lily with dissolve
+
         "Lily quickly runs out the office and rushes down the stairs"
 
         $ metLily = True
