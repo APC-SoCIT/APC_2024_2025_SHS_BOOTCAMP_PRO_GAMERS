@@ -1,34 +1,37 @@
 label lilyroute:
 
-    scene bg office
+    scene bg guidance_office
 
     "You and Lily return to the guidance office, pamphlet in hand. A quiet tension sits in your chest—you’re still unsure about your future."
 
     "The room feels the same, neat and quiet, but there's a sense of warmth to it now. Maybe because you were with a familiar face now."
 
-    "The girl then heads behind the front desk to gather some paperwork "
+    "Lily then heads behind the front desk to gather some paperwork like forms more pamphlets and such"
 
-    "You hesitate, then clear your throat."
+    "Lily then turns back to you with a bright smile on her face"
 
-    main "Excuse me, miss?"
+    show lily yay 
 
-    "She looks up and beams when she sees you. It’s Lily."
+    Lily "I'm really glad you decided to come with me today I have A LOT to discuss with you"
 
-    Lily "Oh hey, you came back! That’s a nice surprise."
+    Lily "come on take a seat!"
+
+    "Lily gestures to the seats infront of you two"
 
     main "I was hoping you could help me again. It’s about the pamphlet you gave me… the one with the seminars."
 
     Lily "Of course!"  
 
-    "She reaches under the desk and pulls out a fresh copy of the seminar guide."
+    "She reaches for the stack of papers on to of the table and sifted through it until 
+    she pulls out a fresh copy of the seminar guide."
 
     Lily "I actually hoped you’d come back. Most students just grab it and leave. Not many take the time to ask more."
 
-    main "I wasn’t sure if I’d come back either… but I guess I kept thinking about it."
+    main "I wasn’t sure if I’d be interested either… but I guess I kept thinking about it."
 
     Lily "That’s a good sign. It means something stuck."
 
-    "She lays out the pamphlet on the counter and taps a few parts with her pen."
+    "She lays out the pamphlet on the table and taps a few parts with her pen."
 
     Lily "There’s a variety of topics covered here—business, tech, science, health care, and creative fields too."
 
@@ -38,7 +41,9 @@ label lilyroute:
 
     main "That does sound interesting."
 
-    Lily "And it’s hands-on! You’ll get to try out basic editing software, sketch some mockup designs, maybe even collaborate on a mini-project."
+    Lily "And it’s hands-on! You’ll get to try out basic editing software, sketch some mockup designs,
+
+    maybe even collaborate on a mini-project."
 
     main "That sounds... kind of fun, actually."
 
@@ -89,7 +94,7 @@ label lilyabortending:
 
     "Slowly, you fold the pamphlet and slide it into your bag, but you already know you won’t be showing up to the seminar."
 
-    "Maybe next time… or maybe not."
+    "Maybe next time… or maybe not..."
 
     scene bg black
     with fade
@@ -195,7 +200,7 @@ label lilybestending:
 
     scene bg rooftop_evening
 
-    "One evening, the two of you sit together on the school rooftop, watching the sky darken."
+    "One evening, the two of you sit together on the school parking lot, watching the sky darken."
 
     Lily "I knew from the start you had something special. I’m glad you trusted yourself."
 
@@ -203,7 +208,7 @@ label lilybestending:
 
     Lily "Maybe. But you’re the one who chose to try."
 
-    "She rests her head on your shoulder."
+    "She smiles at you brightly."
 
     "The path ahead doesn’t seem so uncertain anymore."
 
@@ -255,7 +260,8 @@ label lilybadending:
 
     "You walk away from the chance to grow—uncertain, and with a subtle feeling of regret."
 
-    "You and Lily drift apart. The moment passes, never to return."
+    "In the following days you and Lily didn't interact much anymore. Now you were wondering if you made the right 
+    decision or if you missed a great opportunity"
 
     "You chose the Bad Ending."
 
