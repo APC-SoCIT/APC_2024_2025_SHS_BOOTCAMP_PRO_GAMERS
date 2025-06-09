@@ -1195,7 +1195,7 @@ label jog3:
 
     main "There are still a lot to do, you know?"
 
-    "The journey of our lives is still ongoing, and we'll have to continue. At least it's fun, uou thought."
+    "The journey of our lives is still ongoing, and we'll have to continue. At least it's fun, you thought."
 
     "You have reached the ending of this route."
 
