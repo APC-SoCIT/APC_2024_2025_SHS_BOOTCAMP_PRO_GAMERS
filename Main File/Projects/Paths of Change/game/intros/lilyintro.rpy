@@ -6,9 +6,9 @@ label lilyintro:
 
         "You take the elevator up to the guidance office to get some paperwork needed for new enrollees"
 
-        "You knocked on the door of the guidance office only to be met with silence.... after a few seconds have passed you knock again but this time you tried peeking into the 
-        small window of the guidance office to see if there is anyone inside just as you were about to leave a face of girl peeked into the same window you were peeking at 
-        jumpscaring you a bit"
+        "You knocked on the door of the guidance office only to be met with silence.... after a few seconds have passed you knock again 
+        but this time you tried peeking into the small window of the guidance office to see if there is anyone inside just as you were 
+        about to leave a face of girl peeked into the same window you were peeking at jumpscaring you a bit"
 
         StudentL "Oh- I'm so sorry did I scare you? so sorry about that"
 
@@ -44,7 +44,9 @@ label lilyintro:
 
         main "What are those pamphlets about?"
 
-        Lily "oh they're just seminars for people who are looking to take internships but at the same time the seminar also gives advice to people who can't decide which course they'll take up for their career path."
+        Lily "oh they're just seminars for people who are looking to take internships but at the same time the seminar also gives 
+        advice to people who can't decide which course they'll take up for their career path."
+
         Lily "Would you like one?"
 
         "You take a pamphlet"
@@ -52,8 +54,11 @@ label lilyintro:
         "Lily then perks up like she remembered something she quickly checks her watch then mutters a curse"
 
         Lily "sorry to cut our conversation short but I have class in 5 so I should really get going-"
+
         Lily "you can wait here for the councellor"
+
         Lily "if you're interested in seminars and such you can come here to the office and ask for me."
+
         Lily "I'm really sorry I have to go- it was nice meeting you!"
 
         "Lily quickly runs out the office and rushes down the stairs"
