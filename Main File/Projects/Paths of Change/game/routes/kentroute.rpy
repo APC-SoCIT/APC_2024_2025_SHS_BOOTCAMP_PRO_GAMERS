@@ -1078,7 +1078,7 @@ label oof:
 
     scene bg door with dissolve
 
-    show kenthealth unamused with dissolve
+    show kenthealth unamused at thirdPos with dissolve
 
     Kent "I hate you for this. Let’s go before I change my mind."
  
@@ -1094,7 +1094,7 @@ label jog1:
 
     main "Who are you and what have you done to Kent?"
 
-    show kenthealth unamused
+    show kenthealth unamused at thirdPos
 
     Kent "Shut it..."
 
@@ -1114,13 +1114,13 @@ label jog2:
 
     main "You didn't suffer enough, so you need to suffer more."
 
-    show kenthealth unamused
+    show kenthealth unamused at thirdPos
 
     Kent "Ugh... That sounds like pain. Why is this happening to me?"
 
     "He asked himself."
 
-    show kenthealth talk
+    show kenthealth talk at thirdPos
 
     Kent "Whatever, let's go now."
 
@@ -1149,7 +1149,7 @@ label jog3:
 
     You "See?"
 
-    show kenthealth talk with dissolve
+    show kenthealth talk at thirdPos with dissolve
 
     Kent "What do you mean?"
 
@@ -1161,13 +1161,13 @@ label jog3:
 
     "You said with a faint laugh."
 
-    show kenthealth relax
+    show kenthealth relax at thirdPos
 
     Kent "W-well, it thought it was hard, and yes it was. But I kinda, you know? Enjoyed it more or less doing it with someone."
 
     You "Now you're talking like someone living life to the fullest."
 
-    show kenthealth happy with dissolve
+    show kenthealth happy at thirdPos
 
     Kent "Shut it."
 
