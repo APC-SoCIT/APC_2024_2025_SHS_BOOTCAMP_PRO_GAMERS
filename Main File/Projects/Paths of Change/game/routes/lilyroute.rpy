@@ -103,7 +103,7 @@ menu:
 
 label lilyabortending:
 
-    scene bg hallway
+    scene bg hall
     with dissolve
 
     "You thank Lily politely, but your steps feel heavier as you leave the office."
@@ -232,7 +232,7 @@ label lilybestending:
 
     Lily "That makes me really happy. I was hoping you'd say that."
 
-    scene bg clubroom_day
+    scene bg class
 
     "A few weeks later, you’re part of the creative group. You attend weekly meetings, help organize posters, 
 
@@ -240,9 +240,9 @@ label lilybestending:
 
     "Lily becomes a constant presence—not just a mentor, but a close friend."
 
-    scene bg rooftop_evening
+    scene bg parkinglot
 
-    "One evening, the two of you sit together on the school parking lot, watching the sky darken."
+    "One evening, the two of you sit together on a bench at the school parking lot, watching the sky darken."
 
     show lily glad 
 
