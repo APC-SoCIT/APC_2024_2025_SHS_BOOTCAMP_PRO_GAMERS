@@ -2,11 +2,11 @@ label lilyroute:
 
     scene bg office
 
-    "You return to the guidance office, pamphlet in hand. A quiet tension sits in your chest—you’re still unsure about your future."
+    "You and Lily return to the guidance office, pamphlet in hand. A quiet tension sits in your chest—you’re still unsure about your future."
 
-    "The room feels the same, neat and quiet, but there's a sense of warmth to it now. Maybe because you remember the face from before."
+    "The room feels the same, neat and quiet, but there's a sense of warmth to it now. Maybe because you were with a familiar face now."
 
-    "At the front desk, a familiar girl is hunched over a small stack of papers, focused."
+    "The girl then heads behind the front desk to gather some paperwork "
 
     "You hesitate, then clear your throat."
 
