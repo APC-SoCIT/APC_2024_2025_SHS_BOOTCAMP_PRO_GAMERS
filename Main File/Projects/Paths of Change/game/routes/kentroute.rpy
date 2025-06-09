@@ -1193,7 +1193,7 @@ label jog3:
 
     "But he’s already following, shaking his head."
 
-    main "There are still a lot to do, you know?
+    main "There are still a lot to do, you know?"
 
     "The journey of our lives is still ongoing, and we'll have to continue. At least it's fun, uou thought."
 
