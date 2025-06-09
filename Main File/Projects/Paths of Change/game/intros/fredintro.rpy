@@ -29,6 +29,7 @@ label fredintro:
         show fred talk with dissolve
         Fred  "The name’s Fred, I came from the Senior High School batch from last year, so I kinda know the ropes around this place."
     
+
         Fred "Have you gotten a tour of campus yet? I would be glad to show you around"
 
         main "Yeah, I got a tour the first time I enrolled in here, was pretty surprised that the campus was this big."
@@ -52,8 +53,6 @@ label fredintro:
         Fred "No, nothing like that."
 
         Fred "Besides, it’s way too early in the semester to be having a thesis defense."
-
-        Fred "I’m actually planning a bunch of events for this term, and our student’s activities office requires a bunch of files to be submitted for these events to be accepted."
 
         main "Oh, what kinda events?"
 
@@ -83,9 +82,6 @@ label fredintro:
 
         "His tone soured as he talked about the situation. This is something you didn’t expect would happen from a campus such as this."
 
-        "What more, you did not know that Fred’s mood shifts that easily."
-
-        "For a second, he looks like your typical awkward student, then shifts to a cheery student body representative of some sort, then you realize he could be the school’s secret vigilante of justice."
 
         "Talk about cliche."
 
@@ -110,7 +106,7 @@ label fredintro:
         $ metFred = True
 
         if metFred == True and metKent == True and metVino == True and metLily == True:
-            "After watching Fred run off and getting your requirements, [mcName] decided to head to the lobby"
+            "After Fred waves goodbye, [mcName] decided to head to the lobby"
             jump metAll
 
         else:

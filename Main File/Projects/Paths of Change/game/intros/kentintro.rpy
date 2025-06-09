@@ -12,15 +12,21 @@ label kentintro:
 
         main "Nice to meet you, my name is [mcName]. Let’s get along well, neighbor."
 
+        show kent happy with dissolve
+
         Kent "Hi, nice to meet you. My name is Kent A. Ford. Let’s get along."
 
         "He was so pale, and his complexion looks concerning, you thought after looking at him."
 
         main "I am kinda new here so I would appreciate your company, if you don’t mind."
 
+        show kent talk 
+
         Kent "You’re new here, huh? Sure, I don’t mind. Feel free, I have nothing better to do anyways."
 
         main "Thanks!"
+
+        hide kent with dissolve
 
         scene bg black
 
@@ -30,13 +36,23 @@ label kentintro:
 
         scene bg hall
 
+        show kent anxious with dissolve
+
         Kent "Hey, sorry but I won’t be able to accompany you for a bit since I have to do something real quick. Urgent thingy, trust."
 
-        main "It’s fine, I understand. Let’s talk later after you arrive. For the meantime, I’ll wander around the school for a bit."
+        main "Oh, I see."
+
+        main "Let’s talk later after you arrive then. For the meantime, I’ll wander around the school for a bit."
+
+        show kent happy
 
         Kent "I see, then it’s settled. Really, sorry about this. Talk to you later."
 
+        show kent huh
+
         Kent "By the way, just add me in social media. Just search up my name and it'll appear. Add me so that we can message each other."
+
+        show kent bashful
 
         Kent "Bye now."
 

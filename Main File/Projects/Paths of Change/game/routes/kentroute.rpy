@@ -4,7 +4,7 @@ label kentroute:
 
     scene bg class with dissolve
 
-    show kent talk at thirdPos with dissolve
+    show kent talk with dissolve
 
     Kent "Phew... I-I managed to snatch you away from them. T-this place should be enough to... hide."
 
@@ -22,7 +22,7 @@ label madman:
 
     main "Why were you fighting with them like a madman?"
 
-    show kent huh at thirdPos
+    show kent huh
 
     Kent "Well, I mean... Those 3 were trying to do the same as well."
 
@@ -30,19 +30,19 @@ label madman:
 
     main "I am not a thing to fight over with!"
 
-    show kent laughing at thirdPos
+    show kent laughing
 
     Kent "I know, I know. I was kidding."
 
     main "Hmm...."
 
-    show kent bashful at thirdPos
+    show kent bashful
 
     Kent "R-really, I swear..."
 
     main "I was joking as well..."
 
-    show kent disgust at thirdPos
+    show kent disgust
 
     Kent "Are you for real right now?"
 
@@ -57,13 +57,13 @@ label hre:
 
     Kent "Cuz this place is a good place to hide. Trust."
 
-    show kent norm at thirdPos
+    show kent norm
 
     "He confidently said."
 
     main "This is literally such an easy place to be found."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "Nuh uh. As people says it, hiding in open spots are better than hiding in something so hidden."
 
@@ -71,7 +71,7 @@ label hre:
 
     main "Right... Good point, I guess?"
 
-    show kent happy at thirdPos
+    show kent happy
 
     Kent "See?"
 
@@ -83,25 +83,25 @@ label star:
 
     main "So, uhh... What are we gonna do again?"
 
-    show kent norm at thirdPos
+    show kent norm
 
     Kent "Beats me."
 
     main "Hey, you dragged me with without any plans on top?"
 
-    show kent nervous at thirdPos
+    show kent nervous
 
     Kent "Well, I kinda did it in the heat of the moment so..."
 
     main "Seriously?"
 
-    show kent anxious at thirdPos
+    show kent anxious
 
     Kent "Okay okay, I dragged you here so... Let me think of something to do to make up for it."
 
     main "Sure."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "Oh... I get it."
     
@@ -129,7 +129,7 @@ label routeabort:
 
     "You replied."
 
-    show kent huh at thirdPos
+    show kent huh
 
     Kent "Huh? Why?"
 
@@ -139,7 +139,7 @@ label routeabort:
 
     "You said as you recalled your interaction with him in the classroom earlier."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "Oh wait. Yeah, I do have something to do."
 
@@ -149,13 +149,13 @@ label routeabort:
 
     main "What are you so occupied with?"
 
-    show kent laughing at thirdPos
+    show kent laughing
 
     Kent "Well... Let's say it's a secret."
 
     Kent "(Can't really say that I am occupied with games.)"
 
-    show kent happy at thirdPos
+    show kent happy
 
     Kent "Well then, talk to you later."
 
@@ -172,7 +172,7 @@ label yh1:
 
     main "That's unexpected... But sure."
 
-    show kent happy at thirdPos
+    show kent happy
 
     Kent "Oh boy, this is gonna be my first time going out in a while."
 
@@ -180,19 +180,19 @@ label yh1:
 
     main "Wait, seriously?"
 
-    show kent bashful at thirdPos
+    show kent bashful
 
     Kent "Yeah... More or less... Since I am spending most of my time in the dorm."
 
     main "I see..."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "Well, enough about that. Let's hang out after class orientation ends."
 
     main "Yeah, that works."
 
-    show kent happy at thirdPos
+    show kent happy
 
     Kent "Nice... Although knowing that you are new here, I’ll take the lead."
 
@@ -200,19 +200,19 @@ label yh1:
 
     main "Yeah."
 
-    show kent neutral at thirdPos
+    show kent neutral
 
     Kent "Of course, if you have anywhere you want to go, then we’ll go there as well."
 
     main "Oh, that's nice of you."
 
-    show kent laughing at thirdPos
+    show kent laughing
 
     Kent "Hehe, of course."
 
     "He smirked while saying that."
 
-    show kent norm at thirdPos
+    show kent norm
 
     Kent "Nice. Now with that decided, let's hang out after class!"
     
@@ -226,13 +226,13 @@ label yh1:
 
     scene bg class with dissolve
 
-    show kent talk at thirdPos with dissolve
+    show kent talk with dissolve
 
     Kent "Hey... Actually, before doing anything else, why don't we eat?"
 
     main "Sure. Do you have something in mind?"
 
-    show kent anxious at thirdPos
+    show kent anxious
 
     Kent "Well, why don't we go to the nearest fast-food restaurant for starters?."
 
@@ -250,7 +250,7 @@ label yer:
 
     main "Yup."
 
-    show kent happy at thirdPos
+    show kent happy
 
     Kent "Alright! The nearest fast-food restaurant here is McDonald's so..."
 
@@ -266,7 +266,7 @@ label yerr:
 
     main "Well, I am a little hungry so..."
 
-    show kent norm at thirdPos
+    show kent norm
 
     Kent "Same here."
 
@@ -290,7 +290,7 @@ label goi:
 
     scene bg mcdoout with dissolve
 
-    show kent disgust at thirdPos with dissolve
+    show kent disgust with dissolve
 
     Kent "W-we’re here. Let’s go in."
 
@@ -308,7 +308,7 @@ label yera:
 
     main "Hey, are you alright?"
 
-    show kent nervous at thirdPos
+    show kent nervous
 
     Kent "Yeah, just a bit tired."
 
@@ -318,7 +318,7 @@ label yerb:
 
     main "Wait, you’re exhausted already?"
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "How rude. Though yeah, my stamina is dead."
 
@@ -326,7 +326,7 @@ label yerb:
  
 label yerc:
 
-    show kent bashful at thirdPos
+    show kent bashful
 
     Kent "Well, this has always been the case for me though."
 
@@ -334,13 +334,13 @@ label yerc:
 
     main "Oh, I see."
 
-    show kent neutral at thirdPos
+    show kent neutral
 
     Kent "Well, enough about me. Ready to go in?"
 
     main "Absolutely!"
 
-    show kent huh at thirdPos
+    show kent huh
 
     Kent "Woah, so enthusiastic."
 
@@ -352,13 +352,13 @@ label yerc:
 
     scene bg mcdoin with dissolve
 
-    show kent happy at thirdPos with dissolve
+    show kent happy with dissolve
 
     Kent "Finally! Air that really feels good to the touch."
 
     "Kent said excitedly."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "By the way, do you know what you want to get?"
  
@@ -376,7 +376,7 @@ label yes:
 
     "You told Kent what you want."
 
-    show kent huh at thirdPos
+    show kent huh
 
     Kent "Oh? You’ve got quite the interesting combination."
 
@@ -386,7 +386,7 @@ label no:
 
     main "Not yet... Too many choices here."
 
-    show kent norm at thirdPos
+    show kent norm
 
     Kent "Take your time, though don’t take too long."
 
@@ -394,7 +394,7 @@ label no:
 
     "You told Kent what you want."
 
-    show kent huh at thirdPos
+    show kent huh
 
     Kent "Oh? You’ve got quite the interesting combination."
 
@@ -408,7 +408,7 @@ label next:
 
     main "What do you want to get for yourself?"
 
-    show kent neutral at thirdPos
+    show kent neutral
 
     Kent "Well... I will order fried chicken, burger, fries, and coke."
  
@@ -424,7 +424,7 @@ label lot:
 
     main "...That’s a lot"
 
-    show kent happy at thirdPos
+    show kent happy
 
     Kent "Gotta eat a lot, you know?"
 
@@ -434,7 +434,7 @@ label sure:
 
     main "Are you sure about that? Those are quite the unhealthy combo you have."
 
-    show kent happy at thirdPos
+    show kent happy
 
     Kent "Nah, it’s fine. I eat these types of food almost every day. And look, nothing happened."
  
@@ -452,7 +452,7 @@ label be:
 
     "You reluctantly said."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "I’ll order now."
 
@@ -462,13 +462,13 @@ label something:
 
     main "Why not, you know? Add something green alongside?"
 
-    show kent disgust at thirdPos
+    show kent disgust
 
     Kent "Ehh..."
 
     "Kent said in an aloof manner, expressing his unenthusiasm"
 
-    show kent norm at thirdPos
+    show kent norm
 
     Kent "Fine, I’ll add some of that just as you've said. Although just once."
 
@@ -476,7 +476,7 @@ label something:
 
     main "Nice. That's it, my guy."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "I’ll order now."
 
@@ -492,7 +492,7 @@ label arrive:
 
     scene bg mcdoin with dissolve
 
-    show kent huh at thirdPos with dissolve
+    show kent huh with dissolve
 
     Kent "What do you do usually?"
  
@@ -508,7 +508,7 @@ label secret:
 
     main "Well... That's sudden. Though it's a secret"
 
-    show kent neutral at thirdPos
+    show kent neutral
 
     Kent "Eh… No secrets please."
 
@@ -522,11 +522,9 @@ label usual:
 
     main "Hmm... I usually study, exercise, and do what I like."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "You’re so active, huh?"
-
-    main "How about you?"
 
     jump ab
  
@@ -534,11 +532,9 @@ label usual1:
 
     main "Well, I usually study, exercise, and do what I like."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "Wow, so active."
-
-    main "How about you?"
 
     jump ab
  
@@ -546,15 +542,15 @@ label ab:
 
     main "How about you?"
 
-    show anxious talk at thirdPos
+    show kent anxious
 
     Kent "About me..."
 
-    show kent nervous at thirdPos
+    show kent nervous
 
     Kent "Well, I just play games and laze around all around the clock. I don’t really go out that often so..."
 
-    show kent bashful at thirdPos
+    show kent bashful
 
     Kent "That’s it."
 
@@ -562,7 +558,7 @@ label ab:
 
     "You stared at him in silence."
 
-    show kent disgust at thirdPos
+    show kent disgust
 
     Kent "Hey… What’s with the silent stare? You’re scaring me."
 
@@ -580,7 +576,7 @@ label LED:
 
     main "Not working out, studying, or breathing fresh air frequently?"
 
-    show kent bashful at thirdPos
+    show kent bashful
 
     Kent "Well, yeah. More or less."
 
@@ -592,7 +588,7 @@ label vamp:
 
     main "...Are you a vampire avoiding the big LED outside? So sensitive to vitamin D?"
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "So harsh! It's not that bad, bro."
 
@@ -608,7 +604,7 @@ label gue:
 
     main "You know what? Why don’t we hangout often?"
 
-    show kent huh at thirdPos
+    show kent huh
 
     Kent "Wait wait wait... How come?"
 
@@ -626,7 +622,7 @@ label idea:
 
     main "Hearing what you said, I just thought it would be a good idea, no?"
 
-    show kent disgust at thirdPos
+    show kent disgust
 
     Kent "Ehh… What a pain that is."
 
@@ -638,7 +634,7 @@ label longa:
 
     "You said smugly."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "Hey! That’s rude. Though I would hate it if I can’t get myself to play that game."
 
@@ -648,11 +644,11 @@ label next1:
 
     "Kent is spacing out thinking about something."
 
-    show kent anxious at thirdPos
+    show kent anxious
 
     Kent "Well, I guess it’s alright?"
 
-    show kent happy at thirdPos
+    show kent happy
 
     Kent "I’ve got nothing better to do anyways other than what I said. And you’re fun to be with also so it’s a win-win for me."
 
@@ -662,11 +658,11 @@ label next2:
 
     "After a while..."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "Alright, you win... I’ve got nothing better to do anyways other than what I said." 
 
-    show kent happy at thirdPos
+    show kent happy
 
     Kent "And you’re fun to be with also so it’s a win-win for me."
 
@@ -678,7 +674,7 @@ label next3:
 
     main "Then it’s decided! We can talk about what to do later. We’ll eat for now."
 
-    show kent laughing at thirdPos
+    show kent laughing
 
     Kent "Yep, I feel hungry after seeing the food."
 
@@ -692,7 +688,7 @@ label next3:
 
     scene bg mcdoin with dissolve
 
-    show kent happy at thirdPos with dissolve
+    show kent happy with dissolve
 
     Kent "I’m stuffed!"
 
@@ -700,11 +696,11 @@ label next3:
 
     main "So, what do we do now?"
 
-    show kent neutral at thirdPos
+    show kent neutral
 
     Kent "Let’s see..."
 
-    show kent norm at thirdPos
+    show kent norm
 
     Kent "Why don’t we leave for now?"
 
@@ -718,7 +714,7 @@ label next3:
 
     scene bg mcdoout with dissolve
 
-    show kent disgust at thirdPos with dissolve
+    show kent disgust with dissolve
 
     Kent "Ugh… I might have overdone it."
  
@@ -736,7 +732,7 @@ label saw:
 
     "You said bluntly as if you expected this much to happen."
 
-    show kent basful at thirdPos
+    show kent bashful
 
     Kent "W-well..."
 
@@ -748,7 +744,7 @@ label conv:
 
     main "Want to walk it off? Looks like there's a convenience store just in front with water."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "Water? Bold of you to assume I hydrate."
 
@@ -776,7 +772,7 @@ label this:
 
     "You handed Kent coconut water, and he reluctantly took a sip of the coconut water and gags."
 
-    show kent disgust at thirdPos with dissolve
+    show kent disgust with dissolve
 
     Kent "Ugh, this tastes like regret."
 
@@ -784,7 +780,7 @@ label this:
 
     "You said while smirking."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "Yes, it is…"
 
@@ -796,7 +792,7 @@ label this1:
 
     "You handed Kent coconut water, and he reluctantly took a sip of the coconut water and gags."
 
-    show kent disgust at thirdPos with dissolve
+    show kent disgust with dissolve
 
     Kent "Ugh, this tastes like regret."
 
@@ -804,7 +800,7 @@ label this1:
 
     "You said while smirking."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "Yes, it is…"
 
@@ -822,7 +818,7 @@ label noto:
 
     "You both sat on a bench outside the store, watching pigeons fight over a discarded fry. Kent swirls his coconut water like it’s a fine wine he hates."
 
-    show kent anxious at thirdPos with dissolve
+    show kent anxious with dissolve
 
     Kent "Hey… Why do you even care about my ‘health’ or whatever?"
 
@@ -840,7 +836,7 @@ label already:
 
     main "I already told you the reason earlier though. Forgot it already?"
 
-    show kent nervous at thirdPos
+    show kent nervous
 
     Kent "Well... no?"
 
@@ -854,7 +850,7 @@ label already:
 
     main "I wanna hang out with you for a lot longer. Can't have you dying early now, can I?"
 
-    show kent huh at thirdPos
+    show kent huh
 
     Kent "Huh? The heck is with that reason?"
 
@@ -870,7 +866,7 @@ label grem:
 
     "You grin as you said that, bumping his shoulder."
 
-    show kent happy at thirdPos
+    show kent happy
 
     Kent "Gremlin? I'm not like that at all."
 
@@ -882,7 +878,7 @@ label grem:
 
     "You said mockingly..."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "You shut it. I'm going home."
 
@@ -892,7 +888,7 @@ label grem:
  
 label reas:
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "Eh, is that really it?"
 
@@ -900,7 +896,7 @@ label reas:
 
     "You said proudly"
 
-    show kent bashful at thirdPos
+    show kent bashful
 
     Kent "I see.. Haha"
 
@@ -918,7 +914,7 @@ label nex:
 
     scene bg city with dissolve
 
-    show kent disgust at thirdPos with dissolve
+    show kent disgust with dissolve
 
     Kent "Don't you get tired?"
  
@@ -936,13 +932,13 @@ label exha:
 
     "You said while looking at him, grinning."
 
-    show kent huh at thirdPos
+    show kent huh
 
     Kent "But it is for me, though..."
 
     main "Yes yes. Let's go."
 
-    show kent nervous at thirdPos
+    show kent nervous
 
     Kent "Ugh, I’d rather die."
 
@@ -956,7 +952,7 @@ label answ:
 
     main "And you are going to go along with me and I won't be taking no as an answer."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "I don't even have a choice anymore?!"
 
@@ -976,7 +972,7 @@ label shr:
 
     scene bg gym with dissolve
 
-    show kent talk at thirdPos with dissolve
+    show kent talk with dissolve
 
     Kent "I will never let go. Never!"
 
@@ -994,7 +990,7 @@ label nochoi:
 
     main "You’re at it again, huh? You will die if you don’t move. C’mon, just the treadmill!"
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "…Treadmill. But I’m setting it to ‘snail’."
 
@@ -1004,7 +1000,7 @@ label nochoi1:
 
     main "Fine. But if you refuse, we’re volunteering at the animal shelter next weekend."
 
-    show kent talk at thirdPos
+    show kent talk
 
     Kent "Treadmill it is then. But I’m setting it to ‘snail’."
 
@@ -1016,7 +1012,7 @@ label oof:
 
     main "You lasted longer than I thought."
 
-    show kent laughing at thirdPos
+    show kent laughing
 
     Kent "W-well, it’s me we are talking here."
 
@@ -1026,7 +1022,7 @@ label oof:
 
     "You said to Kent while smirking wickedly."
 
-    show kent disgust at thirdPos
+    show kent disgust
 
     Kent "No, no. I’m joking. Please no more. I’ll die at this rate."
 
@@ -1034,7 +1030,7 @@ label oof:
 
     main "I’m joking. Let's take a short break."
 
-    show kent huh at thirdPos
+    show kent huh
 
     Kent "..."
 
@@ -1052,7 +1048,7 @@ label oof:
 
     "Later in your apartment. Smoke billows from a pan as Kent frantically waves a towel at the screeching smoke alarm."
 
-    show kent huh at thirdPos with dissolve
+    show kent huh with dissolve
 
     Kent "I told you I’m a takeout guy! I don’t cook!"
 
@@ -1064,7 +1060,7 @@ label oof:
 
     "You said with a defeated sigh, opened the window."
 
-    show kent anxious at thirdPos
+    show kent anxious
 
     Kent "I miss my chicken nuggets."
 
@@ -1078,7 +1074,7 @@ label oof:
 
     scene bg door with dissolve
 
-    show kenthealth unamused at thirdPos with dissolve
+    show kenthealth unamused with dissolve
 
     Kent "I hate you for this. Let’s go before I change my mind."
  
@@ -1094,7 +1090,7 @@ label jog1:
 
     main "Who are you and what have you done to Kent?"
 
-    show kenthealth unamused at thirdPos
+    show kenthealth unamused
 
     Kent "Shut it..."
 
@@ -1114,13 +1110,13 @@ label jog2:
 
     main "You didn't suffer enough, so you need to suffer more."
 
-    show kenthealth unamused at thirdPos
+    show kenthealth unamused
 
     Kent "Ugh... That sounds like pain. Why is this happening to me?"
 
     "He asked himself."
 
-    show kenthealth talk at thirdPos
+    show kenthealth talk
 
     Kent "Whatever, let's go now."
 
@@ -1147,27 +1143,27 @@ label jog3:
 
     "But he doesn’t complain, just watches the sunrise with you, a small, grudging smile tugging at his lips."
 
-    You "See?"
+    main "See?"
 
-    show kenthealth talk at thirdPos with dissolve
+    show kenthealth talk with dissolve
 
     Kent "What do you mean?"
 
-    You "Compare to how you look when we first met, you look far better. A little movement doesn’t exhaust you anymore."
+    main "Compare to how you look when we first met, you look far better. A little movement doesn’t exhaust you anymore."
 
-    You "At first, you looked so pale, and your complexion looks so dire. I also remember the fact that you tend to get too easily get sick."
+    main "At first, you looked so pale, and your complexion looks so dire. I also remember the fact that you tend to get too easily get sick."
 
-    You "But now? Those problems are already gone when I more or less forced you into getting back in shape. Though you were reluctant at it first."
+    main "But now? Those problems are already gone when I more or less forced you into getting back in shape. Though you were reluctant at it first."
 
     "You said with a faint laugh."
 
-    show kenthealth relax at thirdPos
+    show kenthealth relax
 
     Kent "W-well, it thought it was hard, and yes it was. But I kinda, you know? Enjoyed it more or less doing it with someone."
 
-    You "Now you're talking like someone living life to the fullest."
+    main "Now you're talking like someone living life to the fullest."
 
-    show kenthealth happy at thirdPos
+    show kenthealth happy
 
     Kent "Shut it."
 
