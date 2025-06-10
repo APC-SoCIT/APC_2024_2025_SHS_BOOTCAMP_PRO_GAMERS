@@ -1,5 +1,5 @@
 ﻿label start:
-
+    play music "bgmusic.mp3"
     "Ughh...new college, new headache"
     "This year, my parents wanted me to go to a newly appointed university in town"
     "Quite surprising, really I honestly didn't expect to be in this university of all things"
@@ -19,7 +19,7 @@
     
     main "Welp, time to get ready for school"
 
-    play music "bgmusic.mp3"
+
     scene bg shuttleout with dissolve
 
     "On your way to the bus stop, or...the shuttle station, as how you hear other students call it, you seem to be the only one there"

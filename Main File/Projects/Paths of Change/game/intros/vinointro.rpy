@@ -12,8 +12,12 @@ label vinointro:
 
         "You walk over there wondering who it is that called you"
 
+        show vino neutral
+
         StudentV "Hey, you seem a bit lost."
         
+        show vino talk
+
         StudentV "You need a place to sit?"
 
         main "Uhh yeah, though it looks like all the seats are taken..."
@@ -42,7 +46,7 @@ label vinointro:
 
         main "Sounds good"
 
-        hide (vino talk)
+        hide vino talk
 
         "You and Vino stood up to go get some food"
 
@@ -80,7 +84,7 @@ label vinointro:
 
         Vino "Of course! anytime"
 
-        hide (vino smile)
+        hide vino smile
 
         "Time passes and both are done eating"
 
@@ -94,8 +98,10 @@ label vinointro:
 
         main "Yea, it was nice meeting you too"
 
+        hide vino smile
+
         main "I'll get going too, I've still got some things to do as well"
-        
+        scene bg lobby        
         $ metVino = True
 
         if metFred == True and metKent == True and metVino == True and metLily == True:
@@ -111,8 +117,9 @@ label vinointro:
         jump vinoleft
     
 label vinoleft:
+    scene bg caf with dissolve
     "Vino left the cafeteria"
-
+    scene bg lobby with dissolve
     call screen map
 
     

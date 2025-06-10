@@ -102,7 +102,7 @@ label fredintro:
 
         hide fred itsok with dissolve
         "And with that, Fred ran to the building in a hurry, casually almost stumbling on the pavement from his hasty footsteps."
-
+        scene bg lobby
         $ metFred = True
 
         if metFred == True and metKent == True and metVino == True and metLily == True:
@@ -117,8 +117,9 @@ label fredintro:
         jump fredleft
     
 label fredleft:
+    scene bg parkinglot with dissolve
     "Fred left the parking lot"
-    
+    scene bg lobby with dissolve
     call screen map
 
     

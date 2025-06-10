@@ -322,7 +322,7 @@ label approachvino:
 
     main "Sounds like a good idea"
 
-    hide (vino talk)
+    hide vino talk
 
     "You both grab some food to eat"
 

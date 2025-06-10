@@ -61,7 +61,7 @@ label kentintro:
         "He said as he walks away in a rush."
 
         main "Yeah. Bye..."
-
+        scene bg lobby
         $ metKent = True
 
         if metFred == True and metKent == True and metVino == True and metLily == True:
@@ -76,6 +76,7 @@ label kentintro:
         jump kentleft
     
 label kentleft:
+    scene bg class with dissolve
     "Kent left the classroom"
-    
+    scene bg lobby with dissolve
     call screen map

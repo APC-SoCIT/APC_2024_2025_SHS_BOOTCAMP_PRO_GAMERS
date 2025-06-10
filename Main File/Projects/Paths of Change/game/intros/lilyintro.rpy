@@ -57,7 +57,7 @@ label lilyintro:
         Lily "I'm really sorry I have to go- it was nice meeting you!"
 
         "Lily quickly runs out the office and rushes down the stairs"
-
+        scene bg lobby
         $ metLily = True
 
         if metFred == True and metKent == True and metVino == True and metLily == True:
@@ -72,6 +72,7 @@ label lilyintro:
         jump lilyleft
 
 label lilyleft:
+    scene bg office with dissolve
     "Lily left the office"
-
+    scene bg lobby with dissolve
     call screen map

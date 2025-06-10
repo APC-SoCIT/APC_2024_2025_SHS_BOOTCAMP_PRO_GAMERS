@@ -164,84 +164,157 @@ label metAll:
 
 menu:
     "Fred":
+        show fred awk at firstPos with dissolve
         "A smile grew on Fred's face as you mentioned his name followed by a sly unforseen smirk that he flashed onto the others"
+        show fred ctalk at firstPos with dissolve
         Fred "Well, sorry guys but [mcName] made their decision"
+        show fred cocky at firstPos with dissolve
 
+        show lily madtalk at secondPos with dissolve
         Lily "Ughh, no fair, Fred."
 
+        show vino relaxed at fourthPos with dissolve
         Vino "Honestly, I respect your decision. Glad you didn't choose Lily before she makes you hold her mirror while she does her makeup"
 
         "Lily recoiled in an appalled gasp before crossing her arms, pouting"
-
+        show lily mad at secondPos with dissolve
         Lily "I am NOT like that"
+        show lily cocky at secondPos with dissolve
         Lily "Well...to new people"
 
+        show vino talk at fourthPos with dissolve
         Vino "Whatevs, have fun. I'm gonna head to the garden to do some daily check ins"
+        hide vino talk at fourthPos with dissolve
 
+        show kent talk at thirdPos with dissolve
         Kent "I'll go to the caf and buy something too, see ya around"
+        hide kent talk at thirdPos with dissolve
 
-        Lily "Guess I'll go too then, bye [mcName]"
+        show lily awkward at secondPos with dissolve
+        Lily "Guess I'll go too then,"
+        show lily talk at secondPos with dissolve
+        Lily "bye [mcName]"
+        hide lily talk at secondPos with dissolve
 
         "You watch as the party shrinks down to just you and Fred as the others leave to do their own thing one by one"
 
+        show fred itsok at firstPos with dissolve
         Fred "Welp, shall we?"
         jump fredroute
 
     "Kent":
+        show kent bashful at thirdPos with dissolve
         "Kent looked at others with a smug look in his face."
  
+        show kent laughing at thirdPos with dissolve
         Kent "See? I am just better, is all."
  
+        show vino unamused at fourthPos with dissolve
         Vino "[mcName], that guy doesn't go out at all! He doesn't know how things work in the outside world."
  
+        show lily madtalk at secondPos with dissolve
         Lily "Yeah!"
- 
+        show lily mad at secondPos with dissolve
         "Lily agreed to Vino's words."
  
+        show kent talk at thirdPos with dissolve
         Kent "Well, that's not true at all. How unfortunate for the two of you."
  
+        show fred disappointed at firstPos with dissolve
         Fred "Yeah yeah, we believe you."
  
         "Fred said looking unconvinced."
  
+        
         Kent "Yada yada, all is said and done. [mcName] will go with me."
  
         "Still, the others seems to have not given up so..."
  
+        show kent huh at thirdPos with dissolve
         Kent "[mcName], follow me."
+        hide kent huh at thirdPos with dissolve
  
+        show vino madtalk at fourthPos with dissolve
         Vino "They are running away."
  
+        show lily madtalk at secondPos with dissolve
         Lily "After. Them."
  
+        show fred utalk at firstPos with dissolve
         Fred "Don't do something stupid, you two. Let's respect [mcName]'s choice."
- 
+
+        show vino unamused at fourthPos with dissolve
         Vino "Right..."
  
+        show lily unamused at secondPos with dissolve
         Lily "Fine. I give up."
  
+        show fred disappointed at firstPos with dissolve
         Fred "Good."
+
+        hide fred disappointed at firstPos with dissolve
+        hide lily unamused at secondPos with dissolve
+        hide vino unamused at fourthPos with dissolve
 
         jump kentroute
 
     "Lily":
-        
+        show kent talk at thirdPos with dissolve
+        Kent "Booo"
+
+        show lily cocky at secondPos with dissolve
+        Lily "Oh stop whining, its just that [mcName] likes me more than you"
+
+        show fred disappointed at firstPos with dissolve
+        Fred "No one's competing here for [mcName]'s attention guys, stop being kids"
+
+        show vino smirk at fourthPos with dissolve
+        Vino "Aww really Fred? Why'd you seem disappointed when they chose Lily"
+
+        show fred nerv at firstPos with dissolve
+        Fred "Wh- No I don't!"
+
+        show vino talk at fourthPos with dissolve
+        Vino "Whatevs, I'm off to tend to my garden."
+        Vino "Have fun."
+        hide vino talk at fourthPos with dissolve
+
+        show kent huh at thirdPos with dissolve
+        Kent "Yea, I'll just go grab an energy drink or something"
+        hide kent huh at thirdPos with dissolve
+
+        show fred disappointed at firstPos with dissolve
+        Fred "I'll go with, could use a coffee. See you later guys"
+        hide fred disappointed at firstPos with dissolve
+
+        show lily yay at secondPos with dissolve
+        Lily "Welp, now that that's taken care off, let's go [mcName]!"
+        hide lily yay at secondPos with dissolve
         jump lilyroute
     
     "Vino":
         "As you stare at Vino he then calls you over to follow him"
 
+        show fred disappointed at firstPos with dissolve
         Fred "Wow... none of them even said a word yet"
 
+        show lily sad at secondPos with dissolve
         Lily "I guess [mcName] is going with Vino then"
 
+        show kent huh at thirdPos with dissolve
         Kent "If any of you need me, I'll be in my dorm"
+        hide kent huh at thirdPos with dissolve
 
+        show lily disappointed at secondPos with dissolve
         Lily "Yeah, I'll be hitting the restroom then"
+        hide lily disappointed at secondPos with dissolve
 
+        show fred itsok at firstPos with dissolve
         Fred "See ya guys"
-
+        hide fred itsok at firstPos with dissolve
         "You accompany Vino as the others leaves"
 
+        show vino smirk at fourthPos with dissolve
         Vino "Just follow me"
+        hide vino smirk at fourthPos with dissolve
         jump vinoroute
