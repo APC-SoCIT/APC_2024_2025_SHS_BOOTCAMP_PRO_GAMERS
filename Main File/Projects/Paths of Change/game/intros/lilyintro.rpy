@@ -4,9 +4,9 @@ label lilyintro:
 
         scene bg hall
 
-        "You take the elevator up to the guidance office to get some paperwork needed for new enrollees"
+        "You take the elevator up to the guidance office to get some paperwork needed for new enrollees."
 
-        "You knocked on the door of the guidance office only to be met with silence.... after a few seconds have passed you knock again
+        "You knocked on the door of the guidance office only to be met with silence.... After a few seconds have passed you knock again
 
         but this time you tried peeking into the small window of the guidance office to see if there is anyone inside just as you were
 
@@ -14,25 +14,23 @@ label lilyintro:
 
         show lily flustered
 
-        StudentL "Oh- I'm so sorry did I scare you? so sorry about that"
+        StudentL "Oh- I'm so sorry did I scare you? so sorry about that."
 
         show lily awkward
 
-        "The girl sheepishly smiles. You notice that she is carrying lots of folders as well as pamphlets she reaches out 
+        "The girl sheepishly smiles. You notice that she is carrying lots of folders as well as pamphlets she reaches out her hand to you."
 
-        her hand to you"
-
-        Lily "I'm really sorry about that. I'm Lily by the way and I do volunteer work here at the guidance office"
+        Lily "I'm really sorry about that. I'm Lily by the way and I do volunteer work here at the guidance office."
 
         show lily glad
 
-        "You shake her hand and you introduce yourself. She smiles brightly"
+        "You shake her hand and you introduce yourself. She smiles brightly."
 
-        Lily "Nice to meet you [mcName] are you here to apply for internships?"
+        Lily "Nice to meet you, [mcName]. Are you here to apply for internships?"
 
         show lily talk
 
-        "You shake your head no"
+        "You shake your head no."
 
         Lily "Oh- um- Are you here to do volunteer work?"
 
