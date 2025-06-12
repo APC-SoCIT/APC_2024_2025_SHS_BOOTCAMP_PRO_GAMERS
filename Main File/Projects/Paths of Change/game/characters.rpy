@@ -28,3 +28,8 @@ define thirdPos = Position(xalign=0.65)
 define fourthPos = Position(xalign=1.0)
 define fredPos = Position(xalign=0.25)
 define chadPos = Position(xalign=0.75)
+
+define Remie = Character('Remie', color="#bf6474")
+define Alf= Character('Alf', color="#f38405")
+define Josh= Character('Josh', color="#3d85d6")
+define Gian= Character('Gian', color="#139d6d")
