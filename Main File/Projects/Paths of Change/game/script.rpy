@@ -1,5 +1,5 @@
 ﻿label start:
-    play music "bgmusic.mp3"
+    
     "Ughh...new college, new headache"
     "This year, my parents wanted me to go to a newly appointed university in town"
     "Quite surprising, really I honestly didn't expect to be in this university of all things"
@@ -10,7 +10,7 @@
     $ mcName = renpy.input("Enter your name", length = 32)
     if not mcName:
         $ mcName = "You"
-
+    jump part1
     main "Ah, there it is"
 
     "You put on your lanyard with a bright yellow shade and blue highlights that reflects your school's main color palette"
